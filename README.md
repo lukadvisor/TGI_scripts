@@ -3,7 +3,7 @@
 To install:
 ```shell script
 git clone https://github.com/lukadvisor/TGI_scripts
-cd TGI_cython
+cd TGI_scripts
 pip install -r "requirements.txt"
 pip install -U deep_translator
 ```
