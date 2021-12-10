@@ -4,7 +4,8 @@ To install:
 ```shell script
 git clone https://github.com/lukadvisor/TGI_scripts
 cd TGI_scripts
-pip install -r "requirements.txt"
+pip install scrapy
+pip install bs4
 pip install -U deep_translator
 ```
 To compile just one module (e.g. discounto):
