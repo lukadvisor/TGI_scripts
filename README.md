@@ -7,7 +7,7 @@ cd TGI_scripts
 pip install -r "requirements.txt"
 pip install -U deep_translator
 ```
-To compile just one module:
+To compile just one module (e.g. discounto):
 ```shell script
 make discounto
 ```
@@ -16,7 +16,7 @@ To compile all module at once:
 make all
 ```
 
-To run one crawler:
+To run one crawler (e.g. discounto):
 ```shell script
 python run_crawler.py discounto
 ```
