@@ -842,13 +842,6 @@ static const char *__pyx_f[] = {
 struct __pyx_obj_6lidlpl___pyx_scope_struct__start_requests;
 struct __pyx_obj_6lidlpl___pyx_scope_struct_1_parse;
 
-/* "lidlpl.pyx":49
- *     name = 'lidlpl'
- * 
- *     def start_requests(self):             # <<<<<<<<<<<<<<
- *         self.file = open('lidl-pl.csv','w',encoding='utf-8')
- *         self.writer = csv.writer(self.file)
- */
 struct __pyx_obj_6lidlpl___pyx_scope_struct__start_requests {
   PyObject_HEAD
   PyObject *__pyx_v_brand;
@@ -864,13 +857,6 @@ struct __pyx_obj_6lidlpl___pyx_scope_struct__start_requests {
 };
 
 
-/* "lidlpl.pyx":68
- * 
- * 
- *     def parse(self,response):             # <<<<<<<<<<<<<<
- *         category = response.meta['category']
- *         category_en = response.meta['category_en']
- */
 struct __pyx_obj_6lidlpl___pyx_scope_struct_1_parse {
   PyObject_HEAD
   PyObject *__pyx_v_category;
@@ -1935,13 +1921,6 @@ static PyObject *__pyx_codeobj__27;
 /* Late includes */
 static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_2generator(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
-/* "lidlpl.pyx":49
- *     name = 'lidlpl'
- * 
- *     def start_requests(self):             # <<<<<<<<<<<<<<
- *         self.file = open('lidl-pl.csv','w',encoding='utf-8')
- *         self.writer = csv.writer(self.file)
- */
 
 /* Python wrapper */
 static PyObject *__pyx_pw_6lidlpl_12LidlplSpider_1start_requests(PyObject *__pyx_self, PyObject *__pyx_v_self); /*proto*/
@@ -1969,7 +1948,7 @@ static PyObject *__pyx_pf_6lidlpl_12LidlplSpider_start_requests(CYTHON_UNUSED Py
   if (unlikely(!__pyx_cur_scope)) {
     __pyx_cur_scope = ((struct __pyx_obj_6lidlpl___pyx_scope_struct__start_requests *)Py_None);
     __Pyx_INCREF(Py_None);
-    __PYX_ERR(0, 49, __pyx_L1_error)
+    __PYX_ERR(0, 51, __pyx_L1_error)
   } else {
     __Pyx_GOTREF(__pyx_cur_scope);
   }
@@ -1977,7 +1956,7 @@ static PyObject *__pyx_pf_6lidlpl_12LidlplSpider_start_requests(CYTHON_UNUSED Py
   __Pyx_INCREF(__pyx_cur_scope->__pyx_v_self);
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_self);
   {
-    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_6lidlpl_12LidlplSpider_2generator, __pyx_codeobj_, (PyObject *) __pyx_cur_scope, __pyx_n_s_start_requests, __pyx_n_s_LidlplSpider_start_requests, __pyx_n_s_lidlpl); if (unlikely(!gen)) __PYX_ERR(0, 49, __pyx_L1_error)
+    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_6lidlpl_12LidlplSpider_2generator, __pyx_codeobj_, (PyObject *) __pyx_cur_scope, __pyx_n_s_start_requests, __pyx_n_s_LidlplSpider_start_requests, __pyx_n_s_lidlpl); if (unlikely(!gen)) __PYX_ERR(0, 51, __pyx_L1_error)
     __Pyx_DECREF(__pyx_cur_scope);
     __Pyx_RefNannyFinishContext();
     return (PyObject *) gen;
@@ -2028,37 +2007,23 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_2generator(__pyx_CoroutineObjec
     return NULL;
   }
   __pyx_L3_first_run:;
-  if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 49, __pyx_L1_error)
+  if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 51, __pyx_L1_error)
 
-  /* "lidlpl.pyx":50
- * 
- *     def start_requests(self):
- *         self.file = open('lidl-pl.csv','w',encoding='utf-8')             # <<<<<<<<<<<<<<
- *         self.writer = csv.writer(self.file)
- *         self.writer.writerow(HEADER)
- */
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 50, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_encoding, __pyx_kp_s_utf_8) < 0) __PYX_ERR(0, 50, __pyx_L1_error)
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_open, __pyx_tuple__2, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 50, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_encoding, __pyx_kp_s_utf_8) < 0) __PYX_ERR(0, 52, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_open, __pyx_tuple__2, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (__Pyx_PyObject_SetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_file, __pyx_t_2) < 0) __PYX_ERR(0, 50, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_file, __pyx_t_2) < 0) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "lidlpl.pyx":51
- *     def start_requests(self):
- *         self.file = open('lidl-pl.csv','w',encoding='utf-8')
- *         self.writer = csv.writer(self.file)             # <<<<<<<<<<<<<<
- *         self.writer.writerow(HEADER)
- * 
- */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_csv); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 51, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_csv); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_writer); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 51, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_writer); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_file); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 51, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_file); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_4 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_3))) {
@@ -2073,25 +2038,18 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_2generator(__pyx_CoroutineObjec
   __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_4, __pyx_t_1) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_1);
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 51, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (__Pyx_PyObject_SetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_writer, __pyx_t_2) < 0) __PYX_ERR(0, 51, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_writer, __pyx_t_2) < 0) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "lidlpl.pyx":52
- *         self.file = open('lidl-pl.csv','w',encoding='utf-8')
- *         self.writer = csv.writer(self.file)
- *         self.writer.writerow(HEADER)             # <<<<<<<<<<<<<<
- * 
- *         with open('categories_pl.txt','r') as f:
- */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_writer); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 52, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_writer); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 54, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_writerow); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 52, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_writerow); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 54, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_HEADER); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 52, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_HEADER); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 54, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_4 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_1))) {
@@ -2106,24 +2064,17 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_2generator(__pyx_CoroutineObjec
   __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_4, __pyx_t_3) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 52, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 54, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "lidlpl.pyx":54
- *         self.writer.writerow(HEADER)
- * 
- *         with open('categories_pl.txt','r') as f:             # <<<<<<<<<<<<<<
- *             categories = f.read().splitlines()
- * 
- */
   /*with:*/ {
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_open, __pyx_tuple__3, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 54, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_open, __pyx_tuple__3, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 56, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_5 = __Pyx_PyObject_LookupSpecial(__pyx_t_2, __pyx_n_s_exit); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 54, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_LookupSpecial(__pyx_t_2, __pyx_n_s_exit); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 56, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_3 = __Pyx_PyObject_LookupSpecial(__pyx_t_2, __pyx_n_s_enter); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 54, __pyx_L4_error)
+    __pyx_t_3 = __Pyx_PyObject_LookupSpecial(__pyx_t_2, __pyx_n_s_enter); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 56, __pyx_L4_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_4 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
@@ -2137,7 +2088,7 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_2generator(__pyx_CoroutineObjec
     }
     __pyx_t_1 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 54, __pyx_L4_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 56, __pyx_L4_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __pyx_t_3 = __pyx_t_1;
@@ -2154,14 +2105,7 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_2generator(__pyx_CoroutineObjec
           __pyx_cur_scope->__pyx_v_f = __pyx_t_3;
           __pyx_t_3 = 0;
 
-          /* "lidlpl.pyx":55
- * 
- *         with open('categories_pl.txt','r') as f:
- *             categories = f.read().splitlines()             # <<<<<<<<<<<<<<
- * 
- *         with open('categories.txt','r') as f:
- */
-          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_f, __pyx_n_s_read); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 55, __pyx_L8_error)
+          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_f, __pyx_n_s_read); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 57, __pyx_L8_error)
           __Pyx_GOTREF(__pyx_t_1);
           __pyx_t_4 = NULL;
           if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_1))) {
@@ -2175,10 +2119,10 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_2generator(__pyx_CoroutineObjec
           }
           __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_1);
           __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-          if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 55, __pyx_L8_error)
+          if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 57, __pyx_L8_error)
           __Pyx_GOTREF(__pyx_t_2);
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_splitlines); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 55, __pyx_L8_error)
+          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_splitlines); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 57, __pyx_L8_error)
           __Pyx_GOTREF(__pyx_t_1);
           __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
           __pyx_t_2 = NULL;
@@ -2193,20 +2137,13 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_2generator(__pyx_CoroutineObjec
           }
           __pyx_t_3 = (__pyx_t_2) ? __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_2) : __Pyx_PyObject_CallNoArg(__pyx_t_1);
           __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-          if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 55, __pyx_L8_error)
+          if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 57, __pyx_L8_error)
           __Pyx_GOTREF(__pyx_t_3);
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
           __Pyx_GIVEREF(__pyx_t_3);
           __pyx_cur_scope->__pyx_v_categories = __pyx_t_3;
           __pyx_t_3 = 0;
 
-          /* "lidlpl.pyx":54
- *         self.writer.writerow(HEADER)
- * 
- *         with open('categories_pl.txt','r') as f:             # <<<<<<<<<<<<<<
- *             categories = f.read().splitlines()
- * 
- */
         }
         __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
         __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -2219,20 +2156,20 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_2generator(__pyx_CoroutineObjec
         __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
         /*except:*/ {
           __Pyx_AddTraceback("lidlpl.LidlplSpider.start_requests", __pyx_clineno, __pyx_lineno, __pyx_filename);
-          if (__Pyx_GetException(&__pyx_t_3, &__pyx_t_1, &__pyx_t_2) < 0) __PYX_ERR(0, 54, __pyx_L10_except_error)
+          if (__Pyx_GetException(&__pyx_t_3, &__pyx_t_1, &__pyx_t_2) < 0) __PYX_ERR(0, 56, __pyx_L10_except_error)
           __Pyx_GOTREF(__pyx_t_3);
           __Pyx_GOTREF(__pyx_t_1);
           __Pyx_GOTREF(__pyx_t_2);
-          __pyx_t_4 = PyTuple_Pack(3, __pyx_t_3, __pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 54, __pyx_L10_except_error)
+          __pyx_t_4 = PyTuple_Pack(3, __pyx_t_3, __pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 56, __pyx_L10_except_error)
           __Pyx_GOTREF(__pyx_t_4);
           __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_4, NULL);
           __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-          if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 54, __pyx_L10_except_error)
+          if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 56, __pyx_L10_except_error)
           __Pyx_GOTREF(__pyx_t_9);
           __pyx_t_10 = __Pyx_PyObject_IsTrue(__pyx_t_9);
           __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-          if (__pyx_t_10 < 0) __PYX_ERR(0, 54, __pyx_L10_except_error)
+          if (__pyx_t_10 < 0) __PYX_ERR(0, 56, __pyx_L10_except_error)
           __pyx_t_11 = ((!(__pyx_t_10 != 0)) != 0);
           if (__pyx_t_11) {
             __Pyx_GIVEREF(__pyx_t_3);
@@ -2240,7 +2177,7 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_2generator(__pyx_CoroutineObjec
             __Pyx_XGIVEREF(__pyx_t_2);
             __Pyx_ErrRestoreWithState(__pyx_t_3, __pyx_t_1, __pyx_t_2);
             __pyx_t_3 = 0; __pyx_t_1 = 0; __pyx_t_2 = 0; 
-            __PYX_ERR(0, 54, __pyx_L10_except_error)
+            __PYX_ERR(0, 56, __pyx_L10_except_error)
           }
           __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
           __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -2266,7 +2203,7 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_2generator(__pyx_CoroutineObjec
         if (__pyx_t_5) {
           __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_tuple__4, NULL);
           __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-          if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 54, __pyx_L1_error)
+          if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 56, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_8);
           __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
         }
@@ -2281,19 +2218,12 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_2generator(__pyx_CoroutineObjec
     __pyx_L17:;
   }
 
-  /* "lidlpl.pyx":57
- *             categories = f.read().splitlines()
- * 
- *         with open('categories.txt','r') as f:             # <<<<<<<<<<<<<<
- *             categories_en = f.read().splitlines()
- * 
- */
   /*with:*/ {
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_open, __pyx_tuple__5, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 57, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_open, __pyx_tuple__5, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 59, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_5 = __Pyx_PyObject_LookupSpecial(__pyx_t_2, __pyx_n_s_exit); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 57, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_LookupSpecial(__pyx_t_2, __pyx_n_s_exit); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 59, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_3 = __Pyx_PyObject_LookupSpecial(__pyx_t_2, __pyx_n_s_enter); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 57, __pyx_L18_error)
+    __pyx_t_3 = __Pyx_PyObject_LookupSpecial(__pyx_t_2, __pyx_n_s_enter); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 59, __pyx_L18_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_4 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
@@ -2307,7 +2237,7 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_2generator(__pyx_CoroutineObjec
     }
     __pyx_t_1 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 57, __pyx_L18_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 59, __pyx_L18_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __pyx_t_3 = __pyx_t_1;
@@ -2325,14 +2255,7 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_2generator(__pyx_CoroutineObjec
           __Pyx_GIVEREF(__pyx_t_3);
           __pyx_t_3 = 0;
 
-          /* "lidlpl.pyx":58
- * 
- *         with open('categories.txt','r') as f:
- *             categories_en = f.read().splitlines()             # <<<<<<<<<<<<<<
- * 
- *         with open('brands.txt','r') as f:
- */
-          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_f, __pyx_n_s_read); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 58, __pyx_L22_error)
+          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_f, __pyx_n_s_read); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 60, __pyx_L22_error)
           __Pyx_GOTREF(__pyx_t_1);
           __pyx_t_4 = NULL;
           if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_1))) {
@@ -2346,10 +2269,10 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_2generator(__pyx_CoroutineObjec
           }
           __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_1);
           __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-          if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 58, __pyx_L22_error)
+          if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 60, __pyx_L22_error)
           __Pyx_GOTREF(__pyx_t_2);
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_splitlines); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 58, __pyx_L22_error)
+          __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_splitlines); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 60, __pyx_L22_error)
           __Pyx_GOTREF(__pyx_t_1);
           __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
           __pyx_t_2 = NULL;
@@ -2364,20 +2287,13 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_2generator(__pyx_CoroutineObjec
           }
           __pyx_t_3 = (__pyx_t_2) ? __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_2) : __Pyx_PyObject_CallNoArg(__pyx_t_1);
           __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-          if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 58, __pyx_L22_error)
+          if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 60, __pyx_L22_error)
           __Pyx_GOTREF(__pyx_t_3);
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
           __Pyx_GIVEREF(__pyx_t_3);
           __pyx_cur_scope->__pyx_v_categories_en = __pyx_t_3;
           __pyx_t_3 = 0;
 
-          /* "lidlpl.pyx":57
- *             categories = f.read().splitlines()
- * 
- *         with open('categories.txt','r') as f:             # <<<<<<<<<<<<<<
- *             categories_en = f.read().splitlines()
- * 
- */
         }
         __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
         __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -2390,20 +2306,20 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_2generator(__pyx_CoroutineObjec
         __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
         /*except:*/ {
           __Pyx_AddTraceback("lidlpl.LidlplSpider.start_requests", __pyx_clineno, __pyx_lineno, __pyx_filename);
-          if (__Pyx_GetException(&__pyx_t_3, &__pyx_t_1, &__pyx_t_2) < 0) __PYX_ERR(0, 57, __pyx_L24_except_error)
+          if (__Pyx_GetException(&__pyx_t_3, &__pyx_t_1, &__pyx_t_2) < 0) __PYX_ERR(0, 59, __pyx_L24_except_error)
           __Pyx_GOTREF(__pyx_t_3);
           __Pyx_GOTREF(__pyx_t_1);
           __Pyx_GOTREF(__pyx_t_2);
-          __pyx_t_4 = PyTuple_Pack(3, __pyx_t_3, __pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 57, __pyx_L24_except_error)
+          __pyx_t_4 = PyTuple_Pack(3, __pyx_t_3, __pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 59, __pyx_L24_except_error)
           __Pyx_GOTREF(__pyx_t_4);
           __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_4, NULL);
           __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-          if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 57, __pyx_L24_except_error)
+          if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 59, __pyx_L24_except_error)
           __Pyx_GOTREF(__pyx_t_9);
           __pyx_t_11 = __Pyx_PyObject_IsTrue(__pyx_t_9);
           __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-          if (__pyx_t_11 < 0) __PYX_ERR(0, 57, __pyx_L24_except_error)
+          if (__pyx_t_11 < 0) __PYX_ERR(0, 59, __pyx_L24_except_error)
           __pyx_t_10 = ((!(__pyx_t_11 != 0)) != 0);
           if (__pyx_t_10) {
             __Pyx_GIVEREF(__pyx_t_3);
@@ -2411,7 +2327,7 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_2generator(__pyx_CoroutineObjec
             __Pyx_XGIVEREF(__pyx_t_2);
             __Pyx_ErrRestoreWithState(__pyx_t_3, __pyx_t_1, __pyx_t_2);
             __pyx_t_3 = 0; __pyx_t_1 = 0; __pyx_t_2 = 0; 
-            __PYX_ERR(0, 57, __pyx_L24_except_error)
+            __PYX_ERR(0, 59, __pyx_L24_except_error)
           }
           __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
           __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -2437,7 +2353,7 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_2generator(__pyx_CoroutineObjec
         if (__pyx_t_5) {
           __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_tuple__4, NULL);
           __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-          if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 57, __pyx_L1_error)
+          if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 59, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
           __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
         }
@@ -2452,19 +2368,12 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_2generator(__pyx_CoroutineObjec
     __pyx_L31:;
   }
 
-  /* "lidlpl.pyx":60
- *             categories_en = f.read().splitlines()
- * 
- *         with open('brands.txt','r') as f:             # <<<<<<<<<<<<<<
- *             self.brand_list = [brand.lower().strip() for brand in f.read().splitlines()]
- * 
- */
   /*with:*/ {
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_open, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 60, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_open, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 62, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_5 = __Pyx_PyObject_LookupSpecial(__pyx_t_2, __pyx_n_s_exit); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 60, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_LookupSpecial(__pyx_t_2, __pyx_n_s_exit); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 62, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_3 = __Pyx_PyObject_LookupSpecial(__pyx_t_2, __pyx_n_s_enter); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 60, __pyx_L32_error)
+    __pyx_t_3 = __Pyx_PyObject_LookupSpecial(__pyx_t_2, __pyx_n_s_enter); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 62, __pyx_L32_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_4 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
@@ -2478,7 +2387,7 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_2generator(__pyx_CoroutineObjec
     }
     __pyx_t_1 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 60, __pyx_L32_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 62, __pyx_L32_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __pyx_t_3 = __pyx_t_1;
@@ -2496,16 +2405,9 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_2generator(__pyx_CoroutineObjec
           __Pyx_GIVEREF(__pyx_t_3);
           __pyx_t_3 = 0;
 
-          /* "lidlpl.pyx":61
- * 
- *         with open('brands.txt','r') as f:
- *             self.brand_list = [brand.lower().strip() for brand in f.read().splitlines()]             # <<<<<<<<<<<<<<
- * 
- *         for i in range(0,len(categories)):
- */
-          __pyx_t_3 = PyList_New(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 61, __pyx_L36_error)
+          __pyx_t_3 = PyList_New(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 63, __pyx_L36_error)
           __Pyx_GOTREF(__pyx_t_3);
-          __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_f, __pyx_n_s_read); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 61, __pyx_L36_error)
+          __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_f, __pyx_n_s_read); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 63, __pyx_L36_error)
           __Pyx_GOTREF(__pyx_t_4);
           __pyx_t_12 = NULL;
           if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_4))) {
@@ -2519,10 +2421,10 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_2generator(__pyx_CoroutineObjec
           }
           __pyx_t_1 = (__pyx_t_12) ? __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_12) : __Pyx_PyObject_CallNoArg(__pyx_t_4);
           __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
-          if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 61, __pyx_L36_error)
+          if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 63, __pyx_L36_error)
           __Pyx_GOTREF(__pyx_t_1);
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-          __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_splitlines); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 61, __pyx_L36_error)
+          __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_splitlines); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 63, __pyx_L36_error)
           __Pyx_GOTREF(__pyx_t_4);
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
           __pyx_t_1 = NULL;
@@ -2537,16 +2439,16 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_2generator(__pyx_CoroutineObjec
           }
           __pyx_t_2 = (__pyx_t_1) ? __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_1) : __Pyx_PyObject_CallNoArg(__pyx_t_4);
           __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
-          if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 61, __pyx_L36_error)
+          if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 63, __pyx_L36_error)
           __Pyx_GOTREF(__pyx_t_2);
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
           if (likely(PyList_CheckExact(__pyx_t_2)) || PyTuple_CheckExact(__pyx_t_2)) {
             __pyx_t_4 = __pyx_t_2; __Pyx_INCREF(__pyx_t_4); __pyx_t_13 = 0;
             __pyx_t_14 = NULL;
           } else {
-            __pyx_t_13 = -1; __pyx_t_4 = PyObject_GetIter(__pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 61, __pyx_L36_error)
+            __pyx_t_13 = -1; __pyx_t_4 = PyObject_GetIter(__pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 63, __pyx_L36_error)
             __Pyx_GOTREF(__pyx_t_4);
-            __pyx_t_14 = Py_TYPE(__pyx_t_4)->tp_iternext; if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 61, __pyx_L36_error)
+            __pyx_t_14 = Py_TYPE(__pyx_t_4)->tp_iternext; if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 63, __pyx_L36_error)
           }
           __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
           for (;;) {
@@ -2554,17 +2456,17 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_2generator(__pyx_CoroutineObjec
               if (likely(PyList_CheckExact(__pyx_t_4))) {
                 if (__pyx_t_13 >= PyList_GET_SIZE(__pyx_t_4)) break;
                 #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-                __pyx_t_2 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_13); __Pyx_INCREF(__pyx_t_2); __pyx_t_13++; if (unlikely(0 < 0)) __PYX_ERR(0, 61, __pyx_L36_error)
+                __pyx_t_2 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_13); __Pyx_INCREF(__pyx_t_2); __pyx_t_13++; if (unlikely(0 < 0)) __PYX_ERR(0, 63, __pyx_L36_error)
                 #else
-                __pyx_t_2 = PySequence_ITEM(__pyx_t_4, __pyx_t_13); __pyx_t_13++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 61, __pyx_L36_error)
+                __pyx_t_2 = PySequence_ITEM(__pyx_t_4, __pyx_t_13); __pyx_t_13++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 63, __pyx_L36_error)
                 __Pyx_GOTREF(__pyx_t_2);
                 #endif
               } else {
                 if (__pyx_t_13 >= PyTuple_GET_SIZE(__pyx_t_4)) break;
                 #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-                __pyx_t_2 = PyTuple_GET_ITEM(__pyx_t_4, __pyx_t_13); __Pyx_INCREF(__pyx_t_2); __pyx_t_13++; if (unlikely(0 < 0)) __PYX_ERR(0, 61, __pyx_L36_error)
+                __pyx_t_2 = PyTuple_GET_ITEM(__pyx_t_4, __pyx_t_13); __Pyx_INCREF(__pyx_t_2); __pyx_t_13++; if (unlikely(0 < 0)) __PYX_ERR(0, 63, __pyx_L36_error)
                 #else
-                __pyx_t_2 = PySequence_ITEM(__pyx_t_4, __pyx_t_13); __pyx_t_13++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 61, __pyx_L36_error)
+                __pyx_t_2 = PySequence_ITEM(__pyx_t_4, __pyx_t_13); __pyx_t_13++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 63, __pyx_L36_error)
                 __Pyx_GOTREF(__pyx_t_2);
                 #endif
               }
@@ -2574,7 +2476,7 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_2generator(__pyx_CoroutineObjec
                 PyObject* exc_type = PyErr_Occurred();
                 if (exc_type) {
                   if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-                  else __PYX_ERR(0, 61, __pyx_L36_error)
+                  else __PYX_ERR(0, 63, __pyx_L36_error)
                 }
                 break;
               }
@@ -2584,7 +2486,7 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_2generator(__pyx_CoroutineObjec
             __Pyx_XDECREF_SET(__pyx_cur_scope->__pyx_v_brand, __pyx_t_2);
             __Pyx_GIVEREF(__pyx_t_2);
             __pyx_t_2 = 0;
-            __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_brand, __pyx_n_s_lower); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 61, __pyx_L36_error)
+            __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_brand, __pyx_n_s_lower); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 63, __pyx_L36_error)
             __Pyx_GOTREF(__pyx_t_12);
             __pyx_t_15 = NULL;
             if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_12))) {
@@ -2598,10 +2500,10 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_2generator(__pyx_CoroutineObjec
             }
             __pyx_t_1 = (__pyx_t_15) ? __Pyx_PyObject_CallOneArg(__pyx_t_12, __pyx_t_15) : __Pyx_PyObject_CallNoArg(__pyx_t_12);
             __Pyx_XDECREF(__pyx_t_15); __pyx_t_15 = 0;
-            if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 61, __pyx_L36_error)
+            if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 63, __pyx_L36_error)
             __Pyx_GOTREF(__pyx_t_1);
             __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
-            __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_strip); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 61, __pyx_L36_error)
+            __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_strip); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 63, __pyx_L36_error)
             __Pyx_GOTREF(__pyx_t_12);
             __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
             __pyx_t_1 = NULL;
@@ -2616,23 +2518,16 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_2generator(__pyx_CoroutineObjec
             }
             __pyx_t_2 = (__pyx_t_1) ? __Pyx_PyObject_CallOneArg(__pyx_t_12, __pyx_t_1) : __Pyx_PyObject_CallNoArg(__pyx_t_12);
             __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
-            if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 61, __pyx_L36_error)
+            if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 63, __pyx_L36_error)
             __Pyx_GOTREF(__pyx_t_2);
             __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
-            if (unlikely(__Pyx_ListComp_Append(__pyx_t_3, (PyObject*)__pyx_t_2))) __PYX_ERR(0, 61, __pyx_L36_error)
+            if (unlikely(__Pyx_ListComp_Append(__pyx_t_3, (PyObject*)__pyx_t_2))) __PYX_ERR(0, 63, __pyx_L36_error)
             __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
           }
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-          if (__Pyx_PyObject_SetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_brand_list, __pyx_t_3) < 0) __PYX_ERR(0, 61, __pyx_L36_error)
+          if (__Pyx_PyObject_SetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_brand_list, __pyx_t_3) < 0) __PYX_ERR(0, 63, __pyx_L36_error)
           __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-          /* "lidlpl.pyx":60
- *             categories_en = f.read().splitlines()
- * 
- *         with open('brands.txt','r') as f:             # <<<<<<<<<<<<<<
- *             self.brand_list = [brand.lower().strip() for brand in f.read().splitlines()]
- * 
- */
         }
         __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
         __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -2647,20 +2542,20 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_2generator(__pyx_CoroutineObjec
         __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
         /*except:*/ {
           __Pyx_AddTraceback("lidlpl.LidlplSpider.start_requests", __pyx_clineno, __pyx_lineno, __pyx_filename);
-          if (__Pyx_GetException(&__pyx_t_3, &__pyx_t_4, &__pyx_t_2) < 0) __PYX_ERR(0, 60, __pyx_L38_except_error)
+          if (__Pyx_GetException(&__pyx_t_3, &__pyx_t_4, &__pyx_t_2) < 0) __PYX_ERR(0, 62, __pyx_L38_except_error)
           __Pyx_GOTREF(__pyx_t_3);
           __Pyx_GOTREF(__pyx_t_4);
           __Pyx_GOTREF(__pyx_t_2);
-          __pyx_t_12 = PyTuple_Pack(3, __pyx_t_3, __pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 60, __pyx_L38_except_error)
+          __pyx_t_12 = PyTuple_Pack(3, __pyx_t_3, __pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 62, __pyx_L38_except_error)
           __Pyx_GOTREF(__pyx_t_12);
           __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_12, NULL);
           __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
           __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
-          if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 60, __pyx_L38_except_error)
+          if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 62, __pyx_L38_except_error)
           __Pyx_GOTREF(__pyx_t_9);
           __pyx_t_10 = __Pyx_PyObject_IsTrue(__pyx_t_9);
           __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-          if (__pyx_t_10 < 0) __PYX_ERR(0, 60, __pyx_L38_except_error)
+          if (__pyx_t_10 < 0) __PYX_ERR(0, 62, __pyx_L38_except_error)
           __pyx_t_11 = ((!(__pyx_t_10 != 0)) != 0);
           if (__pyx_t_11) {
             __Pyx_GIVEREF(__pyx_t_3);
@@ -2668,7 +2563,7 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_2generator(__pyx_CoroutineObjec
             __Pyx_XGIVEREF(__pyx_t_2);
             __Pyx_ErrRestoreWithState(__pyx_t_3, __pyx_t_4, __pyx_t_2);
             __pyx_t_3 = 0; __pyx_t_4 = 0; __pyx_t_2 = 0; 
-            __PYX_ERR(0, 60, __pyx_L38_except_error)
+            __PYX_ERR(0, 62, __pyx_L38_except_error)
           }
           __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
           __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -2694,7 +2589,7 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_2generator(__pyx_CoroutineObjec
         if (__pyx_t_5) {
           __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_tuple__4, NULL);
           __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-          if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 60, __pyx_L1_error)
+          if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 62, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_8);
           __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
         }
@@ -2709,33 +2604,19 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_2generator(__pyx_CoroutineObjec
     __pyx_L47:;
   }
 
-  /* "lidlpl.pyx":63
- *             self.brand_list = [brand.lower().strip() for brand in f.read().splitlines()]
- * 
- *         for i in range(0,len(categories)):             # <<<<<<<<<<<<<<
- *             url = BASE_URL.format(categories[i],1)
- *             yield scrapy.Request(url, meta={'category':categories[i], 'category_en':categories_en[i], 'page':1})
- */
-  if (unlikely(!__pyx_cur_scope->__pyx_v_categories)) { __Pyx_RaiseUnboundLocalError("categories"); __PYX_ERR(0, 63, __pyx_L1_error) }
-  __pyx_t_13 = PyObject_Length(__pyx_cur_scope->__pyx_v_categories); if (unlikely(__pyx_t_13 == ((Py_ssize_t)-1))) __PYX_ERR(0, 63, __pyx_L1_error)
+  if (unlikely(!__pyx_cur_scope->__pyx_v_categories)) { __Pyx_RaiseUnboundLocalError("categories"); __PYX_ERR(0, 65, __pyx_L1_error) }
+  __pyx_t_13 = PyObject_Length(__pyx_cur_scope->__pyx_v_categories); if (unlikely(__pyx_t_13 == ((Py_ssize_t)-1))) __PYX_ERR(0, 65, __pyx_L1_error)
   __pyx_t_16 = __pyx_t_13;
   for (__pyx_t_17 = 0; __pyx_t_17 < __pyx_t_16; __pyx_t_17+=1) {
     __pyx_cur_scope->__pyx_v_i = __pyx_t_17;
 
-    /* "lidlpl.pyx":64
- * 
- *         for i in range(0,len(categories)):
- *             url = BASE_URL.format(categories[i],1)             # <<<<<<<<<<<<<<
- *             yield scrapy.Request(url, meta={'category':categories[i], 'category_en':categories_en[i], 'page':1})
- * 
- */
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_BASE_URL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 64, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_BASE_URL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 66, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_format); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 64, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_format); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 66, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_cur_scope->__pyx_v_categories)) { __Pyx_RaiseUnboundLocalError("categories"); __PYX_ERR(0, 64, __pyx_L1_error) }
-    __pyx_t_4 = __Pyx_GetItemInt(__pyx_cur_scope->__pyx_v_categories, __pyx_cur_scope->__pyx_v_i, Py_ssize_t, 1, PyInt_FromSsize_t, 0, 1, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 64, __pyx_L1_error)
+    if (unlikely(!__pyx_cur_scope->__pyx_v_categories)) { __Pyx_RaiseUnboundLocalError("categories"); __PYX_ERR(0, 66, __pyx_L1_error) }
+    __pyx_t_4 = __Pyx_GetItemInt(__pyx_cur_scope->__pyx_v_categories, __pyx_cur_scope->__pyx_v_i, Py_ssize_t, 1, PyInt_FromSsize_t, 0, 1, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 66, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_t_12 = NULL;
     __pyx_t_18 = 0;
@@ -2752,7 +2633,7 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_2generator(__pyx_CoroutineObjec
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_3)) {
       PyObject *__pyx_temp[3] = {__pyx_t_12, __pyx_t_4, __pyx_int_1};
-      __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_18, 2+__pyx_t_18); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 64, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_18, 2+__pyx_t_18); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 66, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -2761,14 +2642,14 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_2generator(__pyx_CoroutineObjec
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
       PyObject *__pyx_temp[3] = {__pyx_t_12, __pyx_t_4, __pyx_int_1};
-      __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_18, 2+__pyx_t_18); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 64, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_18, 2+__pyx_t_18); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 66, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     } else
     #endif
     {
-      __pyx_t_1 = PyTuple_New(2+__pyx_t_18); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 64, __pyx_L1_error)
+      __pyx_t_1 = PyTuple_New(2+__pyx_t_18); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 66, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       if (__pyx_t_12) {
         __Pyx_GIVEREF(__pyx_t_12); PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_12); __pyx_t_12 = NULL;
@@ -2779,7 +2660,7 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_2generator(__pyx_CoroutineObjec
       __Pyx_GIVEREF(__pyx_int_1);
       PyTuple_SET_ITEM(__pyx_t_1, 1+__pyx_t_18, __pyx_int_1);
       __pyx_t_4 = 0;
-      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 64, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 66, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     }
@@ -2789,41 +2670,34 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_2generator(__pyx_CoroutineObjec
     __Pyx_GIVEREF(__pyx_t_2);
     __pyx_t_2 = 0;
 
-    /* "lidlpl.pyx":65
- *         for i in range(0,len(categories)):
- *             url = BASE_URL.format(categories[i],1)
- *             yield scrapy.Request(url, meta={'category':categories[i], 'category_en':categories_en[i], 'page':1})             # <<<<<<<<<<<<<<
- * 
- * 
- */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_scrapy); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 65, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_scrapy); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_Request); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 65, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_Request); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 65, __pyx_L1_error)
+    __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_cur_scope->__pyx_v_url);
     __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_url);
     PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_cur_scope->__pyx_v_url);
-    __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 65, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_4 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 65, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    if (unlikely(!__pyx_cur_scope->__pyx_v_categories)) { __Pyx_RaiseUnboundLocalError("categories"); __PYX_ERR(0, 65, __pyx_L1_error) }
-    __pyx_t_12 = __Pyx_GetItemInt(__pyx_cur_scope->__pyx_v_categories, __pyx_cur_scope->__pyx_v_i, Py_ssize_t, 1, PyInt_FromSsize_t, 0, 1, 1); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 65, __pyx_L1_error)
+    if (unlikely(!__pyx_cur_scope->__pyx_v_categories)) { __Pyx_RaiseUnboundLocalError("categories"); __PYX_ERR(0, 67, __pyx_L1_error) }
+    __pyx_t_12 = __Pyx_GetItemInt(__pyx_cur_scope->__pyx_v_categories, __pyx_cur_scope->__pyx_v_i, Py_ssize_t, 1, PyInt_FromSsize_t, 0, 1, 1); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_12);
-    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_category, __pyx_t_12) < 0) __PYX_ERR(0, 65, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_category, __pyx_t_12) < 0) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
-    if (unlikely(!__pyx_cur_scope->__pyx_v_categories_en)) { __Pyx_RaiseUnboundLocalError("categories_en"); __PYX_ERR(0, 65, __pyx_L1_error) }
-    __pyx_t_12 = __Pyx_GetItemInt(__pyx_cur_scope->__pyx_v_categories_en, __pyx_cur_scope->__pyx_v_i, Py_ssize_t, 1, PyInt_FromSsize_t, 0, 1, 1); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 65, __pyx_L1_error)
+    if (unlikely(!__pyx_cur_scope->__pyx_v_categories_en)) { __Pyx_RaiseUnboundLocalError("categories_en"); __PYX_ERR(0, 67, __pyx_L1_error) }
+    __pyx_t_12 = __Pyx_GetItemInt(__pyx_cur_scope->__pyx_v_categories_en, __pyx_cur_scope->__pyx_v_i, Py_ssize_t, 1, PyInt_FromSsize_t, 0, 1, 1); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_12);
-    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_category_en, __pyx_t_12) < 0) __PYX_ERR(0, 65, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_category_en, __pyx_t_12) < 0) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
-    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_page, __pyx_int_1) < 0) __PYX_ERR(0, 65, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_meta, __pyx_t_4) < 0) __PYX_ERR(0, 65, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_page, __pyx_int_1) < 0) __PYX_ERR(0, 67, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_meta, __pyx_t_4) < 0) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 65, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 67, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -2843,17 +2717,10 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_2generator(__pyx_CoroutineObjec
     __pyx_t_13 = __pyx_cur_scope->__pyx_t_0;
     __pyx_t_16 = __pyx_cur_scope->__pyx_t_1;
     __pyx_t_17 = __pyx_cur_scope->__pyx_t_2;
-    if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 65, __pyx_L1_error)
+    if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 67, __pyx_L1_error)
   }
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
-  /* "lidlpl.pyx":49
- *     name = 'lidlpl'
- * 
- *     def start_requests(self):             # <<<<<<<<<<<<<<
- *         self.file = open('lidl-pl.csv','w',encoding='utf-8')
- *         self.writer = csv.writer(self.file)
- */
 
   /* function exit code */
   PyErr_SetNone(PyExc_StopIteration);
@@ -2878,13 +2745,6 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_2generator(__pyx_CoroutineObjec
 }
 static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_5generator1(__pyx_CoroutineObject *__pyx_generator, CYTHON_UNUSED PyThreadState *__pyx_tstate, PyObject *__pyx_sent_value); /* proto */
 
-/* "lidlpl.pyx":68
- * 
- * 
- *     def parse(self,response):             # <<<<<<<<<<<<<<
- *         category = response.meta['category']
- *         category_en = response.meta['category_en']
- */
 
 /* Python wrapper */
 static PyObject *__pyx_pw_6lidlpl_12LidlplSpider_4parse(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
@@ -2921,11 +2781,11 @@ static PyObject *__pyx_pw_6lidlpl_12LidlplSpider_4parse(PyObject *__pyx_self, Py
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_response)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("parse", 1, 2, 2, 1); __PYX_ERR(0, 68, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("parse", 1, 2, 2, 1); __PYX_ERR(0, 70, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "parse") < 0)) __PYX_ERR(0, 68, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "parse") < 0)) __PYX_ERR(0, 70, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -2938,7 +2798,7 @@ static PyObject *__pyx_pw_6lidlpl_12LidlplSpider_4parse(PyObject *__pyx_self, Py
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("parse", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 68, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("parse", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 70, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("lidlpl.LidlplSpider.parse", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -2963,7 +2823,7 @@ static PyObject *__pyx_pf_6lidlpl_12LidlplSpider_3parse(CYTHON_UNUSED PyObject *
   if (unlikely(!__pyx_cur_scope)) {
     __pyx_cur_scope = ((struct __pyx_obj_6lidlpl___pyx_scope_struct_1_parse *)Py_None);
     __Pyx_INCREF(Py_None);
-    __PYX_ERR(0, 68, __pyx_L1_error)
+    __PYX_ERR(0, 70, __pyx_L1_error)
   } else {
     __Pyx_GOTREF(__pyx_cur_scope);
   }
@@ -2974,7 +2834,7 @@ static PyObject *__pyx_pf_6lidlpl_12LidlplSpider_3parse(CYTHON_UNUSED PyObject *
   __Pyx_INCREF(__pyx_cur_scope->__pyx_v_response);
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_response);
   {
-    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_6lidlpl_12LidlplSpider_5generator1, __pyx_codeobj__7, (PyObject *) __pyx_cur_scope, __pyx_n_s_parse, __pyx_n_s_LidlplSpider_parse, __pyx_n_s_lidlpl); if (unlikely(!gen)) __PYX_ERR(0, 68, __pyx_L1_error)
+    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_6lidlpl_12LidlplSpider_5generator1, __pyx_codeobj__7, (PyObject *) __pyx_cur_scope, __pyx_n_s_parse, __pyx_n_s_LidlplSpider_parse, __pyx_n_s_lidlpl); if (unlikely(!gen)) __PYX_ERR(0, 70, __pyx_L1_error)
     __Pyx_DECREF(__pyx_cur_scope);
     __Pyx_RefNannyFinishContext();
     return (PyObject *) gen;
@@ -3021,83 +2881,48 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_5generator1(__pyx_CoroutineObje
     return NULL;
   }
   __pyx_L3_first_run:;
-  if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 68, __pyx_L1_error)
+  if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 70, __pyx_L1_error)
 
-  /* "lidlpl.pyx":69
- * 
- *     def parse(self,response):
- *         category = response.meta['category']             # <<<<<<<<<<<<<<
- *         category_en = response.meta['category_en']
- *         page = response.meta['page']
- */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_response, __pyx_n_s_meta); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 69, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_response, __pyx_n_s_meta); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 71, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_Dict_GetItem(__pyx_t_1, __pyx_n_s_category); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 69, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Dict_GetItem(__pyx_t_1, __pyx_n_s_category); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 71, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_GIVEREF(__pyx_t_2);
   __pyx_cur_scope->__pyx_v_category = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "lidlpl.pyx":70
- *     def parse(self,response):
- *         category = response.meta['category']
- *         category_en = response.meta['category_en']             # <<<<<<<<<<<<<<
- *         page = response.meta['page']
- * 
- */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_response, __pyx_n_s_meta); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 70, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_response, __pyx_n_s_meta); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_t_2, __pyx_n_s_category_en); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 70, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_t_2, __pyx_n_s_category_en); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_GIVEREF(__pyx_t_1);
   __pyx_cur_scope->__pyx_v_category_en = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "lidlpl.pyx":71
- *         category = response.meta['category']
- *         category_en = response.meta['category_en']
- *         page = response.meta['page']             # <<<<<<<<<<<<<<
- * 
- *         #this message means NO PRODUCTS FOUND
- */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_response, __pyx_n_s_meta); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 71, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_response, __pyx_n_s_meta); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 73, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_Dict_GetItem(__pyx_t_1, __pyx_n_s_page); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 71, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Dict_GetItem(__pyx_t_1, __pyx_n_s_page); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 73, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_GIVEREF(__pyx_t_2);
   __pyx_cur_scope->__pyx_v_page = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "lidlpl.pyx":74
- * 
- *         #this message means NO PRODUCTS FOUND
- *         if not 'Przepraszamy, nie znalelimy szukanego produktu' in response.text:             # <<<<<<<<<<<<<<
- *             product_urls = re.findall(r',"(\\u002Fp\\u002F[0-9A-Za-z\-]*\\u002Fp[0-9A-Za-z]*)",',response.text)
- *             print(f"{response.url} - {len(product_urls)}")
- */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_response, __pyx_n_s_text); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 74, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_response, __pyx_n_s_text); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 76, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = (__Pyx_PySequence_ContainsTF(__pyx_kp_s_Przepraszamy_nie_znalelimy_szuka, __pyx_t_2, Py_NE)); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 74, __pyx_L1_error)
+  __pyx_t_3 = (__Pyx_PySequence_ContainsTF(__pyx_kp_s_Przepraszamy_nie_znalelimy_szuka, __pyx_t_2, Py_NE)); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 76, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_4 = (__pyx_t_3 != 0);
   if (__pyx_t_4) {
 
-    /* "lidlpl.pyx":75
- *         #this message means NO PRODUCTS FOUND
- *         if not 'Przepraszamy, nie znalelimy szukanego produktu' in response.text:
- *             product_urls = re.findall(r',"(\\u002Fp\\u002F[0-9A-Za-z\-]*\\u002Fp[0-9A-Za-z]*)",',response.text)             # <<<<<<<<<<<<<<
- *             print(f"{response.url} - {len(product_urls)}")
- *             #print(product_urls)
- */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_re); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 75, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_re); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_findall); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 75, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_findall); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_response, __pyx_n_s_text); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 75, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_response, __pyx_n_s_text); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __pyx_t_6 = NULL;
     __pyx_t_7 = 0;
@@ -3114,7 +2939,7 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_5generator1(__pyx_CoroutineObje
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_5)) {
       PyObject *__pyx_temp[3] = {__pyx_t_6, __pyx_kp_s_u002Fp_u002F_0_9A_Za_z_u002Fp_0, __pyx_t_1};
-      __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 75, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 77, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -3123,14 +2948,14 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_5generator1(__pyx_CoroutineObje
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_5)) {
       PyObject *__pyx_temp[3] = {__pyx_t_6, __pyx_kp_s_u002Fp_u002F_0_9A_Za_z_u002Fp_0, __pyx_t_1};
-      __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 75, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 77, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     } else
     #endif
     {
-      __pyx_t_8 = PyTuple_New(2+__pyx_t_7); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 75, __pyx_L1_error)
+      __pyx_t_8 = PyTuple_New(2+__pyx_t_7); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 77, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       if (__pyx_t_6) {
         __Pyx_GIVEREF(__pyx_t_6); PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_t_6); __pyx_t_6 = NULL;
@@ -3141,7 +2966,7 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_5generator1(__pyx_CoroutineObje
       __Pyx_GIVEREF(__pyx_t_1);
       PyTuple_SET_ITEM(__pyx_t_8, 1+__pyx_t_7, __pyx_t_1);
       __pyx_t_1 = 0;
-      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_8, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 75, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_8, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 77, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     }
@@ -3150,20 +2975,13 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_5generator1(__pyx_CoroutineObje
     __pyx_cur_scope->__pyx_v_product_urls = __pyx_t_2;
     __pyx_t_2 = 0;
 
-    /* "lidlpl.pyx":76
- *         if not 'Przepraszamy, nie znalelimy szukanego produktu' in response.text:
- *             product_urls = re.findall(r',"(\\u002Fp\\u002F[0-9A-Za-z\-]*\\u002Fp[0-9A-Za-z]*)",',response.text)
- *             print(f"{response.url} - {len(product_urls)}")             # <<<<<<<<<<<<<<
- *             #print(product_urls)
- * 
- */
-    __pyx_t_2 = PyTuple_New(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 76, __pyx_L1_error)
+    __pyx_t_2 = PyTuple_New(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 78, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_t_9 = 0;
     __pyx_t_10 = 127;
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_response, __pyx_n_s_url); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 76, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_response, __pyx_n_s_url); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 78, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_8 = __Pyx_PyObject_FormatSimple(__pyx_t_5, __pyx_empty_unicode); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 76, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_FormatSimple(__pyx_t_5, __pyx_empty_unicode); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 78, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __pyx_t_10 = (__Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_8) > __pyx_t_10) ? __Pyx_PyUnicode_MAX_CHAR_VALUE(__pyx_t_8) : __pyx_t_10;
@@ -3175,50 +2993,43 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_5generator1(__pyx_CoroutineObje
     __pyx_t_9 += 3;
     __Pyx_GIVEREF(__pyx_kp_u__8);
     PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_kp_u__8);
-    __pyx_t_11 = PyObject_Length(__pyx_cur_scope->__pyx_v_product_urls); if (unlikely(__pyx_t_11 == ((Py_ssize_t)-1))) __PYX_ERR(0, 76, __pyx_L1_error)
-    __pyx_t_8 = __Pyx_PyUnicode_From_Py_ssize_t(__pyx_t_11, 0, ' ', 'd'); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 76, __pyx_L1_error)
+    __pyx_t_11 = PyObject_Length(__pyx_cur_scope->__pyx_v_product_urls); if (unlikely(__pyx_t_11 == ((Py_ssize_t)-1))) __PYX_ERR(0, 78, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyUnicode_From_Py_ssize_t(__pyx_t_11, 0, ' ', 'd'); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 78, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __pyx_t_9 += __Pyx_PyUnicode_GET_LENGTH(__pyx_t_8);
     __Pyx_GIVEREF(__pyx_t_8);
     PyTuple_SET_ITEM(__pyx_t_2, 2, __pyx_t_8);
     __pyx_t_8 = 0;
-    __pyx_t_8 = __Pyx_PyUnicode_Join(__pyx_t_2, 3, __pyx_t_9, __pyx_t_10); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 76, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyUnicode_Join(__pyx_t_2, 3, __pyx_t_9, __pyx_t_10); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 78, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (__Pyx_PrintOne(0, __pyx_t_8) < 0) __PYX_ERR(0, 76, __pyx_L1_error)
+    if (__Pyx_PrintOne(0, __pyx_t_8) < 0) __PYX_ERR(0, 78, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
-    /* "lidlpl.pyx":79
- *             #print(product_urls)
- * 
- *             for product_url in product_urls:             # <<<<<<<<<<<<<<
- *                 if(product_url):
- *                     url = HOME_URL + product_url.replace('\\u002F','/')
- */
     if (likely(PyList_CheckExact(__pyx_cur_scope->__pyx_v_product_urls)) || PyTuple_CheckExact(__pyx_cur_scope->__pyx_v_product_urls)) {
       __pyx_t_8 = __pyx_cur_scope->__pyx_v_product_urls; __Pyx_INCREF(__pyx_t_8); __pyx_t_9 = 0;
       __pyx_t_12 = NULL;
     } else {
-      __pyx_t_9 = -1; __pyx_t_8 = PyObject_GetIter(__pyx_cur_scope->__pyx_v_product_urls); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 79, __pyx_L1_error)
+      __pyx_t_9 = -1; __pyx_t_8 = PyObject_GetIter(__pyx_cur_scope->__pyx_v_product_urls); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 81, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
-      __pyx_t_12 = Py_TYPE(__pyx_t_8)->tp_iternext; if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 79, __pyx_L1_error)
+      __pyx_t_12 = Py_TYPE(__pyx_t_8)->tp_iternext; if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 81, __pyx_L1_error)
     }
     for (;;) {
       if (likely(!__pyx_t_12)) {
         if (likely(PyList_CheckExact(__pyx_t_8))) {
           if (__pyx_t_9 >= PyList_GET_SIZE(__pyx_t_8)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_2 = PyList_GET_ITEM(__pyx_t_8, __pyx_t_9); __Pyx_INCREF(__pyx_t_2); __pyx_t_9++; if (unlikely(0 < 0)) __PYX_ERR(0, 79, __pyx_L1_error)
+          __pyx_t_2 = PyList_GET_ITEM(__pyx_t_8, __pyx_t_9); __Pyx_INCREF(__pyx_t_2); __pyx_t_9++; if (unlikely(0 < 0)) __PYX_ERR(0, 81, __pyx_L1_error)
           #else
-          __pyx_t_2 = PySequence_ITEM(__pyx_t_8, __pyx_t_9); __pyx_t_9++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 79, __pyx_L1_error)
+          __pyx_t_2 = PySequence_ITEM(__pyx_t_8, __pyx_t_9); __pyx_t_9++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 81, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_2);
           #endif
         } else {
           if (__pyx_t_9 >= PyTuple_GET_SIZE(__pyx_t_8)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_2 = PyTuple_GET_ITEM(__pyx_t_8, __pyx_t_9); __Pyx_INCREF(__pyx_t_2); __pyx_t_9++; if (unlikely(0 < 0)) __PYX_ERR(0, 79, __pyx_L1_error)
+          __pyx_t_2 = PyTuple_GET_ITEM(__pyx_t_8, __pyx_t_9); __Pyx_INCREF(__pyx_t_2); __pyx_t_9++; if (unlikely(0 < 0)) __PYX_ERR(0, 81, __pyx_L1_error)
           #else
-          __pyx_t_2 = PySequence_ITEM(__pyx_t_8, __pyx_t_9); __pyx_t_9++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 79, __pyx_L1_error)
+          __pyx_t_2 = PySequence_ITEM(__pyx_t_8, __pyx_t_9); __pyx_t_9++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 81, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_2);
           #endif
         }
@@ -3228,7 +3039,7 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_5generator1(__pyx_CoroutineObje
           PyObject* exc_type = PyErr_Occurred();
           if (exc_type) {
             if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-            else __PYX_ERR(0, 79, __pyx_L1_error)
+            else __PYX_ERR(0, 81, __pyx_L1_error)
           }
           break;
         }
@@ -3239,31 +3050,17 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_5generator1(__pyx_CoroutineObje
       __Pyx_GIVEREF(__pyx_t_2);
       __pyx_t_2 = 0;
 
-      /* "lidlpl.pyx":80
- * 
- *             for product_url in product_urls:
- *                 if(product_url):             # <<<<<<<<<<<<<<
- *                     url = HOME_URL + product_url.replace('\\u002F','/')
- *                     #print(url)
- */
-      __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_cur_scope->__pyx_v_product_url); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 80, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_cur_scope->__pyx_v_product_url); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 82, __pyx_L1_error)
       if (__pyx_t_4) {
 
-        /* "lidlpl.pyx":81
- *             for product_url in product_urls:
- *                 if(product_url):
- *                     url = HOME_URL + product_url.replace('\\u002F','/')             # <<<<<<<<<<<<<<
- *                     #print(url)
- *                     yield scrapy.Request(url, callback=self.parse_item, meta={'category':category, 'category_en':category_en})
- */
-        __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_HOME_URL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 81, __pyx_L1_error)
+        __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_HOME_URL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 83, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
-        __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_product_url, __pyx_n_s_replace); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 81, __pyx_L1_error)
+        __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_product_url, __pyx_n_s_replace); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 83, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
-        __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_tuple__10, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 81, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_tuple__10, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 83, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-        __pyx_t_5 = PyNumber_Add(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 81, __pyx_L1_error)
+        __pyx_t_5 = PyNumber_Add(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 83, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -3272,36 +3069,29 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_5generator1(__pyx_CoroutineObje
         __Pyx_GIVEREF(__pyx_t_5);
         __pyx_t_5 = 0;
 
-        /* "lidlpl.pyx":83
- *                     url = HOME_URL + product_url.replace('\\u002F','/')
- *                     #print(url)
- *                     yield scrapy.Request(url, callback=self.parse_item, meta={'category':category, 'category_en':category_en})             # <<<<<<<<<<<<<<
- * 
- *             if(len(product_urls)==36):
- */
-        __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_scrapy); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 83, __pyx_L1_error)
+        __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_scrapy); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 85, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
-        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_Request); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 83, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_Request); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 85, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-        __pyx_t_5 = PyTuple_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 83, __pyx_L1_error)
+        __pyx_t_5 = PyTuple_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 85, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
         __Pyx_INCREF(__pyx_cur_scope->__pyx_v_url);
         __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_url);
         PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_cur_scope->__pyx_v_url);
-        __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 83, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 85, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
-        __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_parse_item); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 83, __pyx_L1_error)
+        __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_self, __pyx_n_s_parse_item); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 85, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
-        if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_callback, __pyx_t_6) < 0) __PYX_ERR(0, 83, __pyx_L1_error)
+        if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_callback, __pyx_t_6) < 0) __PYX_ERR(0, 85, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-        __pyx_t_6 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 83, __pyx_L1_error)
+        __pyx_t_6 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 85, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
-        if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_category, __pyx_cur_scope->__pyx_v_category) < 0) __PYX_ERR(0, 83, __pyx_L1_error)
-        if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_category_en, __pyx_cur_scope->__pyx_v_category_en) < 0) __PYX_ERR(0, 83, __pyx_L1_error)
-        if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_meta, __pyx_t_6) < 0) __PYX_ERR(0, 83, __pyx_L1_error)
+        if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_category, __pyx_cur_scope->__pyx_v_category) < 0) __PYX_ERR(0, 85, __pyx_L1_error)
+        if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_category_en, __pyx_cur_scope->__pyx_v_category_en) < 0) __PYX_ERR(0, 85, __pyx_L1_error)
+        if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_meta, __pyx_t_6) < 0) __PYX_ERR(0, 85, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-        __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_5, __pyx_t_2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 83, __pyx_L1_error)
+        __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_5, __pyx_t_2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 85, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -3324,61 +3114,33 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_5generator1(__pyx_CoroutineObje
         __Pyx_XGOTREF(__pyx_t_8);
         __pyx_t_9 = __pyx_cur_scope->__pyx_t_1;
         __pyx_t_12 = __pyx_cur_scope->__pyx_t_2;
-        if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 83, __pyx_L1_error)
+        if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 85, __pyx_L1_error)
 
-        /* "lidlpl.pyx":80
- * 
- *             for product_url in product_urls:
- *                 if(product_url):             # <<<<<<<<<<<<<<
- *                     url = HOME_URL + product_url.replace('\\u002F','/')
- *                     #print(url)
- */
       }
 
-      /* "lidlpl.pyx":79
- *             #print(product_urls)
- * 
- *             for product_url in product_urls:             # <<<<<<<<<<<<<<
- *                 if(product_url):
- *                     url = HOME_URL + product_url.replace('\\u002F','/')
- */
     }
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
-    /* "lidlpl.pyx":85
- *                     yield scrapy.Request(url, callback=self.parse_item, meta={'category':category, 'category_en':category_en})
- * 
- *             if(len(product_urls)==36):             # <<<<<<<<<<<<<<
- *                 next_page = response.url.replace(f"page={page}",f"page={page+1}")
- *                 yield response.follow(next_page, meta={'category':category, 'category_en':category_en, 'page':page+1})
- */
-    __pyx_t_9 = PyObject_Length(__pyx_cur_scope->__pyx_v_product_urls); if (unlikely(__pyx_t_9 == ((Py_ssize_t)-1))) __PYX_ERR(0, 85, __pyx_L1_error)
+    __pyx_t_9 = PyObject_Length(__pyx_cur_scope->__pyx_v_product_urls); if (unlikely(__pyx_t_9 == ((Py_ssize_t)-1))) __PYX_ERR(0, 87, __pyx_L1_error)
     __pyx_t_4 = ((__pyx_t_9 == 36) != 0);
     if (__pyx_t_4) {
 
-      /* "lidlpl.pyx":86
- * 
- *             if(len(product_urls)==36):
- *                 next_page = response.url.replace(f"page={page}",f"page={page+1}")             # <<<<<<<<<<<<<<
- *                 yield response.follow(next_page, meta={'category':category, 'category_en':category_en, 'page':page+1})
- * 
- */
-      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_response, __pyx_n_s_url); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 86, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_response, __pyx_n_s_url); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 88, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
-      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_replace); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 86, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_replace); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 88, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-      __pyx_t_6 = __Pyx_PyObject_FormatSimple(__pyx_cur_scope->__pyx_v_page, __pyx_empty_unicode); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 86, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyObject_FormatSimple(__pyx_cur_scope->__pyx_v_page, __pyx_empty_unicode); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 88, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
-      __pyx_t_5 = __Pyx_PyUnicode_Concat(__pyx_kp_u_page_2, __pyx_t_6); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 86, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyUnicode_Concat(__pyx_kp_u_page_2, __pyx_t_6); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 88, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-      __pyx_t_6 = __Pyx_PyInt_AddObjC(__pyx_cur_scope->__pyx_v_page, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 86, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyInt_AddObjC(__pyx_cur_scope->__pyx_v_page, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 88, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
-      __pyx_t_1 = __Pyx_PyObject_FormatSimple(__pyx_t_6, __pyx_empty_unicode); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 86, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_FormatSimple(__pyx_t_6, __pyx_empty_unicode); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 88, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-      __pyx_t_6 = __Pyx_PyUnicode_Concat(__pyx_kp_u_page_2, __pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 86, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyUnicode_Concat(__pyx_kp_u_page_2, __pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 88, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __pyx_t_1 = NULL;
@@ -3396,7 +3158,7 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_5generator1(__pyx_CoroutineObje
       #if CYTHON_FAST_PYCALL
       if (PyFunction_Check(__pyx_t_2)) {
         PyObject *__pyx_temp[3] = {__pyx_t_1, __pyx_t_5, __pyx_t_6};
-        __pyx_t_8 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 86, __pyx_L1_error)
+        __pyx_t_8 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 88, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
         __Pyx_GOTREF(__pyx_t_8);
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -3406,7 +3168,7 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_5generator1(__pyx_CoroutineObje
       #if CYTHON_FAST_PYCCALL
       if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
         PyObject *__pyx_temp[3] = {__pyx_t_1, __pyx_t_5, __pyx_t_6};
-        __pyx_t_8 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 86, __pyx_L1_error)
+        __pyx_t_8 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 88, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
         __Pyx_GOTREF(__pyx_t_8);
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -3414,7 +3176,7 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_5generator1(__pyx_CoroutineObje
       } else
       #endif
       {
-        __pyx_t_13 = PyTuple_New(2+__pyx_t_7); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 86, __pyx_L1_error)
+        __pyx_t_13 = PyTuple_New(2+__pyx_t_7); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 88, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_13);
         if (__pyx_t_1) {
           __Pyx_GIVEREF(__pyx_t_1); PyTuple_SET_ITEM(__pyx_t_13, 0, __pyx_t_1); __pyx_t_1 = NULL;
@@ -3425,7 +3187,7 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_5generator1(__pyx_CoroutineObje
         PyTuple_SET_ITEM(__pyx_t_13, 1+__pyx_t_7, __pyx_t_6);
         __pyx_t_5 = 0;
         __pyx_t_6 = 0;
-        __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_13, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 86, __pyx_L1_error)
+        __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_13, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 88, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_8);
         __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
       }
@@ -3434,33 +3196,26 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_5generator1(__pyx_CoroutineObje
       __pyx_cur_scope->__pyx_v_next_page = __pyx_t_8;
       __pyx_t_8 = 0;
 
-      /* "lidlpl.pyx":87
- *             if(len(product_urls)==36):
- *                 next_page = response.url.replace(f"page={page}",f"page={page+1}")
- *                 yield response.follow(next_page, meta={'category':category, 'category_en':category_en, 'page':page+1})             # <<<<<<<<<<<<<<
- * 
- * 
- */
-      __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_response, __pyx_n_s_follow); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 87, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_response, __pyx_n_s_follow); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 89, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
-      __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 87, __pyx_L1_error)
+      __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 89, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_INCREF(__pyx_cur_scope->__pyx_v_next_page);
       __Pyx_GIVEREF(__pyx_cur_scope->__pyx_v_next_page);
       PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_cur_scope->__pyx_v_next_page);
-      __pyx_t_13 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 87, __pyx_L1_error)
+      __pyx_t_13 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 89, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_13);
-      __pyx_t_6 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 87, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 89, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
-      if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_category, __pyx_cur_scope->__pyx_v_category) < 0) __PYX_ERR(0, 87, __pyx_L1_error)
-      if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_category_en, __pyx_cur_scope->__pyx_v_category_en) < 0) __PYX_ERR(0, 87, __pyx_L1_error)
-      __pyx_t_5 = __Pyx_PyInt_AddObjC(__pyx_cur_scope->__pyx_v_page, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 87, __pyx_L1_error)
+      if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_category, __pyx_cur_scope->__pyx_v_category) < 0) __PYX_ERR(0, 89, __pyx_L1_error)
+      if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_category_en, __pyx_cur_scope->__pyx_v_category_en) < 0) __PYX_ERR(0, 89, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyInt_AddObjC(__pyx_cur_scope->__pyx_v_page, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 89, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
-      if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_page, __pyx_t_5) < 0) __PYX_ERR(0, 87, __pyx_L1_error)
+      if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_page, __pyx_t_5) < 0) __PYX_ERR(0, 89, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-      if (PyDict_SetItem(__pyx_t_13, __pyx_n_s_meta, __pyx_t_6) < 0) __PYX_ERR(0, 87, __pyx_L1_error)
+      if (PyDict_SetItem(__pyx_t_13, __pyx_n_s_meta, __pyx_t_6) < 0) __PYX_ERR(0, 89, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-      __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_2, __pyx_t_13); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 87, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_2, __pyx_t_13); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 89, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -3474,34 +3229,13 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_5generator1(__pyx_CoroutineObje
       __pyx_generator->resume_label = 2;
       return __pyx_r;
       __pyx_L10_resume_from_yield:;
-      if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 87, __pyx_L1_error)
+      if (unlikely(!__pyx_sent_value)) __PYX_ERR(0, 89, __pyx_L1_error)
 
-      /* "lidlpl.pyx":85
- *                     yield scrapy.Request(url, callback=self.parse_item, meta={'category':category, 'category_en':category_en})
- * 
- *             if(len(product_urls)==36):             # <<<<<<<<<<<<<<
- *                 next_page = response.url.replace(f"page={page}",f"page={page+1}")
- *                 yield response.follow(next_page, meta={'category':category, 'category_en':category_en, 'page':page+1})
- */
     }
 
-    /* "lidlpl.pyx":74
- * 
- *         #this message means NO PRODUCTS FOUND
- *         if not 'Przepraszamy, nie znalelimy szukanego produktu' in response.text:             # <<<<<<<<<<<<<<
- *             product_urls = re.findall(r',"(\\u002Fp\\u002F[0-9A-Za-z\-]*\\u002Fp[0-9A-Za-z]*)",',response.text)
- *             print(f"{response.url} - {len(product_urls)}")
- */
   }
   CYTHON_MAYBE_UNUSED_VAR(__pyx_cur_scope);
 
-  /* "lidlpl.pyx":68
- * 
- * 
- *     def parse(self,response):             # <<<<<<<<<<<<<<
- *         category = response.meta['category']
- *         category_en = response.meta['category_en']
- */
 
   /* function exit code */
   PyErr_SetNone(PyExc_StopIteration);
@@ -3525,13 +3259,6 @@ static PyObject *__pyx_gb_6lidlpl_12LidlplSpider_5generator1(__pyx_CoroutineObje
   return __pyx_r;
 }
 
-/* "lidlpl.pyx":90
- * 
- * 
- *     def parse_item(self,response):             # <<<<<<<<<<<<<<
- *         category = response.meta['category']
- *         category_en = response.meta['category_en']
- */
 
 /* Python wrapper */
 static PyObject *__pyx_pw_6lidlpl_12LidlplSpider_7parse_item(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
@@ -3568,11 +3295,11 @@ static PyObject *__pyx_pw_6lidlpl_12LidlplSpider_7parse_item(PyObject *__pyx_sel
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_response)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("parse_item", 1, 2, 2, 1); __PYX_ERR(0, 90, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("parse_item", 1, 2, 2, 1); __PYX_ERR(0, 92, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "parse_item") < 0)) __PYX_ERR(0, 90, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "parse_item") < 0)) __PYX_ERR(0, 92, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -3585,7 +3312,7 @@ static PyObject *__pyx_pw_6lidlpl_12LidlplSpider_7parse_item(PyObject *__pyx_sel
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("parse_item", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 90, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("parse_item", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 92, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("lidlpl.LidlplSpider.parse_item", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -3632,44 +3359,23 @@ static PyObject *__pyx_pf_6lidlpl_12LidlplSpider_6parse_item(CYTHON_UNUSED PyObj
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("parse_item", 0);
 
-  /* "lidlpl.pyx":91
- * 
- *     def parse_item(self,response):
- *         category = response.meta['category']             # <<<<<<<<<<<<<<
- *         category_en = response.meta['category_en']
- * 
- */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_response, __pyx_n_s_meta); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 91, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_response, __pyx_n_s_meta); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 93, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_Dict_GetItem(__pyx_t_1, __pyx_n_s_category); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 91, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Dict_GetItem(__pyx_t_1, __pyx_n_s_category); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 93, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_category = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "lidlpl.pyx":92
- *     def parse_item(self,response):
- *         category = response.meta['category']
- *         category_en = response.meta['category_en']             # <<<<<<<<<<<<<<
- * 
- *         product_data_str = response.xpath('*[inserted by cython to avoid comment closer]//script[@data-hid="json_data_product"]/text()').extract_first()
- */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_response, __pyx_n_s_meta); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 92, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_response, __pyx_n_s_meta); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 94, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_t_2, __pyx_n_s_category_en); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 92, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_t_2, __pyx_n_s_category_en); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 94, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_category_en = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "lidlpl.pyx":94
- *         category_en = response.meta['category_en']
- * 
- *         product_data_str = response.xpath('*[inserted by cython to avoid comment closer]//script[@data-hid="json_data_product"]/text()').extract_first()             # <<<<<<<<<<<<<<
- *         product_data = json.loads(product_data_str)
- * 
- */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_response, __pyx_n_s_xpath); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 94, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_response, __pyx_n_s_xpath); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 96, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_4 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
@@ -3683,10 +3389,10 @@ static PyObject *__pyx_pf_6lidlpl_12LidlplSpider_6parse_item(CYTHON_UNUSED PyObj
   }
   __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_4, __pyx_kp_s_script_data_hid_json_data_produ) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_kp_s_script_data_hid_json_data_produ);
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 94, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 96, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_extract_first); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 94, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_extract_first); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 96, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_2 = NULL;
@@ -3701,22 +3407,15 @@ static PyObject *__pyx_pf_6lidlpl_12LidlplSpider_6parse_item(CYTHON_UNUSED PyObj
   }
   __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_2) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 94, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 96, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_product_data_str = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "lidlpl.pyx":95
- * 
- *         product_data_str = response.xpath('*[inserted by cython to avoid comment closer]//script[@data-hid="json_data_product"]/text()').extract_first()
- *         product_data = json.loads(product_data_str)             # <<<<<<<<<<<<<<
- * 
- *         brand = ''
- */
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_json); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 95, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_json); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 97, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_loads); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 95, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_loads); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 97, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_3 = NULL;
@@ -3731,103 +3430,47 @@ static PyObject *__pyx_pf_6lidlpl_12LidlplSpider_6parse_item(CYTHON_UNUSED PyObj
   }
   __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_3, __pyx_v_product_data_str) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_v_product_data_str);
   __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 95, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 97, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_product_data = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "lidlpl.pyx":97
- *         product_data = json.loads(product_data_str)
- * 
- *         brand = ''             # <<<<<<<<<<<<<<
- *         if 'brand' in product_data:
- *             if 'name' in product_data["brand"]:
- */
   __Pyx_INCREF(__pyx_kp_s__11);
   __pyx_v_brand = __pyx_kp_s__11;
 
-  /* "lidlpl.pyx":98
- * 
- *         brand = ''
- *         if 'brand' in product_data:             # <<<<<<<<<<<<<<
- *             if 'name' in product_data["brand"]:
- *                 brand = product_data["brand"]["name"]
- */
-  __pyx_t_5 = (__Pyx_PySequence_ContainsTF(__pyx_n_s_brand, __pyx_v_product_data, Py_EQ)); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 98, __pyx_L1_error)
+  __pyx_t_5 = (__Pyx_PySequence_ContainsTF(__pyx_n_s_brand, __pyx_v_product_data, Py_EQ)); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 100, __pyx_L1_error)
   __pyx_t_6 = (__pyx_t_5 != 0);
   if (__pyx_t_6) {
 
-    /* "lidlpl.pyx":99
- *         brand = ''
- *         if 'brand' in product_data:
- *             if 'name' in product_data["brand"]:             # <<<<<<<<<<<<<<
- *                 brand = product_data["brand"]["name"]
- *                 brand = brand.replace('','')
- */
-    __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_v_product_data, __pyx_n_s_brand); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 99, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_v_product_data, __pyx_n_s_brand); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 101, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_6 = (__Pyx_PySequence_ContainsTF(__pyx_n_s_name, __pyx_t_1, Py_EQ)); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 99, __pyx_L1_error)
+    __pyx_t_6 = (__Pyx_PySequence_ContainsTF(__pyx_n_s_name, __pyx_t_1, Py_EQ)); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 101, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_t_5 = (__pyx_t_6 != 0);
     if (__pyx_t_5) {
 
-      /* "lidlpl.pyx":100
- *         if 'brand' in product_data:
- *             if 'name' in product_data["brand"]:
- *                 brand = product_data["brand"]["name"]             # <<<<<<<<<<<<<<
- *                 brand = brand.replace('','')
- * 
- */
-      __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_v_product_data, __pyx_n_s_brand); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 100, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_v_product_data, __pyx_n_s_brand); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 102, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      __pyx_t_2 = __Pyx_PyObject_Dict_GetItem(__pyx_t_1, __pyx_n_s_name); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 100, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_Dict_GetItem(__pyx_t_1, __pyx_n_s_name); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 102, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __Pyx_DECREF_SET(__pyx_v_brand, __pyx_t_2);
       __pyx_t_2 = 0;
 
-      /* "lidlpl.pyx":101
- *             if 'name' in product_data["brand"]:
- *                 brand = product_data["brand"]["name"]
- *                 brand = brand.replace('','')             # <<<<<<<<<<<<<<
- * 
- *         if brand.lower() in self.brand_list:
- */
-      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_brand, __pyx_n_s_replace); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 101, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_brand, __pyx_n_s_replace); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 103, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__13, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 101, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__13, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 103, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_DECREF_SET(__pyx_v_brand, __pyx_t_1);
       __pyx_t_1 = 0;
 
-      /* "lidlpl.pyx":99
- *         brand = ''
- *         if 'brand' in product_data:
- *             if 'name' in product_data["brand"]:             # <<<<<<<<<<<<<<
- *                 brand = product_data["brand"]["name"]
- *                 brand = brand.replace('','')
- */
     }
 
-    /* "lidlpl.pyx":98
- * 
- *         brand = ''
- *         if 'brand' in product_data:             # <<<<<<<<<<<<<<
- *             if 'name' in product_data["brand"]:
- *                 brand = product_data["brand"]["name"]
- */
   }
 
-  /* "lidlpl.pyx":103
- *                 brand = brand.replace('','')
- * 
- *         if brand.lower() in self.brand_list:             # <<<<<<<<<<<<<<
- *             image = response.xpath('*[inserted by cython to avoid comment closer]//li[@class="multimediabox__slide"]/a/@href').extract_first()
- * 
- */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_brand, __pyx_n_s_lower); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 103, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_brand, __pyx_n_s_lower); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 105, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_3 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -3841,25 +3484,18 @@ static PyObject *__pyx_pf_6lidlpl_12LidlplSpider_6parse_item(CYTHON_UNUSED PyObj
   }
   __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 103, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 105, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_brand_list); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 103, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_brand_list); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 105, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_5 = (__Pyx_PySequence_ContainsTF(__pyx_t_1, __pyx_t_2, Py_EQ)); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 103, __pyx_L1_error)
+  __pyx_t_5 = (__Pyx_PySequence_ContainsTF(__pyx_t_1, __pyx_t_2, Py_EQ)); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 105, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_6 = (__pyx_t_5 != 0);
   if (__pyx_t_6) {
 
-    /* "lidlpl.pyx":104
- * 
- *         if brand.lower() in self.brand_list:
- *             image = response.xpath('*[inserted by cython to avoid comment closer]//li[@class="multimediabox__slide"]/a/@href').extract_first()             # <<<<<<<<<<<<<<
- * 
- *             price = response.xpath('*[inserted by cython to avoid comment closer]//div[@class="m-price__price"]/text()').extract_first()
- */
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_response, __pyx_n_s_xpath); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 104, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_response, __pyx_n_s_xpath); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 106, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_4 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
@@ -3873,10 +3509,10 @@ static PyObject *__pyx_pf_6lidlpl_12LidlplSpider_6parse_item(CYTHON_UNUSED PyObj
     }
     __pyx_t_1 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_4, __pyx_kp_s_li_class_multimediabox__slide_a) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_kp_s_li_class_multimediabox__slide_a);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 104, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 106, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_extract_first); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 104, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_extract_first); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 106, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_t_1 = NULL;
@@ -3891,20 +3527,13 @@ static PyObject *__pyx_pf_6lidlpl_12LidlplSpider_6parse_item(CYTHON_UNUSED PyObj
     }
     __pyx_t_2 = (__pyx_t_1) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_1) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
     __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
-    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 104, __pyx_L1_error)
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 106, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __pyx_v_image = __pyx_t_2;
     __pyx_t_2 = 0;
 
-    /* "lidlpl.pyx":106
- *             image = response.xpath('*[inserted by cython to avoid comment closer]//li[@class="multimediabox__slide"]/a/@href').extract_first()
- * 
- *             price = response.xpath('*[inserted by cython to avoid comment closer]//div[@class="m-price__price"]/text()').extract_first()             # <<<<<<<<<<<<<<
- *             price = price.replace('  ','').replace('\t','').replace('\n','').replace(',','.')
- *             old_price = price
- */
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_response, __pyx_n_s_xpath); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 106, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_response, __pyx_n_s_xpath); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 108, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __pyx_t_4 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_1))) {
@@ -3918,10 +3547,10 @@ static PyObject *__pyx_pf_6lidlpl_12LidlplSpider_6parse_item(CYTHON_UNUSED PyObj
     }
     __pyx_t_3 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_4, __pyx_kp_s_div_class_m_price__price_text) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_kp_s_div_class_m_price__price_text);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 106, __pyx_L1_error)
+    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 108, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_extract_first); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 106, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_extract_first); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 108, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __pyx_t_3 = NULL;
@@ -3936,83 +3565,48 @@ static PyObject *__pyx_pf_6lidlpl_12LidlplSpider_6parse_item(CYTHON_UNUSED PyObj
     }
     __pyx_t_2 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_1);
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 106, __pyx_L1_error)
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 108, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_price = __pyx_t_2;
     __pyx_t_2 = 0;
 
-    /* "lidlpl.pyx":107
- * 
- *             price = response.xpath('*[inserted by cython to avoid comment closer]//div[@class="m-price__price"]/text()').extract_first()
- *             price = price.replace('  ','').replace('\t','').replace('\n','').replace(',','.')             # <<<<<<<<<<<<<<
- *             old_price = price
- * 
- */
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_price, __pyx_n_s_replace); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 107, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_price, __pyx_n_s_replace); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 109, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__15, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 107, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__15, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 109, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_replace); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 107, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_replace); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 109, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__17, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 107, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__17, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 109, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_replace); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 107, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_replace); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 109, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__19, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 107, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__19, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 109, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_replace); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 107, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_replace); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 109, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__22, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 107, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__22, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 109, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF_SET(__pyx_v_price, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "lidlpl.pyx":108
- *             price = response.xpath('*[inserted by cython to avoid comment closer]//div[@class="m-price__price"]/text()').extract_first()
- *             price = price.replace('  ','').replace('\t','').replace('\n','').replace(',','.')
- *             old_price = price             # <<<<<<<<<<<<<<
- * 
- *             pretty_desc = ''
- */
     __Pyx_INCREF(__pyx_v_price);
     __pyx_v_old_price = __pyx_v_price;
 
-    /* "lidlpl.pyx":110
- *             old_price = price
- * 
- *             pretty_desc = ''             # <<<<<<<<<<<<<<
- *             pretty_desc_en = ''
- *             desc = response.xpath('*[inserted by cython to avoid comment closer]//div[@class="product-detail-container"]').extract_first()
- */
     __Pyx_INCREF(__pyx_kp_s__11);
     __pyx_v_pretty_desc = __pyx_kp_s__11;
 
-    /* "lidlpl.pyx":111
- * 
- *             pretty_desc = ''
- *             pretty_desc_en = ''             # <<<<<<<<<<<<<<
- *             desc = response.xpath('*[inserted by cython to avoid comment closer]//div[@class="product-detail-container"]').extract_first()
- *             if not desc:
- */
     __Pyx_INCREF(__pyx_kp_s__11);
     __pyx_v_pretty_desc_en = __pyx_kp_s__11;
 
-    /* "lidlpl.pyx":112
- *             pretty_desc = ''
- *             pretty_desc_en = ''
- *             desc = response.xpath('*[inserted by cython to avoid comment closer]//div[@class="product-detail-container"]').extract_first()             # <<<<<<<<<<<<<<
- *             if not desc:
- *                 desc = response.xpath('*[inserted by cython to avoid comment closer]//div[contains(@class,"info__content--description")]').extract_first()
- */
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_response, __pyx_n_s_xpath); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 112, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_response, __pyx_n_s_xpath); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 114, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_4 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
@@ -4026,10 +3620,10 @@ static PyObject *__pyx_pf_6lidlpl_12LidlplSpider_6parse_item(CYTHON_UNUSED PyObj
     }
     __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_4, __pyx_kp_s_div_class_product_detail_contai) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_kp_s_div_class_product_detail_contai);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 112, __pyx_L1_error)
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 114, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_extract_first); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 112, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_extract_first); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 114, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __pyx_t_2 = NULL;
@@ -4044,31 +3638,17 @@ static PyObject *__pyx_pf_6lidlpl_12LidlplSpider_6parse_item(CYTHON_UNUSED PyObj
     }
     __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_2) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
     __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 112, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 114, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __pyx_v_desc = __pyx_t_1;
     __pyx_t_1 = 0;
 
-    /* "lidlpl.pyx":113
- *             pretty_desc_en = ''
- *             desc = response.xpath('*[inserted by cython to avoid comment closer]//div[@class="product-detail-container"]').extract_first()
- *             if not desc:             # <<<<<<<<<<<<<<
- *                 desc = response.xpath('*[inserted by cython to avoid comment closer]//div[contains(@class,"info__content--description")]').extract_first()
- *             if(desc):
- */
-    __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_v_desc); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 113, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_v_desc); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 115, __pyx_L1_error)
     __pyx_t_5 = ((!__pyx_t_6) != 0);
     if (__pyx_t_5) {
 
-      /* "lidlpl.pyx":114
- *             desc = response.xpath('*[inserted by cython to avoid comment closer]//div[@class="product-detail-container"]').extract_first()
- *             if not desc:
- *                 desc = response.xpath('*[inserted by cython to avoid comment closer]//div[contains(@class,"info__content--description")]').extract_first()             # <<<<<<<<<<<<<<
- *             if(desc):
- *                 soup = bs(desc, features="lxml")
- */
-      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_response, __pyx_n_s_xpath); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 114, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_response, __pyx_n_s_xpath); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 116, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __pyx_t_4 = NULL;
       if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -4082,10 +3662,10 @@ static PyObject *__pyx_pf_6lidlpl_12LidlplSpider_6parse_item(CYTHON_UNUSED PyObj
       }
       __pyx_t_3 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_4, __pyx_kp_s_div_contains_class_info__conten) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_kp_s_div_contains_class_info__conten);
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-      if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 114, __pyx_L1_error)
+      if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 116, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_extract_first); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 114, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_extract_first); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 116, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __pyx_t_3 = NULL;
@@ -4100,49 +3680,28 @@ static PyObject *__pyx_pf_6lidlpl_12LidlplSpider_6parse_item(CYTHON_UNUSED PyObj
       }
       __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
       __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 114, __pyx_L1_error)
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 116, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_DECREF_SET(__pyx_v_desc, __pyx_t_1);
       __pyx_t_1 = 0;
 
-      /* "lidlpl.pyx":113
- *             pretty_desc_en = ''
- *             desc = response.xpath('*[inserted by cython to avoid comment closer]//div[@class="product-detail-container"]').extract_first()
- *             if not desc:             # <<<<<<<<<<<<<<
- *                 desc = response.xpath('*[inserted by cython to avoid comment closer]//div[contains(@class,"info__content--description")]').extract_first()
- *             if(desc):
- */
     }
 
-    /* "lidlpl.pyx":115
- *             if not desc:
- *                 desc = response.xpath('*[inserted by cython to avoid comment closer]//div[contains(@class,"info__content--description")]').extract_first()
- *             if(desc):             # <<<<<<<<<<<<<<
- *                 soup = bs(desc, features="lxml")
- *                 pretty_desc = soup.get_text()
- */
-    __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_v_desc); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 115, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_v_desc); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 117, __pyx_L1_error)
     if (__pyx_t_5) {
 
-      /* "lidlpl.pyx":116
- *                 desc = response.xpath('*[inserted by cython to avoid comment closer]//div[contains(@class,"info__content--description")]').extract_first()
- *             if(desc):
- *                 soup = bs(desc, features="lxml")             # <<<<<<<<<<<<<<
- *                 pretty_desc = soup.get_text()
- *                 pretty_desc_en = GoogleTranslator(source='auto', target='en').translate(pretty_desc[:4900])
- */
-      __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_bs); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 116, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_bs); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 118, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 116, __pyx_L1_error)
+      __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 118, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_INCREF(__pyx_v_desc);
       __Pyx_GIVEREF(__pyx_v_desc);
       PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_v_desc);
-      __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 116, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 118, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
-      if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_features, __pyx_n_s_lxml) < 0) __PYX_ERR(0, 116, __pyx_L1_error)
-      __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 116, __pyx_L1_error)
+      if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_features, __pyx_n_s_lxml) < 0) __PYX_ERR(0, 118, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 118, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -4150,14 +3709,7 @@ static PyObject *__pyx_pf_6lidlpl_12LidlplSpider_6parse_item(CYTHON_UNUSED PyObj
       __pyx_v_soup = __pyx_t_4;
       __pyx_t_4 = 0;
 
-      /* "lidlpl.pyx":117
- *             if(desc):
- *                 soup = bs(desc, features="lxml")
- *                 pretty_desc = soup.get_text()             # <<<<<<<<<<<<<<
- *                 pretty_desc_en = GoogleTranslator(source='auto', target='en').translate(pretty_desc[:4900])
- * 
- */
-      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_soup, __pyx_n_s_get_text); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 117, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_soup, __pyx_n_s_get_text); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 119, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __pyx_t_2 = NULL;
       if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
@@ -4171,33 +3723,26 @@ static PyObject *__pyx_pf_6lidlpl_12LidlplSpider_6parse_item(CYTHON_UNUSED PyObj
       }
       __pyx_t_4 = (__pyx_t_2) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_2) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
       __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-      if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 117, __pyx_L1_error)
+      if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 119, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __Pyx_DECREF_SET(__pyx_v_pretty_desc, __pyx_t_4);
       __pyx_t_4 = 0;
 
-      /* "lidlpl.pyx":118
- *                 soup = bs(desc, features="lxml")
- *                 pretty_desc = soup.get_text()
- *                 pretty_desc_en = GoogleTranslator(source='auto', target='en').translate(pretty_desc[:4900])             # <<<<<<<<<<<<<<
- * 
- *             item_id = product_data["sku"]
- */
-      __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_GoogleTranslator); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 118, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_GoogleTranslator); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 120, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 118, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 120, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
-      if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_source, __pyx_n_s_auto) < 0) __PYX_ERR(0, 118, __pyx_L1_error)
-      if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_target, __pyx_n_s_en) < 0) __PYX_ERR(0, 118, __pyx_L1_error)
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 118, __pyx_L1_error)
+      if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_source, __pyx_n_s_auto) < 0) __PYX_ERR(0, 120, __pyx_L1_error)
+      if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_target, __pyx_n_s_en) < 0) __PYX_ERR(0, 120, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 120, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_translate); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 118, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_translate); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 120, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-      __pyx_t_1 = __Pyx_PyObject_GetSlice(__pyx_v_pretty_desc, 0, 0x1324, NULL, NULL, &__pyx_slice__23, 0, 1, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 118, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_GetSlice(__pyx_v_pretty_desc, 0, 0x1324, NULL, NULL, &__pyx_slice__23, 0, 1, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 120, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __pyx_t_3 = NULL;
       if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -4212,63 +3757,35 @@ static PyObject *__pyx_pf_6lidlpl_12LidlplSpider_6parse_item(CYTHON_UNUSED PyObj
       __pyx_t_4 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_3, __pyx_t_1) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_1);
       __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-      if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 118, __pyx_L1_error)
+      if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 120, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_DECREF_SET(__pyx_v_pretty_desc_en, __pyx_t_4);
       __pyx_t_4 = 0;
 
-      /* "lidlpl.pyx":115
- *             if not desc:
- *                 desc = response.xpath('*[inserted by cython to avoid comment closer]//div[contains(@class,"info__content--description")]').extract_first()
- *             if(desc):             # <<<<<<<<<<<<<<
- *                 soup = bs(desc, features="lxml")
- *                 pretty_desc = soup.get_text()
- */
     }
 
-    /* "lidlpl.pyx":120
- *                 pretty_desc_en = GoogleTranslator(source='auto', target='en').translate(pretty_desc[:4900])
- * 
- *             item_id = product_data["sku"]             # <<<<<<<<<<<<<<
- *             name = product_data["name"]
- *             name_en = GoogleTranslator(source='auto', target='en').translate(name)
- */
-    __pyx_t_4 = __Pyx_PyObject_Dict_GetItem(__pyx_v_product_data, __pyx_n_s_sku); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 120, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Dict_GetItem(__pyx_v_product_data, __pyx_n_s_sku); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 122, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_v_item_id = __pyx_t_4;
     __pyx_t_4 = 0;
 
-    /* "lidlpl.pyx":121
- * 
- *             item_id = product_data["sku"]
- *             name = product_data["name"]             # <<<<<<<<<<<<<<
- *             name_en = GoogleTranslator(source='auto', target='en').translate(name)
- * 
- */
-    __pyx_t_4 = __Pyx_PyObject_Dict_GetItem(__pyx_v_product_data, __pyx_n_s_name); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 121, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Dict_GetItem(__pyx_v_product_data, __pyx_n_s_name); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 123, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_v_name = __pyx_t_4;
     __pyx_t_4 = 0;
 
-    /* "lidlpl.pyx":122
- *             item_id = product_data["sku"]
- *             name = product_data["name"]
- *             name_en = GoogleTranslator(source='auto', target='en').translate(name)             # <<<<<<<<<<<<<<
- * 
- *             url = product_data["url"]
- */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_GoogleTranslator); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 122, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_GoogleTranslator); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 124, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 122, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 124, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_source, __pyx_n_s_auto) < 0) __PYX_ERR(0, 122, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_target, __pyx_n_s_en) < 0) __PYX_ERR(0, 122, __pyx_L1_error)
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_empty_tuple, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 122, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_source, __pyx_n_s_auto) < 0) __PYX_ERR(0, 124, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_target, __pyx_n_s_en) < 0) __PYX_ERR(0, 124, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_empty_tuple, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 124, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_translate); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 122, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_translate); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 124, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __pyx_t_3 = NULL;
@@ -4283,301 +3800,105 @@ static PyObject *__pyx_pf_6lidlpl_12LidlplSpider_6parse_item(CYTHON_UNUSED PyObj
     }
     __pyx_t_4 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_3, __pyx_v_name) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_v_name);
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 122, __pyx_L1_error)
+    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 124, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_name_en = __pyx_t_4;
     __pyx_t_4 = 0;
 
-    /* "lidlpl.pyx":124
- *             name_en = GoogleTranslator(source='auto', target='en').translate(name)
- * 
- *             url = product_data["url"]             # <<<<<<<<<<<<<<
- * 
- *             if 'image' in product_data:
- */
-    __pyx_t_4 = __Pyx_PyObject_Dict_GetItem(__pyx_v_product_data, __pyx_n_s_url); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 124, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Dict_GetItem(__pyx_v_product_data, __pyx_n_s_url); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 126, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_v_url = __pyx_t_4;
     __pyx_t_4 = 0;
 
-    /* "lidlpl.pyx":126
- *             url = product_data["url"]
- * 
- *             if 'image' in product_data:             # <<<<<<<<<<<<<<
- *                 image = product_data["image"][0]
- * 
- */
-    __pyx_t_5 = (__Pyx_PySequence_ContainsTF(__pyx_n_s_image, __pyx_v_product_data, Py_EQ)); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 126, __pyx_L1_error)
+    __pyx_t_5 = (__Pyx_PySequence_ContainsTF(__pyx_n_s_image, __pyx_v_product_data, Py_EQ)); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 128, __pyx_L1_error)
     __pyx_t_6 = (__pyx_t_5 != 0);
     if (__pyx_t_6) {
 
-      /* "lidlpl.pyx":127
- * 
- *             if 'image' in product_data:
- *                 image = product_data["image"][0]             # <<<<<<<<<<<<<<
- * 
- *             rating = None
- */
-      __pyx_t_4 = __Pyx_PyObject_Dict_GetItem(__pyx_v_product_data, __pyx_n_s_image); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 127, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_Dict_GetItem(__pyx_v_product_data, __pyx_n_s_image); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 129, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_1 = __Pyx_GetItemInt(__pyx_t_4, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 127, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_GetItemInt(__pyx_t_4, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 129, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_DECREF_SET(__pyx_v_image, __pyx_t_1);
       __pyx_t_1 = 0;
 
-      /* "lidlpl.pyx":126
- *             url = product_data["url"]
- * 
- *             if 'image' in product_data:             # <<<<<<<<<<<<<<
- *                 image = product_data["image"][0]
- * 
- */
     }
 
-    /* "lidlpl.pyx":129
- *                 image = product_data["image"][0]
- * 
- *             rating = None             # <<<<<<<<<<<<<<
- *             reviews = None
- *             if('aggregateRating') in product_data:
- */
     __Pyx_INCREF(Py_None);
     __pyx_v_rating = Py_None;
 
-    /* "lidlpl.pyx":130
- * 
- *             rating = None
- *             reviews = None             # <<<<<<<<<<<<<<
- *             if('aggregateRating') in product_data:
- *                 rating = product_data["aggregateRating"]["ratingValue"]
- */
     __Pyx_INCREF(Py_None);
     __pyx_v_reviews = Py_None;
 
-    /* "lidlpl.pyx":131
- *             rating = None
- *             reviews = None
- *             if('aggregateRating') in product_data:             # <<<<<<<<<<<<<<
- *                 rating = product_data["aggregateRating"]["ratingValue"]
- *                 reviews = product_data["aggregateRating"]["ratingCount"]
- */
-    __pyx_t_6 = (__Pyx_PySequence_ContainsTF(__pyx_n_s_aggregateRating, __pyx_v_product_data, Py_EQ)); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 131, __pyx_L1_error)
+    __pyx_t_6 = (__Pyx_PySequence_ContainsTF(__pyx_n_s_aggregateRating, __pyx_v_product_data, Py_EQ)); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 133, __pyx_L1_error)
     __pyx_t_5 = (__pyx_t_6 != 0);
     if (__pyx_t_5) {
 
-      /* "lidlpl.pyx":132
- *             reviews = None
- *             if('aggregateRating') in product_data:
- *                 rating = product_data["aggregateRating"]["ratingValue"]             # <<<<<<<<<<<<<<
- *                 reviews = product_data["aggregateRating"]["ratingCount"]
- * 
- */
-      __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_v_product_data, __pyx_n_s_aggregateRating); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 132, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_v_product_data, __pyx_n_s_aggregateRating); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 134, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      __pyx_t_4 = __Pyx_PyObject_Dict_GetItem(__pyx_t_1, __pyx_n_s_ratingValue); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 132, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_Dict_GetItem(__pyx_t_1, __pyx_n_s_ratingValue); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 134, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __Pyx_DECREF_SET(__pyx_v_rating, __pyx_t_4);
       __pyx_t_4 = 0;
 
-      /* "lidlpl.pyx":133
- *             if('aggregateRating') in product_data:
- *                 rating = product_data["aggregateRating"]["ratingValue"]
- *                 reviews = product_data["aggregateRating"]["ratingCount"]             # <<<<<<<<<<<<<<
- * 
- *             row = []
- */
-      __pyx_t_4 = __Pyx_PyObject_Dict_GetItem(__pyx_v_product_data, __pyx_n_s_aggregateRating); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 133, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_Dict_GetItem(__pyx_v_product_data, __pyx_n_s_aggregateRating); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 135, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_t_4, __pyx_n_s_ratingCount); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 133, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_t_4, __pyx_n_s_ratingCount); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 135, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_DECREF_SET(__pyx_v_reviews, __pyx_t_1);
       __pyx_t_1 = 0;
 
-      /* "lidlpl.pyx":131
- *             rating = None
- *             reviews = None
- *             if('aggregateRating') in product_data:             # <<<<<<<<<<<<<<
- *                 rating = product_data["aggregateRating"]["ratingValue"]
- *                 reviews = product_data["aggregateRating"]["ratingCount"]
- */
     }
 
-    /* "lidlpl.pyx":135
- *                 reviews = product_data["aggregateRating"]["ratingCount"]
- * 
- *             row = []             # <<<<<<<<<<<<<<
- *             row.append(category)
- *             row.append(category_en)
- */
-    __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 135, __pyx_L1_error)
+    __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 137, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __pyx_v_row = ((PyObject*)__pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "lidlpl.pyx":136
- * 
- *             row = []
- *             row.append(category)             # <<<<<<<<<<<<<<
- *             row.append(category_en)
- *             row.append(brand)
- */
-    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_row, __pyx_v_category); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 136, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_row, __pyx_v_category); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 138, __pyx_L1_error)
 
-    /* "lidlpl.pyx":137
- *             row = []
- *             row.append(category)
- *             row.append(category_en)             # <<<<<<<<<<<<<<
- *             row.append(brand)
- *             row.append(PLATFORM)
- */
-    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_row, __pyx_v_category_en); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 137, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_row, __pyx_v_category_en); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 139, __pyx_L1_error)
 
-    /* "lidlpl.pyx":138
- *             row.append(category)
- *             row.append(category_en)
- *             row.append(brand)             # <<<<<<<<<<<<<<
- *             row.append(PLATFORM)
- *             row.append(item_id)
- */
-    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_row, __pyx_v_brand); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 138, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_row, __pyx_v_brand); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 140, __pyx_L1_error)
 
-    /* "lidlpl.pyx":139
- *             row.append(category_en)
- *             row.append(brand)
- *             row.append(PLATFORM)             # <<<<<<<<<<<<<<
- *             row.append(item_id)
- *             row.append(name)
- */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_PLATFORM); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 139, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_PLATFORM); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 141, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_row, __pyx_t_1); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 139, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_row, __pyx_t_1); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 141, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "lidlpl.pyx":140
- *             row.append(brand)
- *             row.append(PLATFORM)
- *             row.append(item_id)             # <<<<<<<<<<<<<<
- *             row.append(name)
- *             row.append(name_en)
- */
-    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_row, __pyx_v_item_id); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 140, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_row, __pyx_v_item_id); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 142, __pyx_L1_error)
 
-    /* "lidlpl.pyx":141
- *             row.append(PLATFORM)
- *             row.append(item_id)
- *             row.append(name)             # <<<<<<<<<<<<<<
- *             row.append(name_en)
- *             row.append(image)
- */
-    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_row, __pyx_v_name); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 141, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_row, __pyx_v_name); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 143, __pyx_L1_error)
 
-    /* "lidlpl.pyx":142
- *             row.append(item_id)
- *             row.append(name)
- *             row.append(name_en)             # <<<<<<<<<<<<<<
- *             row.append(image)
- *             row.append(price)
- */
-    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_row, __pyx_v_name_en); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 142, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_row, __pyx_v_name_en); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 144, __pyx_L1_error)
 
-    /* "lidlpl.pyx":143
- *             row.append(name)
- *             row.append(name_en)
- *             row.append(image)             # <<<<<<<<<<<<<<
- *             row.append(price)
- *             row.append(old_price)
- */
-    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_row, __pyx_v_image); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 143, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_row, __pyx_v_image); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 145, __pyx_L1_error)
 
-    /* "lidlpl.pyx":144
- *             row.append(name_en)
- *             row.append(image)
- *             row.append(price)             # <<<<<<<<<<<<<<
- *             row.append(old_price)
- *             row.append(CURRENCY)
- */
-    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_row, __pyx_v_price); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 144, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_row, __pyx_v_price); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 146, __pyx_L1_error)
 
-    /* "lidlpl.pyx":145
- *             row.append(image)
- *             row.append(price)
- *             row.append(old_price)             # <<<<<<<<<<<<<<
- *             row.append(CURRENCY)
- *             row.append(rating)
- */
-    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_row, __pyx_v_old_price); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 145, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_row, __pyx_v_old_price); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 147, __pyx_L1_error)
 
-    /* "lidlpl.pyx":146
- *             row.append(price)
- *             row.append(old_price)
- *             row.append(CURRENCY)             # <<<<<<<<<<<<<<
- *             row.append(rating)
- *             row.append(reviews)
- */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_CURRENCY); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 146, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_CURRENCY); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 148, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_row, __pyx_t_1); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 146, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_row, __pyx_t_1); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 148, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "lidlpl.pyx":147
- *             row.append(old_price)
- *             row.append(CURRENCY)
- *             row.append(rating)             # <<<<<<<<<<<<<<
- *             row.append(reviews)
- *             row.append(pretty_desc)
- */
-    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_row, __pyx_v_rating); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 147, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_row, __pyx_v_rating); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 149, __pyx_L1_error)
 
-    /* "lidlpl.pyx":148
- *             row.append(CURRENCY)
- *             row.append(rating)
- *             row.append(reviews)             # <<<<<<<<<<<<<<
- *             row.append(pretty_desc)
- *             row.append(pretty_desc_en)
- */
-    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_row, __pyx_v_reviews); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 148, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_row, __pyx_v_reviews); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 150, __pyx_L1_error)
 
-    /* "lidlpl.pyx":149
- *             row.append(rating)
- *             row.append(reviews)
- *             row.append(pretty_desc)             # <<<<<<<<<<<<<<
- *             row.append(pretty_desc_en)
- *             row.append(url)
- */
-    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_row, __pyx_v_pretty_desc); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 149, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_row, __pyx_v_pretty_desc); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 151, __pyx_L1_error)
 
-    /* "lidlpl.pyx":150
- *             row.append(reviews)
- *             row.append(pretty_desc)
- *             row.append(pretty_desc_en)             # <<<<<<<<<<<<<<
- *             row.append(url)
- * 
- */
-    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_row, __pyx_v_pretty_desc_en); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 150, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_row, __pyx_v_pretty_desc_en); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 152, __pyx_L1_error)
 
-    /* "lidlpl.pyx":151
- *             row.append(pretty_desc)
- *             row.append(pretty_desc_en)
- *             row.append(url)             # <<<<<<<<<<<<<<
- * 
- *             self.writer.writerow(row)
- */
-    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_row, __pyx_v_url); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 151, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_row, __pyx_v_url); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 153, __pyx_L1_error)
 
-    /* "lidlpl.pyx":153
- *             row.append(url)
- * 
- *             self.writer.writerow(row)             # <<<<<<<<<<<<<<
- * 
- * 
- */
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_writer); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 153, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_writer); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 155, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_writerow); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 153, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_writerow); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 155, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_t_4 = NULL;
@@ -4592,27 +3913,13 @@ static PyObject *__pyx_pf_6lidlpl_12LidlplSpider_6parse_item(CYTHON_UNUSED PyObj
     }
     __pyx_t_1 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_4, __pyx_v_row) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_row);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 153, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 155, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "lidlpl.pyx":103
- *                 brand = brand.replace('','')
- * 
- *         if brand.lower() in self.brand_list:             # <<<<<<<<<<<<<<
- *             image = response.xpath('*[inserted by cython to avoid comment closer]//li[@class="multimediabox__slide"]/a/@href').extract_first()
- * 
- */
   }
 
-  /* "lidlpl.pyx":90
- * 
- * 
- *     def parse_item(self,response):             # <<<<<<<<<<<<<<
- *         category = response.meta['category']
- *         category_en = response.meta['category_en']
- */
 
   /* function exit code */
   __pyx_r = Py_None; __Pyx_INCREF(Py_None);
@@ -5136,8 +4443,8 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {0, 0, 0, 0, 0, 0, 0}
 };
 static CYTHON_SMALL_CODE int __Pyx_InitCachedBuiltins(void) {
-  __pyx_builtin_open = __Pyx_GetBuiltinName(__pyx_n_s_open); if (!__pyx_builtin_open) __PYX_ERR(0, 50, __pyx_L1_error)
-  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 63, __pyx_L1_error)
+  __pyx_builtin_open = __Pyx_GetBuiltinName(__pyx_n_s_open); if (!__pyx_builtin_open) __PYX_ERR(0, 52, __pyx_L1_error)
+  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 65, __pyx_L1_error)
   return 0;
   __pyx_L1_error:;
   return -1;
@@ -5147,141 +4454,64 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "lidlpl.pyx":50
- * 
- *     def start_requests(self):
- *         self.file = open('lidl-pl.csv','w',encoding='utf-8')             # <<<<<<<<<<<<<<
- *         self.writer = csv.writer(self.file)
- *         self.writer.writerow(HEADER)
- */
-  __pyx_tuple__2 = PyTuple_Pack(2, __pyx_kp_s_lidl_pl_csv, __pyx_n_s_w); if (unlikely(!__pyx_tuple__2)) __PYX_ERR(0, 50, __pyx_L1_error)
+  __pyx_tuple__2 = PyTuple_Pack(2, __pyx_kp_s_lidl_pl_csv, __pyx_n_s_w); if (unlikely(!__pyx_tuple__2)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__2);
   __Pyx_GIVEREF(__pyx_tuple__2);
 
-  /* "lidlpl.pyx":54
- *         self.writer.writerow(HEADER)
- * 
- *         with open('categories_pl.txt','r') as f:             # <<<<<<<<<<<<<<
- *             categories = f.read().splitlines()
- * 
- */
-  __pyx_tuple__3 = PyTuple_Pack(2, __pyx_kp_s_categories_pl_txt, __pyx_n_s_r); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 54, __pyx_L1_error)
+  __pyx_tuple__3 = PyTuple_Pack(2, __pyx_kp_s_categories_pl_txt, __pyx_n_s_r); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 56, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__3);
   __Pyx_GIVEREF(__pyx_tuple__3);
-  __pyx_tuple__4 = PyTuple_Pack(3, Py_None, Py_None, Py_None); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 54, __pyx_L1_error)
+  __pyx_tuple__4 = PyTuple_Pack(3, Py_None, Py_None, Py_None); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 56, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__4);
   __Pyx_GIVEREF(__pyx_tuple__4);
 
-  /* "lidlpl.pyx":57
- *             categories = f.read().splitlines()
- * 
- *         with open('categories.txt','r') as f:             # <<<<<<<<<<<<<<
- *             categories_en = f.read().splitlines()
- * 
- */
-  __pyx_tuple__5 = PyTuple_Pack(2, __pyx_kp_s_categories_txt, __pyx_n_s_r); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 57, __pyx_L1_error)
+  __pyx_tuple__5 = PyTuple_Pack(2, __pyx_kp_s_categories_txt, __pyx_n_s_r); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 59, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__5);
   __Pyx_GIVEREF(__pyx_tuple__5);
 
-  /* "lidlpl.pyx":60
- *             categories_en = f.read().splitlines()
- * 
- *         with open('brands.txt','r') as f:             # <<<<<<<<<<<<<<
- *             self.brand_list = [brand.lower().strip() for brand in f.read().splitlines()]
- * 
- */
-  __pyx_tuple__6 = PyTuple_Pack(2, __pyx_kp_s_brands_txt, __pyx_n_s_r); if (unlikely(!__pyx_tuple__6)) __PYX_ERR(0, 60, __pyx_L1_error)
+  __pyx_tuple__6 = PyTuple_Pack(2, __pyx_kp_s_brands_txt, __pyx_n_s_r); if (unlikely(!__pyx_tuple__6)) __PYX_ERR(0, 62, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__6);
   __Pyx_GIVEREF(__pyx_tuple__6);
 
-  /* "lidlpl.pyx":81
- *             for product_url in product_urls:
- *                 if(product_url):
- *                     url = HOME_URL + product_url.replace('\\u002F','/')             # <<<<<<<<<<<<<<
- *                     #print(url)
- *                     yield scrapy.Request(url, callback=self.parse_item, meta={'category':category, 'category_en':category_en})
- */
-  __pyx_tuple__10 = PyTuple_Pack(2, __pyx_kp_s_u002F, __pyx_kp_s__9); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 81, __pyx_L1_error)
+  __pyx_tuple__10 = PyTuple_Pack(2, __pyx_kp_s_u002F, __pyx_kp_s__9); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 83, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__10);
   __Pyx_GIVEREF(__pyx_tuple__10);
 
-  /* "lidlpl.pyx":101
- *             if 'name' in product_data["brand"]:
- *                 brand = product_data["brand"]["name"]
- *                 brand = brand.replace('','')             # <<<<<<<<<<<<<<
- * 
- *         if brand.lower() in self.brand_list:
- */
-  __pyx_tuple__13 = PyTuple_Pack(2, __pyx_kp_s__12, __pyx_kp_s__11); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(0, 101, __pyx_L1_error)
+  __pyx_tuple__13 = PyTuple_Pack(2, __pyx_kp_s__12, __pyx_kp_s__11); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(0, 103, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__13);
   __Pyx_GIVEREF(__pyx_tuple__13);
 
-  /* "lidlpl.pyx":107
- * 
- *             price = response.xpath('*[inserted by cython to avoid comment closer]//div[@class="m-price__price"]/text()').extract_first()
- *             price = price.replace('  ','').replace('\t','').replace('\n','').replace(',','.')             # <<<<<<<<<<<<<<
- *             old_price = price
- * 
- */
-  __pyx_tuple__15 = PyTuple_Pack(2, __pyx_kp_s__14, __pyx_kp_s__11); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(0, 107, __pyx_L1_error)
+  __pyx_tuple__15 = PyTuple_Pack(2, __pyx_kp_s__14, __pyx_kp_s__11); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(0, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__15);
   __Pyx_GIVEREF(__pyx_tuple__15);
-  __pyx_tuple__17 = PyTuple_Pack(2, __pyx_kp_s__16, __pyx_kp_s__11); if (unlikely(!__pyx_tuple__17)) __PYX_ERR(0, 107, __pyx_L1_error)
+  __pyx_tuple__17 = PyTuple_Pack(2, __pyx_kp_s__16, __pyx_kp_s__11); if (unlikely(!__pyx_tuple__17)) __PYX_ERR(0, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__17);
   __Pyx_GIVEREF(__pyx_tuple__17);
-  __pyx_tuple__19 = PyTuple_Pack(2, __pyx_kp_s__18, __pyx_kp_s__11); if (unlikely(!__pyx_tuple__19)) __PYX_ERR(0, 107, __pyx_L1_error)
+  __pyx_tuple__19 = PyTuple_Pack(2, __pyx_kp_s__18, __pyx_kp_s__11); if (unlikely(!__pyx_tuple__19)) __PYX_ERR(0, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__19);
   __Pyx_GIVEREF(__pyx_tuple__19);
-  __pyx_tuple__22 = PyTuple_Pack(2, __pyx_kp_s__20, __pyx_kp_s__21); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(0, 107, __pyx_L1_error)
+  __pyx_tuple__22 = PyTuple_Pack(2, __pyx_kp_s__20, __pyx_kp_s__21); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(0, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__22);
   __Pyx_GIVEREF(__pyx_tuple__22);
 
-  /* "lidlpl.pyx":118
- *                 soup = bs(desc, features="lxml")
- *                 pretty_desc = soup.get_text()
- *                 pretty_desc_en = GoogleTranslator(source='auto', target='en').translate(pretty_desc[:4900])             # <<<<<<<<<<<<<<
- * 
- *             item_id = product_data["sku"]
- */
-  __pyx_slice__23 = PySlice_New(Py_None, __pyx_int_4900, Py_None); if (unlikely(!__pyx_slice__23)) __PYX_ERR(0, 118, __pyx_L1_error)
+  __pyx_slice__23 = PySlice_New(Py_None, __pyx_int_4900, Py_None); if (unlikely(!__pyx_slice__23)) __PYX_ERR(0, 120, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_slice__23);
   __Pyx_GIVEREF(__pyx_slice__23);
 
-  /* "lidlpl.pyx":49
- *     name = 'lidlpl'
- * 
- *     def start_requests(self):             # <<<<<<<<<<<<<<
- *         self.file = open('lidl-pl.csv','w',encoding='utf-8')
- *         self.writer = csv.writer(self.file)
- */
-  __pyx_tuple__24 = PyTuple_Pack(7, __pyx_n_s_self, __pyx_n_s_f, __pyx_n_s_categories, __pyx_n_s_categories_en, __pyx_n_s_i, __pyx_n_s_url, __pyx_n_s_brand); if (unlikely(!__pyx_tuple__24)) __PYX_ERR(0, 49, __pyx_L1_error)
+  __pyx_tuple__24 = PyTuple_Pack(7, __pyx_n_s_self, __pyx_n_s_f, __pyx_n_s_categories, __pyx_n_s_categories_en, __pyx_n_s_i, __pyx_n_s_url, __pyx_n_s_brand); if (unlikely(!__pyx_tuple__24)) __PYX_ERR(0, 51, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__24);
   __Pyx_GIVEREF(__pyx_tuple__24);
-  __pyx_codeobj_ = (PyObject*)__Pyx_PyCode_New(1, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__24, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_lidlpl_pyx, __pyx_n_s_start_requests, 49, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj_)) __PYX_ERR(0, 49, __pyx_L1_error)
+  __pyx_codeobj_ = (PyObject*)__Pyx_PyCode_New(1, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__24, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_lidlpl_pyx, __pyx_n_s_start_requests, 51, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj_)) __PYX_ERR(0, 51, __pyx_L1_error)
 
-  /* "lidlpl.pyx":68
- * 
- * 
- *     def parse(self,response):             # <<<<<<<<<<<<<<
- *         category = response.meta['category']
- *         category_en = response.meta['category_en']
- */
-  __pyx_tuple__25 = PyTuple_Pack(9, __pyx_n_s_self, __pyx_n_s_response, __pyx_n_s_category, __pyx_n_s_category_en, __pyx_n_s_page, __pyx_n_s_product_urls, __pyx_n_s_product_url, __pyx_n_s_url, __pyx_n_s_next_page); if (unlikely(!__pyx_tuple__25)) __PYX_ERR(0, 68, __pyx_L1_error)
+  __pyx_tuple__25 = PyTuple_Pack(9, __pyx_n_s_self, __pyx_n_s_response, __pyx_n_s_category, __pyx_n_s_category_en, __pyx_n_s_page, __pyx_n_s_product_urls, __pyx_n_s_product_url, __pyx_n_s_url, __pyx_n_s_next_page); if (unlikely(!__pyx_tuple__25)) __PYX_ERR(0, 70, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__25);
   __Pyx_GIVEREF(__pyx_tuple__25);
-  __pyx_codeobj__7 = (PyObject*)__Pyx_PyCode_New(2, 0, 9, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__25, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_lidlpl_pyx, __pyx_n_s_parse, 68, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__7)) __PYX_ERR(0, 68, __pyx_L1_error)
+  __pyx_codeobj__7 = (PyObject*)__Pyx_PyCode_New(2, 0, 9, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__25, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_lidlpl_pyx, __pyx_n_s_parse, 70, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__7)) __PYX_ERR(0, 70, __pyx_L1_error)
 
-  /* "lidlpl.pyx":90
- * 
- * 
- *     def parse_item(self,response):             # <<<<<<<<<<<<<<
- *         category = response.meta['category']
- *         category_en = response.meta['category_en']
- */
-  __pyx_tuple__26 = PyTuple_Pack(21, __pyx_n_s_self, __pyx_n_s_response, __pyx_n_s_category, __pyx_n_s_category_en, __pyx_n_s_product_data_str, __pyx_n_s_product_data, __pyx_n_s_brand, __pyx_n_s_image, __pyx_n_s_price, __pyx_n_s_old_price, __pyx_n_s_pretty_desc, __pyx_n_s_pretty_desc_en, __pyx_n_s_desc, __pyx_n_s_soup, __pyx_n_s_item_id, __pyx_n_s_name, __pyx_n_s_name_en, __pyx_n_s_url, __pyx_n_s_rating, __pyx_n_s_reviews, __pyx_n_s_row); if (unlikely(!__pyx_tuple__26)) __PYX_ERR(0, 90, __pyx_L1_error)
+  __pyx_tuple__26 = PyTuple_Pack(21, __pyx_n_s_self, __pyx_n_s_response, __pyx_n_s_category, __pyx_n_s_category_en, __pyx_n_s_product_data_str, __pyx_n_s_product_data, __pyx_n_s_brand, __pyx_n_s_image, __pyx_n_s_price, __pyx_n_s_old_price, __pyx_n_s_pretty_desc, __pyx_n_s_pretty_desc_en, __pyx_n_s_desc, __pyx_n_s_soup, __pyx_n_s_item_id, __pyx_n_s_name, __pyx_n_s_name_en, __pyx_n_s_url, __pyx_n_s_rating, __pyx_n_s_reviews, __pyx_n_s_row); if (unlikely(!__pyx_tuple__26)) __PYX_ERR(0, 92, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__26);
   __Pyx_GIVEREF(__pyx_tuple__26);
-  __pyx_codeobj__27 = (PyObject*)__Pyx_PyCode_New(2, 0, 21, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__26, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_lidlpl_pyx, __pyx_n_s_parse_item, 90, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__27)) __PYX_ERR(0, 90, __pyx_L1_error)
+  __pyx_codeobj__27 = (PyObject*)__Pyx_PyCode_New(2, 0, 21, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__26, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_lidlpl_pyx, __pyx_n_s_parse_item, 92, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__27)) __PYX_ERR(0, 92, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -5338,7 +4568,7 @@ static int __Pyx_modinit_type_init_code(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__Pyx_modinit_type_init_code", 0);
   /*--- Type init code ---*/
-  if (PyType_Ready(&__pyx_type_6lidlpl___pyx_scope_struct__start_requests) < 0) __PYX_ERR(0, 49, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_6lidlpl___pyx_scope_struct__start_requests) < 0) __PYX_ERR(0, 51, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
   __pyx_type_6lidlpl___pyx_scope_struct__start_requests.tp_print = 0;
   #endif
@@ -5346,7 +4576,7 @@ static int __Pyx_modinit_type_init_code(void) {
     __pyx_type_6lidlpl___pyx_scope_struct__start_requests.tp_getattro = __Pyx_PyObject_GenericGetAttrNoDict;
   }
   __pyx_ptype_6lidlpl___pyx_scope_struct__start_requests = &__pyx_type_6lidlpl___pyx_scope_struct__start_requests;
-  if (PyType_Ready(&__pyx_type_6lidlpl___pyx_scope_struct_1_parse) < 0) __PYX_ERR(0, 68, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_6lidlpl___pyx_scope_struct_1_parse) < 0) __PYX_ERR(0, 70, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
   __pyx_type_6lidlpl___pyx_scope_struct_1_parse.tp_print = 0;
   #endif
@@ -5588,158 +4818,84 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "lidlpl.pyx":1
- * import datetime             # <<<<<<<<<<<<<<
- * import json
- * import scrapy
- */
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_datetime, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_datetime, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 3, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_datetime, __pyx_t_1) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_datetime, __pyx_t_1) < 0) __PYX_ERR(0, 3, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "lidlpl.pyx":2
- * import datetime
- * import json             # <<<<<<<<<<<<<<
- * import scrapy
- * from scrapy.selector import Selector
- */
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_json, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 2, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_json, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_json, __pyx_t_1) < 0) __PYX_ERR(0, 2, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_json, __pyx_t_1) < 0) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "lidlpl.pyx":3
- * import datetime
- * import json
- * import scrapy             # <<<<<<<<<<<<<<
- * from scrapy.selector import Selector
- * 
- */
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_scrapy, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 3, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_scrapy, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_scrapy, __pyx_t_1) < 0) __PYX_ERR(0, 3, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_scrapy, __pyx_t_1) < 0) __PYX_ERR(0, 5, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "lidlpl.pyx":4
- * import json
- * import scrapy
- * from scrapy.selector import Selector             # <<<<<<<<<<<<<<
- * 
- * import re
- */
-  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 6, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_n_s_Selector);
   __Pyx_GIVEREF(__pyx_n_s_Selector);
   PyList_SET_ITEM(__pyx_t_1, 0, __pyx_n_s_Selector);
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_scrapy_selector, __pyx_t_1, -1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 4, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_Import(__pyx_n_s_scrapy_selector, __pyx_t_1, -1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 6, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_Selector); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_Selector); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 6, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_Selector, __pyx_t_1) < 0) __PYX_ERR(0, 4, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_Selector, __pyx_t_1) < 0) __PYX_ERR(0, 6, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "lidlpl.pyx":6
- * from scrapy.selector import Selector
- * 
- * import re             # <<<<<<<<<<<<<<
- * import random
- * import csv
- */
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_re, 0, -1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 6, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_Import(__pyx_n_s_re, 0, -1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 8, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_re, __pyx_t_2) < 0) __PYX_ERR(0, 6, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_re, __pyx_t_2) < 0) __PYX_ERR(0, 8, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "lidlpl.pyx":7
- * 
- * import re
- * import random             # <<<<<<<<<<<<<<
- * import csv
- * import requests
- */
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_random, 0, -1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 7, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_Import(__pyx_n_s_random, 0, -1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_random, __pyx_t_2) < 0) __PYX_ERR(0, 7, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_random, __pyx_t_2) < 0) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "lidlpl.pyx":8
- * import re
- * import random
- * import csv             # <<<<<<<<<<<<<<
- * import requests
- * 
- */
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_csv, 0, -1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 8, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_Import(__pyx_n_s_csv, 0, -1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 10, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_csv, __pyx_t_2) < 0) __PYX_ERR(0, 8, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_csv, __pyx_t_2) < 0) __PYX_ERR(0, 10, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "lidlpl.pyx":9
- * import random
- * import csv
- * import requests             # <<<<<<<<<<<<<<
- * 
- * from bs4 import BeautifulSoup as bs
- */
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_requests, 0, -1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 9, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_Import(__pyx_n_s_requests, 0, -1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 11, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_requests, __pyx_t_2) < 0) __PYX_ERR(0, 9, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_requests, __pyx_t_2) < 0) __PYX_ERR(0, 11, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "lidlpl.pyx":11
- * import requests
- * 
- * from bs4 import BeautifulSoup as bs             # <<<<<<<<<<<<<<
- * from django.forms.models import model_to_dict
- * from django.db.utils import IntegrityError, DataError
- */
-  __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 11, __pyx_L1_error)
+  __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 13, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_n_s_BeautifulSoup);
   __Pyx_GIVEREF(__pyx_n_s_BeautifulSoup);
   PyList_SET_ITEM(__pyx_t_2, 0, __pyx_n_s_BeautifulSoup);
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_bs4, __pyx_t_2, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 11, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_bs4, __pyx_t_2, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 13, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_ImportFrom(__pyx_t_1, __pyx_n_s_BeautifulSoup); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 11, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_ImportFrom(__pyx_t_1, __pyx_n_s_BeautifulSoup); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 13, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_bs, __pyx_t_2) < 0) __PYX_ERR(0, 11, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_bs, __pyx_t_2) < 0) __PYX_ERR(0, 13, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "lidlpl.pyx":12
- * 
- * from bs4 import BeautifulSoup as bs
- * from django.forms.models import model_to_dict             # <<<<<<<<<<<<<<
- * from django.db.utils import IntegrityError, DataError
- * 
- */
-  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 12, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 14, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_n_s_model_to_dict);
   __Pyx_GIVEREF(__pyx_n_s_model_to_dict);
   PyList_SET_ITEM(__pyx_t_1, 0, __pyx_n_s_model_to_dict);
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_django_forms_models, __pyx_t_1, -1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 12, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_Import(__pyx_n_s_django_forms_models, __pyx_t_1, -1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 14, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_model_to_dict); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 12, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_model_to_dict); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 14, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_model_to_dict, __pyx_t_1) < 0) __PYX_ERR(0, 12, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_model_to_dict, __pyx_t_1) < 0) __PYX_ERR(0, 14, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "lidlpl.pyx":13
- * from bs4 import BeautifulSoup as bs
- * from django.forms.models import model_to_dict
- * from django.db.utils import IntegrityError, DataError             # <<<<<<<<<<<<<<
- * 
- * from scrapy.selector import Selector
- */
-  __pyx_t_2 = PyList_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 13, __pyx_L1_error)
+  __pyx_t_2 = PyList_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 15, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_n_s_IntegrityError);
   __Pyx_GIVEREF(__pyx_n_s_IntegrityError);
@@ -5747,126 +4903,70 @@ if (!__Pyx_RefNanny) {
   __Pyx_INCREF(__pyx_n_s_DataError);
   __Pyx_GIVEREF(__pyx_n_s_DataError);
   PyList_SET_ITEM(__pyx_t_2, 1, __pyx_n_s_DataError);
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_django_db_utils, __pyx_t_2, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 13, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_django_db_utils, __pyx_t_2, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 15, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_ImportFrom(__pyx_t_1, __pyx_n_s_IntegrityError); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 13, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_ImportFrom(__pyx_t_1, __pyx_n_s_IntegrityError); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 15, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_IntegrityError, __pyx_t_2) < 0) __PYX_ERR(0, 13, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_IntegrityError, __pyx_t_2) < 0) __PYX_ERR(0, 15, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_ImportFrom(__pyx_t_1, __pyx_n_s_DataError); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 13, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_ImportFrom(__pyx_t_1, __pyx_n_s_DataError); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 15, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_DataError, __pyx_t_2) < 0) __PYX_ERR(0, 13, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_DataError, __pyx_t_2) < 0) __PYX_ERR(0, 15, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "lidlpl.pyx":15
- * from django.db.utils import IntegrityError, DataError
- * 
- * from scrapy.selector import Selector             # <<<<<<<<<<<<<<
- * from deep_translator import GoogleTranslator
- * 
- */
-  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 15, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 17, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_n_s_Selector);
   __Pyx_GIVEREF(__pyx_n_s_Selector);
   PyList_SET_ITEM(__pyx_t_1, 0, __pyx_n_s_Selector);
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_scrapy_selector, __pyx_t_1, -1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 15, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_Import(__pyx_n_s_scrapy_selector, __pyx_t_1, -1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 17, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_Selector); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 15, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_Selector); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 17, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_Selector, __pyx_t_1) < 0) __PYX_ERR(0, 15, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_Selector, __pyx_t_1) < 0) __PYX_ERR(0, 17, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "lidlpl.pyx":16
- * 
- * from scrapy.selector import Selector
- * from deep_translator import GoogleTranslator             # <<<<<<<<<<<<<<
- * 
- * from scrapy.crawler import CrawlerProcess
- */
-  __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 16, __pyx_L1_error)
+  __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 18, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_n_s_GoogleTranslator);
   __Pyx_GIVEREF(__pyx_n_s_GoogleTranslator);
   PyList_SET_ITEM(__pyx_t_2, 0, __pyx_n_s_GoogleTranslator);
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_deep_translator, __pyx_t_2, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 16, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_deep_translator, __pyx_t_2, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 18, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_ImportFrom(__pyx_t_1, __pyx_n_s_GoogleTranslator); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 16, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_ImportFrom(__pyx_t_1, __pyx_n_s_GoogleTranslator); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 18, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_GoogleTranslator, __pyx_t_2) < 0) __PYX_ERR(0, 16, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_GoogleTranslator, __pyx_t_2) < 0) __PYX_ERR(0, 18, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "lidlpl.pyx":18
- * from deep_translator import GoogleTranslator
- * 
- * from scrapy.crawler import CrawlerProcess             # <<<<<<<<<<<<<<
- * 
- * BASE_URL = "https://www.lidl.pl/q/search?q={}&page={}"
- */
-  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 18, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 20, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_n_s_CrawlerProcess);
   __Pyx_GIVEREF(__pyx_n_s_CrawlerProcess);
   PyList_SET_ITEM(__pyx_t_1, 0, __pyx_n_s_CrawlerProcess);
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_scrapy_crawler, __pyx_t_1, -1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 18, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_Import(__pyx_n_s_scrapy_crawler, __pyx_t_1, -1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 20, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_CrawlerProcess); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 18, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_CrawlerProcess); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 20, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_CrawlerProcess, __pyx_t_1) < 0) __PYX_ERR(0, 18, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_CrawlerProcess, __pyx_t_1) < 0) __PYX_ERR(0, 20, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "lidlpl.pyx":20
- * from scrapy.crawler import CrawlerProcess
- * 
- * BASE_URL = "https://www.lidl.pl/q/search?q={}&page={}"             # <<<<<<<<<<<<<<
- * HOME_URL = "https://www.lidl.pl"
- * 
- */
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_BASE_URL, __pyx_kp_s_https_www_lidl_pl_q_search_q_pag) < 0) __PYX_ERR(0, 20, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_BASE_URL, __pyx_kp_s_https_www_lidl_pl_q_search_q_pag) < 0) __PYX_ERR(0, 22, __pyx_L1_error)
 
-  /* "lidlpl.pyx":21
- * 
- * BASE_URL = "https://www.lidl.pl/q/search?q={}&page={}"
- * HOME_URL = "https://www.lidl.pl"             # <<<<<<<<<<<<<<
- * 
- * PLATFORM = "lidl-pl"
- */
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_HOME_URL, __pyx_kp_s_https_www_lidl_pl) < 0) __PYX_ERR(0, 21, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_HOME_URL, __pyx_kp_s_https_www_lidl_pl) < 0) __PYX_ERR(0, 23, __pyx_L1_error)
 
-  /* "lidlpl.pyx":23
- * HOME_URL = "https://www.lidl.pl"
- * 
- * PLATFORM = "lidl-pl"             # <<<<<<<<<<<<<<
- * CURRENCY = "PLN"
- * 
- */
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_PLATFORM, __pyx_kp_s_lidl_pl) < 0) __PYX_ERR(0, 23, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_PLATFORM, __pyx_kp_s_lidl_pl) < 0) __PYX_ERR(0, 25, __pyx_L1_error)
 
-  /* "lidlpl.pyx":24
- * 
- * PLATFORM = "lidl-pl"
- * CURRENCY = "PLN"             # <<<<<<<<<<<<<<
- * 
- * HEADER = [
- */
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_CURRENCY, __pyx_n_s_PLN) < 0) __PYX_ERR(0, 24, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_CURRENCY, __pyx_n_s_PLN) < 0) __PYX_ERR(0, 26, __pyx_L1_error)
 
-  /* "lidlpl.pyx":26
- * CURRENCY = "PLN"
- * 
- * HEADER = [             # <<<<<<<<<<<<<<
- *     'Product category',
- *     'Product category (english)',
- */
-  __pyx_t_2 = PyList_New(16); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 26, __pyx_L1_error)
+  __pyx_t_2 = PyList_New(16); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_kp_s_Product_category);
   __Pyx_GIVEREF(__pyx_kp_s_Product_category);
@@ -5916,182 +5016,93 @@ if (!__Pyx_RefNanny) {
   __Pyx_INCREF(__pyx_kp_s_Product_link);
   __Pyx_GIVEREF(__pyx_kp_s_Product_link);
   PyList_SET_ITEM(__pyx_t_2, 15, __pyx_kp_s_Product_link);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_HEADER, __pyx_t_2) < 0) __PYX_ERR(0, 26, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_HEADER, __pyx_t_2) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "lidlpl.pyx":46
- * 
- * 
- * class LidlplSpider(scrapy.Spider):             # <<<<<<<<<<<<<<
- *     name = 'lidlpl'
- * 
- */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_scrapy); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 46, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_scrapy); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 48, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_Spider); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 46, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_Spider); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 48, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 46, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 48, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_1);
   __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_CalculateMetaclass(NULL, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 46, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CalculateMetaclass(NULL, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 48, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __Pyx_Py3MetaclassPrepare(__pyx_t_1, __pyx_t_2, __pyx_n_s_LidlplSpider, __pyx_n_s_LidlplSpider, (PyObject *) NULL, __pyx_n_s_lidlpl, (PyObject *) NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 46, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_Py3MetaclassPrepare(__pyx_t_1, __pyx_t_2, __pyx_n_s_LidlplSpider, __pyx_n_s_LidlplSpider, (PyObject *) NULL, __pyx_n_s_lidlpl, (PyObject *) NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 48, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
 
-  /* "lidlpl.pyx":47
- * 
- * class LidlplSpider(scrapy.Spider):
- *     name = 'lidlpl'             # <<<<<<<<<<<<<<
- * 
- *     def start_requests(self):
- */
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_name, __pyx_n_s_lidlpl) < 0) __PYX_ERR(0, 47, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_name, __pyx_n_s_lidlpl) < 0) __PYX_ERR(0, 49, __pyx_L1_error)
 
-  /* "lidlpl.pyx":49
- *     name = 'lidlpl'
- * 
- *     def start_requests(self):             # <<<<<<<<<<<<<<
- *         self.file = open('lidl-pl.csv','w',encoding='utf-8')
- *         self.writer = csv.writer(self.file)
- */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_6lidlpl_12LidlplSpider_1start_requests, 0, __pyx_n_s_LidlplSpider_start_requests, NULL, __pyx_n_s_lidlpl, __pyx_d, ((PyObject *)__pyx_codeobj_)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 49, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_6lidlpl_12LidlplSpider_1start_requests, 0, __pyx_n_s_LidlplSpider_start_requests, NULL, __pyx_n_s_lidlpl, __pyx_d, ((PyObject *)__pyx_codeobj_)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 51, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_start_requests, __pyx_t_4) < 0) __PYX_ERR(0, 49, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_start_requests, __pyx_t_4) < 0) __PYX_ERR(0, 51, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "lidlpl.pyx":68
- * 
- * 
- *     def parse(self,response):             # <<<<<<<<<<<<<<
- *         category = response.meta['category']
- *         category_en = response.meta['category_en']
- */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_6lidlpl_12LidlplSpider_4parse, 0, __pyx_n_s_LidlplSpider_parse, NULL, __pyx_n_s_lidlpl, __pyx_d, ((PyObject *)__pyx_codeobj__7)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 68, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_6lidlpl_12LidlplSpider_4parse, 0, __pyx_n_s_LidlplSpider_parse, NULL, __pyx_n_s_lidlpl, __pyx_d, ((PyObject *)__pyx_codeobj__7)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 70, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_parse, __pyx_t_4) < 0) __PYX_ERR(0, 68, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_parse, __pyx_t_4) < 0) __PYX_ERR(0, 70, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "lidlpl.pyx":90
- * 
- * 
- *     def parse_item(self,response):             # <<<<<<<<<<<<<<
- *         category = response.meta['category']
- *         category_en = response.meta['category_en']
- */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_6lidlpl_12LidlplSpider_7parse_item, 0, __pyx_n_s_LidlplSpider_parse_item, NULL, __pyx_n_s_lidlpl, __pyx_d, ((PyObject *)__pyx_codeobj__27)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 90, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_6lidlpl_12LidlplSpider_7parse_item, 0, __pyx_n_s_LidlplSpider_parse_item, NULL, __pyx_n_s_lidlpl, __pyx_d, ((PyObject *)__pyx_codeobj__27)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 92, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_parse_item, __pyx_t_4) < 0) __PYX_ERR(0, 90, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_parse_item, __pyx_t_4) < 0) __PYX_ERR(0, 92, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "lidlpl.pyx":46
- * 
- * 
- * class LidlplSpider(scrapy.Spider):             # <<<<<<<<<<<<<<
- *     name = 'lidlpl'
- * 
- */
-  __pyx_t_4 = __Pyx_Py3ClassCreate(__pyx_t_1, __pyx_n_s_LidlplSpider, __pyx_t_2, __pyx_t_3, NULL, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 46, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_Py3ClassCreate(__pyx_t_1, __pyx_n_s_LidlplSpider, __pyx_t_2, __pyx_t_3, NULL, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 48, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_LidlplSpider, __pyx_t_4) < 0) __PYX_ERR(0, 46, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_LidlplSpider, __pyx_t_4) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "lidlpl.pyx":156
- * 
- * 
- * c = CrawlerProcess(             # <<<<<<<<<<<<<<
- *     settings={
- *         "CONCURRENT_REQUESTS": 2,
- */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_CrawlerProcess); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 156, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_CrawlerProcess); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 158, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
 
-  /* "lidlpl.pyx":157
- * 
- * c = CrawlerProcess(
- *     settings={             # <<<<<<<<<<<<<<
- *         "CONCURRENT_REQUESTS": 2,
- *         'DOWNLOAD_DELAY': 1,
- */
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 157, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 159, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
 
-  /* "lidlpl.pyx":158
- * c = CrawlerProcess(
- *     settings={
- *         "CONCURRENT_REQUESTS": 2,             # <<<<<<<<<<<<<<
- *         'DOWNLOAD_DELAY': 1,
- *         "LOG_LEVEL": "INFO",
- */
-  __pyx_t_3 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 158, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_CONCURRENT_REQUESTS, __pyx_int_2) < 0) __PYX_ERR(0, 158, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_DOWNLOAD_DELAY, __pyx_int_1) < 0) __PYX_ERR(0, 158, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_LOG_LEVEL, __pyx_n_s_INFO) < 0) __PYX_ERR(0, 158, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_settings, __pyx_t_3) < 0) __PYX_ERR(0, 157, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_CONCURRENT_REQUESTS, __pyx_int_2) < 0) __PYX_ERR(0, 160, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_DOWNLOAD_DELAY, __pyx_int_1) < 0) __PYX_ERR(0, 160, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_LOG_LEVEL, __pyx_n_s_INFO) < 0) __PYX_ERR(0, 160, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_settings, __pyx_t_3) < 0) __PYX_ERR(0, 159, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "lidlpl.pyx":156
- * 
- * 
- * c = CrawlerProcess(             # <<<<<<<<<<<<<<
- *     settings={
- *         "CONCURRENT_REQUESTS": 2,
- */
-  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_empty_tuple, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 156, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_empty_tuple, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 158, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_c, __pyx_t_3) < 0) __PYX_ERR(0, 156, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_c, __pyx_t_3) < 0) __PYX_ERR(0, 158, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "lidlpl.pyx":163
- *     },
- *     )
- * c.crawl(LidlplSpider)             # <<<<<<<<<<<<<<
- * c.start()
- * 
- */
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_c); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 163, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_c); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 165, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_crawl); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 163, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_crawl); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 165, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_LidlplSpider); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 163, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_LidlplSpider); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 165, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 163, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 165, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "lidlpl.pyx":164
- *     )
- * c.crawl(LidlplSpider)
- * c.start()             # <<<<<<<<<<<<<<
- * 
- * #compile with:
- */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_c); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 164, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_c); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 166, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_start); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 164, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_start); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 166, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 164, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 166, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "lidlpl.pyx":1
- * import datetime             # <<<<<<<<<<<<<<
- * import json
- * import scrapy
- */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_test, __pyx_t_2) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
