@@ -26,6 +26,10 @@ crmwebcurrenciesapi = 'transactioncurrencies'
 
 def main():
 
+    print("-------------------------------")
+    print("-------------------------------")
+    print(f"NOW STARTING TO WRITE PRODUCTS INTO THE DB...")
+
     source = sys.argv[1]
     file_exist = os.path.isfile(f"{source}.csv")
     if not file_exist:
@@ -157,6 +161,9 @@ def main():
 
                 else:
                     print(rawJson)
+
+    else:
+        print("No token!!")
 
 
 if __name__ == "__main__":
