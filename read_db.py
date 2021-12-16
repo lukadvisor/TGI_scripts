@@ -11,7 +11,7 @@ AUTHORITY_URI = 'https://login.microsoftonline.com/12457c39-cb83-48e2-8265-0ad72
 CLIENT_SECRET = 'TZa7Q~6fHq.DyQQ9gn5AvModq389KI3qa0AdC'
 
 #BE VERY CAREFUL!! SETTING THIS TO TRUE WILL DELETE ENTIRE DATABASE!!!
-delete = False
+delete = False #ONLY FOR DEBUG PURPOSE! BE CAREFUL!!
 
 # Get an access token.
 context = adal.AuthenticationContext(AUTHORITY_URI, api_version=None)
@@ -40,7 +40,7 @@ rawJson_str = r.content.decode('utf-8')
 rawJson = json.loads(rawJson_str)
 products = rawJson['value']
 
-for product in products:
+for product in products[0:100]:
     if not delete:
         print(product)
 
