@@ -27,8 +27,9 @@ To run one crawler (e.g. aldisued) and create its .csv file:
 ```shell script
 python run_crawler.py aldisued
 ```
+Now you can write data from .csv into database. Before doing so, you have to create a .env containing CLIENT_ID, CLIENT_SECRET etc. (see .env_example for reference). The value of these variables must remain secret, so the .env SHOULD NEVER be committed.
 
-To write data from .csv file into database:
+After that, to write data from .csv file into database:
 ```shell script
 python write_to_db_v1.py aldisued
 ```
