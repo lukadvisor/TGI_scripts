@@ -3843,7 +3843,15 @@ static PyObject *__pyx_pf_9johnlewis_15JohnLewisSpider_6parse_item(CYTHON_UNUSED
 
   }
 
-  __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_v_brand); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 168, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_v_brand); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 168, __pyx_L1_error)
+  if (__pyx_t_3) {
+  } else {
+    __pyx_t_4 = __pyx_t_3;
+    goto __pyx_L7_bool_binop_done;
+  }
+  __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_v_item_id); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 168, __pyx_L1_error)
+  __pyx_t_4 = __pyx_t_3;
+  __pyx_L7_bool_binop_done:;
   if (__pyx_t_4) {
 
     __pyx_t_6 = PyList_New(0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 169, __pyx_L1_error)
