@@ -21,6 +21,7 @@ crmwebapi = 'https://mysam-config.api.crm5.dynamics.com/api/data/v9.2/' #full pa
 crmwebapiquery_product = 'tk_customerproductmarketdatas'#?$select=tk_features' #web api query (include leading /)
 crmwebapiquery_price = 'tk_customerproductmarketprices'#?$select=tk_features' #web api query (include leading /)
 crmwebapiquery = 'tk_customerproductmarketprices?$expand=tk_RelatedProduct'
+crmwebcurrenciesapi = 'transactioncurrencies'
 
 
 def main():
@@ -72,7 +73,8 @@ def main():
                 recordid = str(row['Retailer']+'_'+row['Article no.'])
 
                 #get most recent record with this recordid
-                filterquery = f"&$filter=contains(tk_RelatedProduct/tk_recordid,'{recordid}')" 
+                #filterquery = f"&$filter=contains(tk_RelatedProduct/tk_recordid,'{recordid}')" 
+                filterquery = f"&$filter=tk_RelatedProduct/tk_recordid eq '{recordid}'" 
                 sortquery = "&$orderby=modifiedon desc"
                 r = session.get(crmwebapi+crmwebapiquery+filterquery+sortquery)
                 rawJson = json.loads(r.content.decode('utf-8'))
@@ -128,19 +130,28 @@ def main():
                     except:
                         pass
 
-                    print(row['Currency'])
+                    currency_id = None
+                    #currencyfilter = f"?$filter=contains(currencysymbol,'{row['Currency']}')" 
+                    currencyfilter = f"?$filter=currencysymbol eq '{row['Currency']}'" 
+                    r = session.get(crmwebapi+crmwebcurrenciesapi+currencyfilter)
+                    if(r.status_code==200 or r.status_code==201 or r.status_code==204):
+                        rawJson_str = r.content.decode('utf-8')
+                        #print(rawJson_str)
+                        rawJson = json.loads(rawJson_str)
+                        currency_id = rawJson['value'][0]['transactioncurrencyid']
+
                     data_price = {
-                        'tk_retailprice': price,
+                        'tk_retailprice': round(float(price),2),
                         'tk_rating': rating,
                         'tk_numberofreviews': number_of_reviews,
-                        'transactioncurrencyid': row['Currency'], #need to be fixed
+                        'transactioncurrencyid@odata.bind': f'/transactioncurrencies({currency_id})',
                         'tk_RelatedProduct@odata.bind': f'/tk_customerproductmarketdatas({product_id})'
                     }
 
                     data_str = json.dumps(data_price)
                     r = session.post(crmwebapi+crmwebapiquery_price, headers=headers_post, data=data_str)
                     rawJson = r.content.decode('utf-8')
-                    print(rawJson)
+                    #print(rawJson)
                     price = json.loads(rawJson)["tk_retailprice"]
                     print(f"..{name} with price: {price}")
 

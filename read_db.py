@@ -10,6 +10,7 @@ RESOURCE_URI = 'https://mysam-config.crm5.dynamics.com'
 AUTHORITY_URI = 'https://login.microsoftonline.com/12457c39-cb83-48e2-8265-0ad72e99c09d'
 CLIENT_SECRET = 'TZa7Q~6fHq.DyQQ9gn5AvModq389KI3qa0AdC'
 
+#BE VERY CAREFUL!! SETTING THIS TO TRUE WILL DELETE ENTIRE DATABASE!!!
 delete = False
 
 # Get an access token.
@@ -54,8 +55,10 @@ for product in products:
             'Content-Type': 'application/json'
         }
 
+        print(f"Deleting item {product_id}")
         r = session.delete(crmwebapi+crmwebapiquery_product+f'({product_id})', headers=headers)
         print(r.status_code)
+        print(f"Deleting price {price_id}")
         r = session.delete(crmwebapi+crmwebapiquery_price+f'({price_id})', headers=headers)
         print(r.status_code)
 
