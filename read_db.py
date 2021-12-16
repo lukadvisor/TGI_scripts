@@ -3,12 +3,14 @@ import adal
 import requests
 import json
 import csv
+from dotenv import load_dotenv
 
 # Global configs.
-CLIENT_ID = '143d00f8-4e4e-4538-b656-ff5410e9c50b'
-RESOURCE_URI = 'https://mysam-config.crm5.dynamics.com'
-AUTHORITY_URI = 'https://login.microsoftonline.com/12457c39-cb83-48e2-8265-0ad72e99c09d'
-CLIENT_SECRET = 'TZa7Q~6fHq.DyQQ9gn5AvModq389KI3qa0AdC'
+load_dotenv(dotenv_path='.env')
+CLIENT_ID = os.environ.get('CLIENT_ID')
+RESOURCE_URI = os.environ.get('RESOURCE_URI')
+AUTHORITY_URI = os.environ.get('AUTHORITY_URI')
+CLIENT_SECRET = os.environ.get('CLIENT_SECRET')
 
 #BE VERY CAREFUL!! SETTING THIS TO TRUE WILL DELETE ENTIRE DATABASE!!!
 delete = False #ONLY FOR DEBUG PURPOSE! BE CAREFUL!!
