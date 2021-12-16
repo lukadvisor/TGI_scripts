@@ -1652,7 +1652,6 @@ static const char __pyx_k_extract[] = "extract";
 static const char __pyx_k_findall[] = "findall";
 static const char __pyx_k_img_src[] = "*//img/@src";
 static const char __pyx_k_item_id[] = "item_id";
-static const char __pyx_k_lidl_es[] = "lidl-es";
 static const char __pyx_k_name_en[] = "name_en";
 static const char __pyx_k_prepare[] = "__prepare__";
 static const char __pyx_k_product[] = "product";
@@ -1691,12 +1690,12 @@ static const char __pyx_k_Created_at[] = "Created at";
 static const char __pyx_k_brand_list[] = "brand_list";
 static const char __pyx_k_brands_txt[] = "brands.txt";
 static const char __pyx_k_categories[] = "categories";
+static const char __pyx_k_lidles_csv[] = "lidles.csv";
 static const char __pyx_k_parse_item[] = "parse_item";
 static const char __pyx_k_splitlines[] = "splitlines";
 static const char __pyx_k_Picture_url[] = "Picture url";
 static const char __pyx_k_category_en[] = "category_en";
 static const char __pyx_k_description[] = "description";
-static const char __pyx_k_lidl_es_csv[] = "lidl-es.csv";
 static const char __pyx_k_pretty_desc[] = "pretty_desc";
 static const char __pyx_k_LidlesSpider[] = "LidlesSpider";
 static const char __pyx_k_Product_link[] = "Product link";
@@ -1847,9 +1846,8 @@ static PyObject *__pyx_n_s_item_id;
 static PyObject *__pyx_n_s_item_ids;
 static PyObject *__pyx_n_s_join;
 static PyObject *__pyx_n_s_json;
-static PyObject *__pyx_kp_s_lidl_es;
-static PyObject *__pyx_kp_s_lidl_es_csv;
 static PyObject *__pyx_n_s_lidles;
+static PyObject *__pyx_kp_s_lidles_csv;
 static PyObject *__pyx_n_s_lower;
 static PyObject *__pyx_n_s_lxml;
 static PyObject *__pyx_n_s_main;
@@ -4591,9 +4589,8 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_item_ids, __pyx_k_item_ids, sizeof(__pyx_k_item_ids), 0, 0, 1, 1},
   {&__pyx_n_s_join, __pyx_k_join, sizeof(__pyx_k_join), 0, 0, 1, 1},
   {&__pyx_n_s_json, __pyx_k_json, sizeof(__pyx_k_json), 0, 0, 1, 1},
-  {&__pyx_kp_s_lidl_es, __pyx_k_lidl_es, sizeof(__pyx_k_lidl_es), 0, 0, 1, 0},
-  {&__pyx_kp_s_lidl_es_csv, __pyx_k_lidl_es_csv, sizeof(__pyx_k_lidl_es_csv), 0, 0, 1, 0},
   {&__pyx_n_s_lidles, __pyx_k_lidles, sizeof(__pyx_k_lidles), 0, 0, 1, 1},
+  {&__pyx_kp_s_lidles_csv, __pyx_k_lidles_csv, sizeof(__pyx_k_lidles_csv), 0, 0, 1, 0},
   {&__pyx_n_s_lower, __pyx_k_lower, sizeof(__pyx_k_lower), 0, 0, 1, 1},
   {&__pyx_n_s_lxml, __pyx_k_lxml, sizeof(__pyx_k_lxml), 0, 0, 1, 1},
   {&__pyx_n_s_main, __pyx_k_main, sizeof(__pyx_k_main), 0, 0, 1, 1},
@@ -4675,7 +4672,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  __pyx_tuple__2 = PyTuple_Pack(2, __pyx_kp_s_lidl_es_csv, __pyx_n_s_w); if (unlikely(!__pyx_tuple__2)) __PYX_ERR(0, 52, __pyx_L1_error)
+  __pyx_tuple__2 = PyTuple_Pack(2, __pyx_kp_s_lidles_csv, __pyx_n_s_w); if (unlikely(!__pyx_tuple__2)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__2);
   __Pyx_GIVEREF(__pyx_tuple__2);
 
@@ -5138,7 +5135,7 @@ if (!__Pyx_RefNanny) {
 
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_HOME_URL, __pyx_kp_s_https_www_lidl_es) < 0) __PYX_ERR(0, 21, __pyx_L1_error)
 
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_PLATFORM, __pyx_kp_s_lidl_es) < 0) __PYX_ERR(0, 23, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_PLATFORM, __pyx_n_s_lidles) < 0) __PYX_ERR(0, 23, __pyx_L1_error)
 
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_CURRENCY, __pyx_n_s_EUR) < 0) __PYX_ERR(0, 24, __pyx_L1_error)
 

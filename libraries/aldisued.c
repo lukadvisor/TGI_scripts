@@ -1665,7 +1665,6 @@ static const char __pyx_k_HOME_URL[] = "HOME_URL";
 static const char __pyx_k_PLATFORM[] = "PLATFORM";
 static const char __pyx_k_Retailer[] = "Retailer";
 static const char __pyx_k_Selector[] = "Selector";
-static const char __pyx_k_aldi_sud[] = "aldi-sud";
 static const char __pyx_k_aldisued[] = "aldisued";
 static const char __pyx_k_callback[] = "callback";
 static const char __pyx_k_category[] = "category";
@@ -1698,7 +1697,7 @@ static const char __pyx_k_description[] = "description";
 static const char __pyx_k_pretty_desc[] = "pretty_desc";
 static const char __pyx_k_Product_link[] = "Product link";
 static const char __pyx_k_Retail_price[] = "Retail price";
-static const char __pyx_k_aldi_sud_csv[] = "aldi-sud.csv";
+static const char __pyx_k_aldisued_csv[] = "aldisued.csv";
 static const char __pyx_k_BeautifulSoup[] = "BeautifulSoup";
 static const char __pyx_k_categories_en[] = "categories_en";
 static const char __pyx_k_extract_first[] = "extract_first";
@@ -1783,9 +1782,8 @@ static PyObject *__pyx_kp_s__10;
 static PyObject *__pyx_kp_s__8;
 static PyObject *__pyx_kp_s__9;
 static PyObject *__pyx_kp_s_a_href;
-static PyObject *__pyx_kp_s_aldi_sud;
-static PyObject *__pyx_kp_s_aldi_sud_csv;
 static PyObject *__pyx_n_s_aldisued;
+static PyObject *__pyx_kp_s_aldisued_csv;
 static PyObject *__pyx_n_s_args;
 static PyObject *__pyx_n_s_auto;
 static PyObject *__pyx_n_s_bear;
@@ -5188,9 +5186,8 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_kp_s__8, __pyx_k__8, sizeof(__pyx_k__8), 0, 0, 1, 0},
   {&__pyx_kp_s__9, __pyx_k__9, sizeof(__pyx_k__9), 0, 0, 1, 0},
   {&__pyx_kp_s_a_href, __pyx_k_a_href, sizeof(__pyx_k_a_href), 0, 0, 1, 0},
-  {&__pyx_kp_s_aldi_sud, __pyx_k_aldi_sud, sizeof(__pyx_k_aldi_sud), 0, 0, 1, 0},
-  {&__pyx_kp_s_aldi_sud_csv, __pyx_k_aldi_sud_csv, sizeof(__pyx_k_aldi_sud_csv), 0, 0, 1, 0},
   {&__pyx_n_s_aldisued, __pyx_k_aldisued, sizeof(__pyx_k_aldisued), 0, 0, 1, 1},
+  {&__pyx_kp_s_aldisued_csv, __pyx_k_aldisued_csv, sizeof(__pyx_k_aldisued_csv), 0, 0, 1, 0},
   {&__pyx_n_s_args, __pyx_k_args, sizeof(__pyx_k_args), 0, 0, 1, 1},
   {&__pyx_n_s_auto, __pyx_k_auto, sizeof(__pyx_k_auto), 0, 0, 1, 1},
   {&__pyx_n_s_bear, __pyx_k_bear, sizeof(__pyx_k_bear), 0, 0, 1, 1},
@@ -5327,7 +5324,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  __pyx_tuple__2 = PyTuple_Pack(2, __pyx_kp_s_aldi_sud_csv, __pyx_n_s_w); if (unlikely(!__pyx_tuple__2)) __PYX_ERR(0, 51, __pyx_L1_error)
+  __pyx_tuple__2 = PyTuple_Pack(2, __pyx_kp_s_aldisued_csv, __pyx_n_s_w); if (unlikely(!__pyx_tuple__2)) __PYX_ERR(0, 51, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__2);
   __Pyx_GIVEREF(__pyx_tuple__2);
 
@@ -5760,7 +5757,7 @@ if (!__Pyx_RefNanny) {
 
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_API_URL, __pyx_kp_s_https_www_aldi_sued_de_de_sucher) < 0) __PYX_ERR(0, 19, __pyx_L1_error)
 
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_PLATFORM, __pyx_kp_s_aldi_sud) < 0) __PYX_ERR(0, 22, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_PLATFORM, __pyx_n_s_aldisued) < 0) __PYX_ERR(0, 22, __pyx_L1_error)
 
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_CURRENCY, __pyx_n_s_EUR) < 0) __PYX_ERR(0, 23, __pyx_L1_error)
 

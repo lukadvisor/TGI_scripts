@@ -1646,7 +1646,6 @@ static const char __pyx_k_old_price[] = "old_price";
 static const char __pyx_k_price_0_9[] = "\"price\":\"([0-9\\.]*)\"";
 static const char __pyx_k_raw_brand[] = "raw_brand";
 static const char __pyx_k_raw_descs[] = "raw_descs";
-static const char __pyx_k_tchibo_de[] = "tchibo-de";
 static const char __pyx_k_translate[] = "translate";
 static const char __pyx_k_Article_no[] = "Article no.";
 static const char __pyx_k_Brand_name[] = "Brand name";
@@ -1664,11 +1663,11 @@ static const char __pyx_k_description[] = "description";
 static const char __pyx_k_pretty_desc[] = "pretty_desc";
 static const char __pyx_k_Product_link[] = "Product link";
 static const char __pyx_k_Retail_price[] = "Retail price";
+static const char __pyx_k_tchibode_csv[] = "tchibode.csv";
 static const char __pyx_k_BeautifulSoup[] = "BeautifulSoup";
 static const char __pyx_k_Bestellnummer[] = "Bestellnummer";
 static const char __pyx_k_categories_en[] = "categories_en";
 static const char __pyx_k_extract_first[] = "extract_first";
-static const char __pyx_k_tchibo_de_csv[] = "tchibo-de.csv";
 static const char __pyx_k_CrawlerProcess[] = "CrawlerProcess";
 static const char __pyx_k_DOWNLOAD_DELAY[] = "DOWNLOAD_DELAY";
 static const char __pyx_k_TchibodeSpider[] = "TchibodeSpider";
@@ -1851,9 +1850,8 @@ static PyObject *__pyx_n_s_start_requests;
 static PyObject *__pyx_n_s_startswith;
 static PyObject *__pyx_n_s_strip;
 static PyObject *__pyx_n_s_target;
-static PyObject *__pyx_kp_s_tchibo_de;
-static PyObject *__pyx_kp_s_tchibo_de_csv;
 static PyObject *__pyx_n_s_tchibode;
+static PyObject *__pyx_kp_s_tchibode_csv;
 static PyObject *__pyx_n_s_test;
 static PyObject *__pyx_n_s_text;
 static PyObject *__pyx_n_s_throw;
@@ -4544,9 +4542,8 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_startswith, __pyx_k_startswith, sizeof(__pyx_k_startswith), 0, 0, 1, 1},
   {&__pyx_n_s_strip, __pyx_k_strip, sizeof(__pyx_k_strip), 0, 0, 1, 1},
   {&__pyx_n_s_target, __pyx_k_target, sizeof(__pyx_k_target), 0, 0, 1, 1},
-  {&__pyx_kp_s_tchibo_de, __pyx_k_tchibo_de, sizeof(__pyx_k_tchibo_de), 0, 0, 1, 0},
-  {&__pyx_kp_s_tchibo_de_csv, __pyx_k_tchibo_de_csv, sizeof(__pyx_k_tchibo_de_csv), 0, 0, 1, 0},
   {&__pyx_n_s_tchibode, __pyx_k_tchibode, sizeof(__pyx_k_tchibode), 0, 0, 1, 1},
+  {&__pyx_kp_s_tchibode_csv, __pyx_k_tchibode_csv, sizeof(__pyx_k_tchibode_csv), 0, 0, 1, 0},
   {&__pyx_n_s_test, __pyx_k_test, sizeof(__pyx_k_test), 0, 0, 1, 1},
   {&__pyx_n_s_text, __pyx_k_text, sizeof(__pyx_k_text), 0, 0, 1, 1},
   {&__pyx_n_s_throw, __pyx_k_throw, sizeof(__pyx_k_throw), 0, 0, 1, 1},
@@ -4574,7 +4571,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  __pyx_tuple__2 = PyTuple_Pack(2, __pyx_kp_s_tchibo_de_csv, __pyx_n_s_w); if (unlikely(!__pyx_tuple__2)) __PYX_ERR(0, 52, __pyx_L1_error)
+  __pyx_tuple__2 = PyTuple_Pack(2, __pyx_kp_s_tchibode_csv, __pyx_n_s_w); if (unlikely(!__pyx_tuple__2)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__2);
   __Pyx_GIVEREF(__pyx_tuple__2);
 
@@ -5026,7 +5023,7 @@ if (!__Pyx_RefNanny) {
 
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_HOME_URL, __pyx_kp_s_https_www_tchibo_de) < 0) __PYX_ERR(0, 21, __pyx_L1_error)
 
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_PLATFORM, __pyx_kp_s_tchibo_de) < 0) __PYX_ERR(0, 23, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_PLATFORM, __pyx_n_s_tchibode) < 0) __PYX_ERR(0, 23, __pyx_L1_error)
 
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_CURRENCY, __pyx_n_s_EUR) < 0) __PYX_ERR(0, 24, __pyx_L1_error)
 
