@@ -16,7 +16,7 @@ pip install adal
 ```
 To compile just one module (e.g. discounto):
 ```shell script
-make discounto
+make aldisued
 ```
 To compile all module at once:
 ```shell script
