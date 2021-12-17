@@ -145,9 +145,11 @@ def main():
                     r = session.get(crmwebapi+crmwebcurrenciesapi+currencyfilter)
                     if(r.status_code==200 or r.status_code==201 or r.status_code==204):
                         rawJson_str = r.content.decode('utf-8')
-                        #print(rawJson_str)
-                        rawJson = json.loads(rawJson_str)
-                        currency_id = rawJson['value'][0]['transactioncurrencyid']
+                        try:
+                            rawJson = json.loads(rawJson_str)
+                            currency_id = rawJson['value'][0]['transactioncurrencyid']
+                        except Exception as e:
+                            print(e)
 
                     data_price = {
                         'tk_retailprice': round(float(price),2),
@@ -160,9 +162,11 @@ def main():
                     data_str = json.dumps(data_price)
                     r = session.post(crmwebapi+crmwebapiquery_price, headers=headers_post, data=data_str)
                     rawJson = r.content.decode('utf-8')
-                    #print(rawJson)
-                    price = json.loads(rawJson)["tk_retailprice"]
-                    print(f"..{name} with price: {price}")
+                    try:
+                        price = json.loads(rawJson)["tk_retailprice"]
+                        print(f"..{name} with price: {price}")
+                    except Exception as e:
+                        print(e)
 
                 else:
                     print(rawJson)
