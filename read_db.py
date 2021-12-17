@@ -1,4 +1,5 @@
 # !pip install adal , If Required
+import os
 import adal
 import requests
 import json
@@ -31,18 +32,19 @@ crmwebapiquery_price = 'tk_customerproductmarketprices'#?$select=tk_features' #w
 crmwebapiquery = 'tk_customerproductmarketprices?$expand=tk_RelatedProduct'
 filterquery = "&$filter=contains(tk_RelatedProduct/tk_recordid,'discounto_3121040071731')" 
 sortquery = "&$orderby=modifiedon desc"
-retailerquery = "&$filter=contains(tk_RelatedProduct/tk_retailer,'discounto')"
+retailerquery = "&$filter=contains(tk_RelatedProduct/tk_retailer,'saturn')"
 #filterapi_productonly = "&$filter=contains(tk_recordid,'discounto_3121040071731')"
 
 # Request data.
-r = session.get(crmwebapi+crmwebapiquery)
+#r = session.get(crmwebapi+crmwebapiquery)
+r = session.get(crmwebapi+crmwebapiquery+retailerquery)
 #r = session.get(crmwebapi+crmwebapiquery+filterquery+sortquery)
 rawJson_str = r.content.decode('utf-8')
 #print(rawJson_str)
 rawJson = json.loads(rawJson_str)
 products = rawJson['value']
 
-for product in products[0:100]:
+for product in products[0:10]:
     if not delete:
         print(product)
 
