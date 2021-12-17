@@ -98,4 +98,4 @@ The duration of the crawling changes from source to source - some of them (e.g. 
 
 Also, web scraping is not 'an exact science' - websites keep adding new protections to prevent their data from being scraped.
 One of the methods used is block a certain IP address if too many requests are sent from that address.
-Currently, it seems that two of the sources (carrefour and walmart) use this method - therefore, the scripts for these two sources may stop running after a certain amount of data has been crawled. In order to avoid that, please consider using a VPN (temporary solution, as it allows to use 1 IP only) or a rotational proxy (better, as it allows to rotate among different IP addresses, therefore avoiding the block).
+Currently, it seems that two of the sources (carrefour and walmart) use this method - therefore, the scripts for these two sources may stop running after a certain amount of data has been crawled. In order to avoid that, please consider using a VPN (temporary solution, as it allows to use 1 IP only) or a rotational proxy to keep changing IP address (best solution, but more expensive).
