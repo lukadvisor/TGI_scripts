@@ -1887,7 +1887,7 @@ static PyObject *__pyx_tp_new_9discounto___pyx_scope_struct_1_parse(PyTypeObject
 static PyObject *__pyx_int_0;
 static PyObject *__pyx_int_2;
 static PyObject *__pyx_int_54;
-static PyObject *__pyx_int_300;
+static PyObject *__pyx_int_1000;
 static PyObject *__pyx_int_4900;
 static PyObject *__pyx_codeobj_;
 static PyObject *__pyx_tuple__2;
@@ -4595,7 +4595,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitGlobals(void) {
   __pyx_int_0 = PyInt_FromLong(0); if (unlikely(!__pyx_int_0)) __PYX_ERR(0, 1, __pyx_L1_error)
   __pyx_int_2 = PyInt_FromLong(2); if (unlikely(!__pyx_int_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __pyx_int_54 = PyInt_FromLong(54); if (unlikely(!__pyx_int_54)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __pyx_int_300 = PyInt_FromLong(300); if (unlikely(!__pyx_int_300)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_int_1000 = PyInt_FromLong(1000); if (unlikely(!__pyx_int_1000)) __PYX_ERR(0, 1, __pyx_L1_error)
   __pyx_int_4900 = PyInt_FromLong(4900); if (unlikely(!__pyx_int_4900)) __PYX_ERR(0, 1, __pyx_L1_error)
   return 0;
   __pyx_L1_error:;
@@ -4983,7 +4983,7 @@ if (!__Pyx_RefNanny) {
 
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_CURRENCY, __pyx_n_s_EUR) < 0) __PYX_ERR(0, 23, __pyx_L1_error)
 
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_OFFSET_LIMIT, __pyx_int_300) < 0) __PYX_ERR(0, 24, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_OFFSET_LIMIT, __pyx_int_1000) < 0) __PYX_ERR(0, 24, __pyx_L1_error)
 
   __pyx_t_1 = PyList_New(17); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 26, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);

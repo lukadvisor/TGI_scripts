@@ -2080,7 +2080,6 @@ static PyObject *__pyx_pf_7walmart_13WalmartSpider_6parse_item(CYTHON_UNUSED PyO
 static PyObject *__pyx_tp_new_7walmart___pyx_scope_struct__start_requests(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_7walmart___pyx_scope_struct_1_parse(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_int_1;
-static PyObject *__pyx_int_5;
 static PyObject *__pyx_int_20;
 static PyObject *__pyx_int_30;
 static PyObject *__pyx_int_neg_1;
@@ -5492,7 +5491,6 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 static CYTHON_SMALL_CODE int __Pyx_InitGlobals(void) {
   if (__Pyx_InitStrings(__pyx_string_tab) < 0) __PYX_ERR(0, 1, __pyx_L1_error);
   __pyx_int_1 = PyInt_FromLong(1); if (unlikely(!__pyx_int_1)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __pyx_int_5 = PyInt_FromLong(5); if (unlikely(!__pyx_int_5)) __PYX_ERR(0, 1, __pyx_L1_error)
   __pyx_int_20 = PyInt_FromLong(20); if (unlikely(!__pyx_int_20)) __PYX_ERR(0, 1, __pyx_L1_error)
   __pyx_int_30 = PyInt_FromLong(30); if (unlikely(!__pyx_int_30)) __PYX_ERR(0, 1, __pyx_L1_error)
   __pyx_int_neg_1 = PyInt_FromLong(-1); if (unlikely(!__pyx_int_neg_1)) __PYX_ERR(0, 1, __pyx_L1_error)
@@ -5903,7 +5901,7 @@ if (!__Pyx_RefNanny) {
 
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_CURRENCY, __pyx_n_s_USD) < 0) __PYX_ERR(0, 24, __pyx_L1_error)
 
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_PAGE_LIMIT, __pyx_int_5) < 0) __PYX_ERR(0, 25, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_PAGE_LIMIT, __pyx_int_20) < 0) __PYX_ERR(0, 25, __pyx_L1_error)
 
   __pyx_t_2 = __Pyx_PyDict_NewPresized(7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);

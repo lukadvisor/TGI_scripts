@@ -1976,7 +1976,7 @@ static PyObject *__pyx_tp_new_9johnlewis___pyx_scope_struct__start_requests(PyTy
 static PyObject *__pyx_tp_new_9johnlewis___pyx_scope_struct_1_parse(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_int_1;
 static PyObject *__pyx_int_2;
-static PyObject *__pyx_int_5;
+static PyObject *__pyx_int_20;
 static PyObject *__pyx_codeobj_;
 static PyObject *__pyx_tuple__2;
 static PyObject *__pyx_tuple__3;
@@ -4604,7 +4604,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitGlobals(void) {
   if (__Pyx_InitStrings(__pyx_string_tab) < 0) __PYX_ERR(0, 1, __pyx_L1_error);
   __pyx_int_1 = PyInt_FromLong(1); if (unlikely(!__pyx_int_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __pyx_int_2 = PyInt_FromLong(2); if (unlikely(!__pyx_int_2)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __pyx_int_5 = PyInt_FromLong(5); if (unlikely(!__pyx_int_5)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_int_20 = PyInt_FromLong(20); if (unlikely(!__pyx_int_20)) __PYX_ERR(0, 1, __pyx_L1_error)
   return 0;
   __pyx_L1_error:;
   return -1;
@@ -5007,7 +5007,7 @@ if (!__Pyx_RefNanny) {
 
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_CURRENCY, __pyx_n_s_GBP) < 0) __PYX_ERR(0, 23, __pyx_L1_error)
 
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_PAGE_LIMIT, __pyx_int_5) < 0) __PYX_ERR(0, 24, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_PAGE_LIMIT, __pyx_int_20) < 0) __PYX_ERR(0, 24, __pyx_L1_error)
 
   __pyx_t_2 = __Pyx_PyDict_NewPresized(9); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);

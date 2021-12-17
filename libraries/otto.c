@@ -1990,7 +1990,7 @@ static PyObject *__pyx_pf_4otto_10OttoSpider_6parse_item(CYTHON_UNUSED PyObject 
 static PyObject *__pyx_tp_new_4otto___pyx_scope_struct__start_requests(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_4otto___pyx_scope_struct_1_parse(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_int_2;
-static PyObject *__pyx_int_300;
+static PyObject *__pyx_int_2000;
 static PyObject *__pyx_int_4900;
 static PyObject *__pyx_codeobj_;
 static PyObject *__pyx_tuple__2;
@@ -5071,7 +5071,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 static CYTHON_SMALL_CODE int __Pyx_InitGlobals(void) {
   if (__Pyx_InitStrings(__pyx_string_tab) < 0) __PYX_ERR(0, 1, __pyx_L1_error);
   __pyx_int_2 = PyInt_FromLong(2); if (unlikely(!__pyx_int_2)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __pyx_int_300 = PyInt_FromLong(300); if (unlikely(!__pyx_int_300)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_int_2000 = PyInt_FromLong(2000); if (unlikely(!__pyx_int_2000)) __PYX_ERR(0, 1, __pyx_L1_error)
   __pyx_int_4900 = PyInt_FromLong(4900); if (unlikely(!__pyx_int_4900)) __PYX_ERR(0, 1, __pyx_L1_error)
   return 0;
   __pyx_L1_error:;
@@ -5463,7 +5463,7 @@ if (!__Pyx_RefNanny) {
 
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_CURRENCY, __pyx_n_s_EUR) < 0) __PYX_ERR(0, 23, __pyx_L1_error)
 
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_OFFSET_LIMIT, __pyx_int_300) < 0) __PYX_ERR(0, 24, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_OFFSET_LIMIT, __pyx_int_2000) < 0) __PYX_ERR(0, 24, __pyx_L1_error)
 
   __pyx_t_1 = __Pyx_PyDict_NewPresized(11); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 27, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
