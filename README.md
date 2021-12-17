@@ -1,7 +1,7 @@
 # TGI_scripts
 
 ## Pre-requisite:
-The entire package must be run in python 3.8.10 (any other version other than that may cause errors). In order not to modify your current environment, it is recommended to create a virtual environment with python 3.8.10 and install the package there.
+The entire package **must be run in python 3.8.10** (any other version other than that may cause errors). In order not to modify your current environment, it is recommended to create a virtual environment with python 3.8.10 and install the package there.
 
 To do so, I recommend install Anaconda, which allows to manage virtual environments very easily:
 https://docs.continuum.io/anaconda/install/linux/
@@ -10,7 +10,7 @@ After installing anaconda, a new virtual environment with python 3.8.10 can be c
 ```shell script
 conda create --name TGI python=3.8.10
 ```
-And then remember to activate the environment every time you work with this package:
+And then remember to activate the environment **every time** you work with this package:
 ```shell script
 conda activate TGI
 ```
@@ -44,7 +44,7 @@ Now you are ready to write data from .csv into database.
 
 ### Note: pre-requisite before writing into database
 
-Before writing into the database, you have to create a .env containing CLIENT_ID, CLIENT_SECRET etc. (see .env_example in this package for reference). The value of these variables must remain secret, so the .env SHOULD NEVER be committed.
+Before writing into the database, **you have to create a file named .env** containing CLIENT_ID, CLIENT_SECRET etc. (see .env_example in this package for reference). The value of these variables must remain secret, so the .env SHOULD NEVER be committed.
 
 After that, to write data from .csv file into database simply run the command:
 ```shell script
