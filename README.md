@@ -92,6 +92,30 @@ This command will run the script on aldisued every Saturday (6) at 23.45 (with o
 https://en.wikipedia.org/wiki/Cron#Overview
 
 
+## Some other useful scripts
+
+### Change statecode ###
+
+It may happen that certain products which were crawled previously are no longer listed on the original website. In that case, it is possible to change the 'statecode' of that product in the database from 0 (active) to 1 (inactive).
+
+There is a script which has been written exactly for this purpose:
+```shell script
+python update_statecode.py
+```
+This script scans the whole database and searches for thos products that haven't been updated for at least 30 days (**this setting can be changed inside the code**). In that case, it changes their 'statecode' from 0 to 1 (If the product will reappear on the website later on, the statecode 0 will be automatically restored by the write_to_db script).
+
+Consider if you want to add this script in the list of cron jobs as well, to schedule it to run automatically.
+
+### Make queries on the database ###
+
+There is another script 'read_db.py' that can be used to make different queries on the database, to run it:
+```shell script
+python read_db.py
+```
+Please check inside the code before running it to see what kind of query you want to execute.
+
+
+
 ## A few final notes about the crawlers
 
 The duration of the crawling changes from source to source - some of them (e.g. aldisued) takes only a few minutes to complete the crawling, others (e.g. saturn) can take a few hours, and others (e.g. amazon) can take even more than one day given the amount of products to be scraped. Please take this into account when deciding how the schedule the job.
