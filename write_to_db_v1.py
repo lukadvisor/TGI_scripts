@@ -75,6 +75,15 @@ def main():
             for row in reader:
 
                 recordid = str(row['Retailer']+'_'+row['Article no.'])
+                if not row['Article no.']:
+                    continue
+
+                price = None
+                try:
+                    price = float(row['Retail price'])
+                except Exception as e:
+                    print(e)
+                    continue
 
                 #get most recent record with this recordid
                 #filterquery = f"&$filter=contains(tk_RelatedProduct/tk_recordid,'{recordid}')" 
@@ -127,12 +136,6 @@ def main():
                     try:
                         rating = round(float(row['Rating']),2)
                         number_of_reviews = int(row['Number of reviews'])
-                    except:
-                        pass
-
-                    price = None
-                    try:
-                        price = float(row['Retail price'])
                     except:
                         pass
 
