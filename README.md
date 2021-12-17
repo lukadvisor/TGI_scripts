@@ -26,6 +26,20 @@ pip install bs4
 pip install -U deep_translator
 pip install adal
 ```
+
+**Note**
+If you see the following errors during installation, just ignore:
+```shell script
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+requests-oauthlib 1.3.0 requires oauthlib>=3.0.0, which is not installed.
+httpx 0.13.3 requires chardet==3.*, which is not installed.
+django-oauth-toolkit 1.5.0 requires oauthlib>=3.1.0, which is not installed.
+rotating-free-proxies 0.1.2 requires beautifulsoup4==4.8.2, but you have beautifulsoup4 4.10.0 which is incompatible.
+httpx 0.13.3 requires idna==2.*, but you have idna 3.3 which is incompatible. 
+```
+
+## Compile libraries
+
 Libraries must be compiled before use - to compile just one module (e.g. aldisued):
 ```shell script
 make aldisued
@@ -70,9 +84,9 @@ Then create crontab with:
 crontab -e
 ```
 
-And add one line for each job to schedule, e.g:
+And add one line for each job to schedule. Remember to include the complete path to the script's directory (check with 'pwd' command in shell to see current directory), e.g if your directory is /home/myname/TGI_scripts, then the job should be scheduled as follows:
 ```shell script
-45 23 * * 6 python crawl_and_write_to_db.py aldisued > aldisued.log
+45 23 * * 6 python /home/myname/TGI_scripts/crawl_and_write_to_db.py aldisued > /home/myname/TGI_scripts/aldisued.log
 ```
 This command will run the script on aldisued every Saturday (6) at 23.45 (with output printed on a log file 'aldisued.log'). Please check cron wiki page for more explanations about the syntax:
 https://en.wikipedia.org/wiki/Cron#Overview
