@@ -7,16 +7,12 @@ import csv
 from dotenv import load_dotenv
 import datetime
 
-'''
 sources = ['aldinord','aldisued','aldiuk',
             'amazon','amazonde','carrefour','discounto',
             'euroelectronics','homedepot','johnlewis',
             'leclerc','lidlde','lidles', 'lidlpl',
             'mediamarkt','metro','otto',
             'saturn','tchibode','walmart']
-'''
-
-sources = ['aldisued']
 
 # Global configs.
 load_dotenv(dotenv_path='.env')
