@@ -62,15 +62,12 @@ for source in sources:
         #statuscode = product['tk_RelatedProduct']['statuscode']
         statecode = product['tk_RelatedProduct']['statecode']
         modifiedon = product['tk_RelatedProduct']['modifiedon']
-        createdon = product['tk_RelatedProduct']['createdon']
-        last_date_str = modifiedon.split('T')[0]
-        first_date_str = createdon.split('T')[0]
-        last_date = datetime.datetime.strptime(last_date_str, '%Y-%m-%d')
+        first_date_str = modifiedon.split('T')[0]
+        last_date = datetime.datetime.now()
         first_date = datetime.datetime.strptime(first_date_str, '%Y-%m-%d')
         difference = last_date - first_date
         difference_in_days = difference.total_seconds()/86400
-        #print(statecode)
-        if(statecode==0):
+        if(statecode==1):
             if(difference_in_days>=LIMIT):
                 data = "{'value':1}"
                 patch_query = f'({product_id})/statecode'
