@@ -90,3 +90,10 @@ And add one line for each job to schedule. Remember to include the complete path
 ```
 This command will run the script on aldisued every Saturday (6) at 23.45 (with output printed on a log file 'aldisued.log'). Please check cron wiki page for more explanations about the syntax:
 https://en.wikipedia.org/wiki/Cron#Overview
+
+
+## A few final notes about the crawlers
+
+Web scraping is not 'an exact science' - websites keep adding new protections to prevent their data from being scraped.
+One of the methods used is block a certain IP address if too many requests are sent from that address.
+Currently, it seems that two of the sources (carrefour and walmart) use this method - therefore, the scripts for these two sources may stop running after a certain amount of data has been crawled. In order to avoid that, please consider using a VPN (only a temporary solution) or a rotational proxy (which allows to rotate among different IP addresses, therefore avoiding the block).
