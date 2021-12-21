@@ -1738,7 +1738,7 @@ static const char __pyx_k_div_class_infobox_col_lg_8_data[] = "*//div[@class=\"i
 static const char __pyx_k_div_contains_class_item_plp_pro[] = "*//div[contains(@class,\"item plp_product\")]";
 static const char __pyx_k_h2_contains_class_product_title[] = "*//h2[contains(@class,\"product-title\")]/text()";
 static const char __pyx_k_Sternen_bewertet_0_9_Bewertungen[] = "Sternen bewertet, ([0-9]*) Bewertungen";
-static const char __pyx_k_https_www_aldi_sued_de_de_sucher[] = "https://www.aldi-sued.de/de/suchergebnis/produkte/jcr:content/content/h17_search_single_ty.html?search={}&pageNumber={}";
+static const char __pyx_k_https_www_aldi_sued_de_de_sucher[] = "https://www.aldi-sued.de/de/suchergebnis/produkte/jcr:content/content/h17_search_single_ty.html?search=\"{}\"&pageNumber={}";
 static PyObject *__pyx_n_s_API_URL;
 static PyObject *__pyx_n_s_AldiSuedSpider;
 static PyObject *__pyx_n_s_AldiSuedSpider_parse;

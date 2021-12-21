@@ -1715,7 +1715,7 @@ static const char __pyx_k_meta_property_og_image_content[] = "*//meta[@property=
 static const char __pyx_k_meta_property_og_title_content[] = "*//meta[@property=\"og:title\"]/@content";
 static const char __pyx_k_meta_property_product_price_amo[] = "*//meta[@property=\"product:price:amount\"]/@content";
 static const char __pyx_k_meta_property_product_sale_pric[] = "*//meta[@property=\"product:sale_price_dates:start\"]/@content";
-static const char __pyx_k_https_www_discounto_de_Suche_ter[] = "https://www.discounto.de/Suche/?term={}";
+static const char __pyx_k_https_www_discounto_de_Suche_ter[] = "https://www.discounto.de/Suche/?term=\"{}\"";
 static PyObject *__pyx_kp_s_Article_description;
 static PyObject *__pyx_kp_s_Article_description_english;
 static PyObject *__pyx_kp_s_Article_no;

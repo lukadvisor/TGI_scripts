@@ -1711,7 +1711,7 @@ static const char __pyx_k_scripts_euroelectronics_pyx[] = "scripts/euroelectroni
 static const char __pyx_k_div_class_grid_product__vendor[] = "*//div[@class=\"grid-product__vendor\"]/text()";
 static const char __pyx_k_Mozilla_5_0_Macintosh_Intel_Mac[] = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_0) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3";
 static const char __pyx_k_div_contains_class_grid__item_g[] = "*//div[contains(@class,\"grid__item grid-product\")]";
-static const char __pyx_k_https_euroelectronics_eu_search[] = "https://euroelectronics.eu/search?type=product&q={}";
+static const char __pyx_k_https_euroelectronics_eu_search[] = "https://euroelectronics.eu/search?type=product&q=\"{}\"&currency=gbp";
 static const char __pyx_k_it_IT_it_q_0_8_en_US_q_0_5_en_q[] = "it-IT,it;q=0.8,en-US;q=0.5,en;q=0.3";
 static const char __pyx_k_script_type_application_ld_json[] = "*//script[@type=\"application/ld+json\"]/text()";
 static const char __pyx_k_text_html_application_xhtml_xml[] = "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8";
