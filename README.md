@@ -135,7 +135,7 @@ One of the methods used is block a certain IP address if too many requests are s
 Currently, it seems that two of the sources (carrefour and walmart) use this method - therefore, the scripts for these two sources may stop running after a certain amount of data has been crawled. In order to avoid that, please consider using a VPN (temporary solution, as it allows to use 1 IP only) or a rotational proxy to keep changing IP address (best solution, but more expensive).
 
 
-## Updates (ADDED ON 21/12/2021)
+## UPDATES (ADDED ON 21/12/2021)
 
 Updates to the scripts may be needed periodically, as the structure of the websites to crawl may change from time to time and new protection may be added. Whenever an update is released, it will be listed below.
 After the release of an update, please download the up-to-date version of the package with:
@@ -147,3 +147,7 @@ And eventually, re-install the libraries with:
 make all
 ```
 (or you can just run the 'make' command for the library that was updated only, to save time).
+
+### Update 1.0 (21/12/2021)
+
+- Updated the following libraries to improve their "search accuracy": aldinord, aldisued, discounto, euroelectronics
