@@ -1,6 +1,16 @@
 # TGI_scripts
 
+## Before starting (ADDED ON 21/12/2021):
+
+To install python, python headers and pip (in case they are not present on the machine), run the following commands:
+
+```shell script
+sudo apt install python3 python3-pip
+sudo apt-get install python3-dev
+```
+
 ## Pre-requisite:
+
 The entire package **must be run in python 3.8.10** (any other version other than that may cause errors). In order not to modify your current environment, it is recommended to create a virtual environment with python 3.8.10 and install the package there.
 
 To do so, I recommend install Anaconda, which allows to manage virtual environments very easily:
