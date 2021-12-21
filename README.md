@@ -150,4 +150,4 @@ make all
 
 ### Update 1.0 (21/12/2021)
 
-- Updated the following libraries to improve their "search accuracy": aldinord, aldisued, discounto, euroelectronics
+- Updated the following libraries to improve their "search accuracy": **aldinord, aldisued, discounto, euroelectronics**
