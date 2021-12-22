@@ -151,3 +151,7 @@ make all
 ### Update 1.0 (21/12/2021)
 
 - Updated the following libraries to improve their "search accuracy": **aldinord, aldisued, discounto, euroelectronics**
+
+### Update 1.1 (22/12/2021)
+
+- Updated **write_to_db_v1.py** script to prevent duplicated items entering the database
