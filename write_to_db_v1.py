@@ -70,11 +70,15 @@ def main():
             'Prefer': 'return=representation'
         }
 
+        recordid_list = []
         with open(f'{source}.csv', newline='') as csvfile:
             reader = csv.DictReader(csvfile)
             for row in reader:
 
                 recordid = str(row['Retailer']+'_'+row['Article no.'])
+                if recordid in recordid_list:
+                    continue #to skip duplicate products
+                recordid_list.append(recordid)
                 if not row['Article no.']:
                     continue
 
