@@ -70,15 +70,16 @@ def main():
             'Prefer': 'return=representation'
         }
 
-        recordid_list = []
+        url_list = []
         with open(f'{source}.csv', newline='') as csvfile:
             reader = csv.DictReader(csvfile)
             for row in reader:
 
                 recordid = str(row['Retailer']+'_'+row['Article no.'])
-                if recordid in recordid_list:
+                url = row['Product link']
+                if url in url_list:
                     continue #to skip duplicate products
-                recordid_list.append(recordid)
+                url_list.append(url)
                 if not row['Article no.']:
                     continue
 
@@ -159,6 +160,7 @@ def main():
                         'tk_retailprice': round(float(price),2),
                         'tk_rating': rating,
                         'tk_numberofreviews': number_of_reviews,
+                        'tk_url': url,
                         'transactioncurrencyid@odata.bind': f'/transactioncurrencies({currency_id})',
                         'tk_RelatedProduct@odata.bind': f'/tk_customerproductmarketdatas({product_id})'
                     }
