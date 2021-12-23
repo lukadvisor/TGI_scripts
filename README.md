@@ -137,7 +137,7 @@ Currently, it seems that two of the sources (carrefour and walmart) use this met
 
 ## UPDATES (ADDED ON 21/12/2021)
 
-Updates to the scripts may be needed periodically, as the structure of the websites to crawl may change from time to time and new protection may be added. Whenever an update is released, it will be listed below. **Please check this section often - some crawlers may not work without the updates! **
+Updates to the scripts may be needed periodically, as the structure of the websites to crawl may change from time to time and new protection may be added. Whenever an update is released, it will be listed below. **Please check this section often - some crawlers may not work without the updates!**
 After the release of an update, please download the up-to-date version of the package with:
 ```shell script
 git pull
