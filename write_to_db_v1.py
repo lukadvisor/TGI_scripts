@@ -104,6 +104,16 @@ def main():
                     price_id = products[0]['tk_customerproductmarketpriceid']
                     previous_price = products[0]['tk_retailprice']
 
+                rating = None
+                number_of_reviews = None
+                try:
+                    rating = round(float(row['Rating']),2)
+                    number_of_reviews = int(row['Number of reviews'])
+                except:
+                    pass
+                timestamp = row['Created at']
+
+                print(price)
                 data_product = {
                         'tk_productcategory': row['Product category (english)'],
                         'tk_brandname': row['Brand name'],
@@ -117,7 +127,11 @@ def main():
                         'tk_producturl': row['Product link'],
                         'tk_pictureurl': row['Picture url'],
                         'tk_recordid': recordid,
-                        'statecode': 1
+                        'tk_latestprice': round(float(price),2),
+                        'tk_latestrating': rating,
+                        'tk_latestnumberofreview': number_of_reviews,
+                        'tk_lastcheckeddate': timestamp,
+                        'statecode': 0
                     }
 
                 data_str = json.dumps(data_product)
@@ -137,14 +151,6 @@ def main():
                     product_id = json.loads(rawJson)["tk_customerproductmarketdataid"]
                     name = json.loads(rawJson)["tk_name"]
 
-                    rating = None
-                    number_of_reviews = None
-                    try:
-                        rating = round(float(row['Rating']),2)
-                        number_of_reviews = int(row['Number of reviews'])
-                    except:
-                        pass
-
                     currency_id = None
                     #currencyfilter = f"?$filter=contains(currencysymbol,'{row['Currency']}')" 
                     currencyfilter = f"?$filter=currencysymbol eq '{row['Currency']}'" 
@@ -156,8 +162,6 @@ def main():
                             currency_id = rawJson['value'][0]['transactioncurrencyid']
                         except Exception as e:
                             print(e)
-
-                    timestamp = row['Created at']
 
                     data_price = {
                         'tk_retailprice': round(float(price),2),
