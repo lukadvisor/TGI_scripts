@@ -117,6 +117,7 @@ def main():
                         'tk_producturl': row['Product link'],
                         'tk_pictureurl': row['Picture url'],
                         'tk_recordid': recordid,
+                        'statecode': 1
                     }
 
                 data_str = json.dumps(data_product)

@@ -67,7 +67,7 @@ for source in sources:
         first_date = datetime.datetime.strptime(first_date_str, '%Y-%m-%d')
         difference = last_date - first_date
         difference_in_days = difference.total_seconds()/86400
-        if(statecode==1):
+        if(statecode==0): #0=active, 1=inactive
             if(difference_in_days>=LIMIT):
                 data = "{'value':1}"
                 patch_query = f'({product_id})/statecode'
