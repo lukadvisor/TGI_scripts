@@ -154,4 +154,5 @@ make all
 
 ### Update 1.1 (22/12/2021)
 
-- Updated **write_to_db_v1.py** script to prevent duplicated items entering the database
+- Updated **write_to_db_v1.py** to include tk_url field into price table
+- Updated **all libraries** to add newline separator into features field for better readability
