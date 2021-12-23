@@ -148,11 +148,15 @@ make all
 ```
 (or you can just run the 'make' command for the library that was updated only, to save time).
 
-### Update 1.0 (21/12/2021)
+### Update 21/12/2021
 
 - Updated the following libraries to improve their "search accuracy": **aldinord, aldisued, discounto, euroelectronics**
 
-### Update 1.1 (22/12/2021)
+### Update 22/12/2021
 
 - Updated **write_to_db_v1.py** to include tk_url field into price table
 - Updated **all libraries** to add newline separator into features field for better readability
+
+### Update 23/12/2021
+
+- Updated **write_to_db_v1.py** to include tk_timestamp field into price table
