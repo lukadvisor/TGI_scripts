@@ -135,9 +135,9 @@ One of the methods used is block a certain IP address if too many requests are s
 Currently, it seems that two of the sources (carrefour and walmart) use this method - therefore, the scripts for these two sources may stop running after a certain amount of data has been crawled. In order to avoid that, please consider using a VPN (temporary solution, as it allows to use 1 IP only) or a rotational proxy to keep changing IP address (best solution, but more expensive).
 
 
-## UPDATES (ADDED ON 21/12/2021)
+## LIST OF UPDATES (Please check this section often - some crawlers may not work without the updates!)
 
-Updates to the scripts may be needed periodically, as the structure of the websites to crawl may change from time to time and new protection may be added. Whenever an update is released, it will be listed below. **Please check this section often - some crawlers may not work without the updates!**
+Updates to the scripts may be needed periodically, as the structure of the websites to crawl may change from time to time and new protection may be added. Whenever an update is released, it will be listed below. 
 After the release of an update, please download the up-to-date version of the package with:
 ```shell script
 git pull
@@ -160,3 +160,4 @@ make all
 ### Update 23/12/2021
 
 - Updated **write_to_db_v1.py** to include tk_timestamp field into price table
+- Updated **amazon, amazonde** libraries to match changes in website structure
