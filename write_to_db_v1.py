@@ -113,7 +113,18 @@ def main():
                     pass
                 timestamp = row['Created at']
 
-                print(price)
+                currency_id = None
+                #currencyfilter = f"?$filter=contains(currencysymbol,'{row['Currency']}')" 
+                currencyfilter = f"?$filter=currencysymbol eq '{row['Currency']}'" 
+                r = session.get(crmwebapi+crmwebcurrenciesapi+currencyfilter)
+                if(r.status_code==200 or r.status_code==201 or r.status_code==204):
+                    rawJson_str = r.content.decode('utf-8')
+                    try:
+                        rawJson = json.loads(rawJson_str)
+                        currency_id = rawJson['value'][0]['transactioncurrencyid']
+                    except Exception as e:
+                        print(e)
+
                 data_product = {
                         'tk_productcategory': row['Product category (english)'],
                         'tk_brandname': row['Brand name'],
@@ -131,7 +142,8 @@ def main():
                         'tk_latestrating': rating,
                         'tk_latestnumberofreview': number_of_reviews,
                         'tk_lastcheckeddate': timestamp,
-                        'statecode': 0
+                        'statecode': 0,
+                        'transactioncurrencyid@odata.bind': f'/transactioncurrencies({currency_id})',
                     }
 
                 data_str = json.dumps(data_product)
@@ -150,18 +162,6 @@ def main():
                 if(r.status_code==200 or r.status_code==201 or r.status_code==204):
                     product_id = json.loads(rawJson)["tk_customerproductmarketdataid"]
                     name = json.loads(rawJson)["tk_name"]
-
-                    currency_id = None
-                    #currencyfilter = f"?$filter=contains(currencysymbol,'{row['Currency']}')" 
-                    currencyfilter = f"?$filter=currencysymbol eq '{row['Currency']}'" 
-                    r = session.get(crmwebapi+crmwebcurrenciesapi+currencyfilter)
-                    if(r.status_code==200 or r.status_code==201 or r.status_code==204):
-                        rawJson_str = r.content.decode('utf-8')
-                        try:
-                            rawJson = json.loads(rawJson_str)
-                            currency_id = rawJson['value'][0]['transactioncurrencyid']
-                        except Exception as e:
-                            print(e)
 
                     data_price = {
                         'tk_retailprice': round(float(price),2),
