@@ -156,11 +156,14 @@ def main():
                         except Exception as e:
                             print(e)
 
+                    timestamp = row['Created at']
+
                     data_price = {
                         'tk_retailprice': round(float(price),2),
                         'tk_rating': rating,
                         'tk_numberofreviews': number_of_reviews,
                         'tk_url': url,
+                        'tk_timestamp': timestamp,
                         'transactioncurrencyid@odata.bind': f'/transactioncurrencies({currency_id})',
                         'tk_RelatedProduct@odata.bind': f'/tk_customerproductmarketdatas({product_id})'
                     }
