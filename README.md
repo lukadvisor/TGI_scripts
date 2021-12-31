@@ -15,6 +15,7 @@ The entire package **must be run in python 3.8.10** (any other version other tha
 
 To do so, I recommend install Anaconda, which allows to manage virtual environments very easily:
 https://docs.continuum.io/anaconda/install/linux/
+https://linuxize.com/post/how-to-install-anaconda-on-ubuntu-20-04/
 
 After installing anaconda, a new virtual environment with python 3.8.10 can be created as follows:
 ```shell script
