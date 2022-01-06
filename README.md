@@ -163,3 +163,7 @@ make all
 - Updated **write_to_db_v1.py** to include tk_timestamp field into price table
 - Updated **amazon, amazonde** libraries to match changes in website structure
 - Bug fix in **update_statecode.py** script
+
+### Update 06/01/2022
+
+- Updated categories (in all languages)
