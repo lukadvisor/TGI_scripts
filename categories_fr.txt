@@ -40,12 +40,12 @@ Tondeuse électrique
 Robot laveur de vitres
 Brosse à dents oscillante pour enfants
 Diffuseur de parfum
-Sèche Ongles
+Sèche-Ongles
 Aspirateur Robot
 Éventail de cou
 Ventilateur de boîte
 Rasoir électrique
-Tondeuse électrique à cheveux et à barbe
+Tondeuse électrique pour cheveux et barbe
 Brosse à cheveux électrique
 Brosse à dents électrique sonique
 Distributeur de savon
@@ -55,7 +55,7 @@ Essuie-glace électrique
 Refroidisseur d'air
 Nettoyeur de pores électrique
 Refroidisseur d'air de table
-Chauffage à convection
+Convecteur
 Brosse de nettoyage
 Fer à lisser
 Circulateur d'air
@@ -94,10 +94,10 @@ Véritable écouteur sans fil
 Réveil parlant
 Mixeur de table
 Changer
-Lunettes de soleil avec BT et haut-parleur
+Lunettes de soleil avec Bluetooth et haut-parleur
 Four à vapeur
 Mélangeur sur socle avec fonction de cuisson
-Base sonore Stéréo
+Base de son stéréo
 Panneau d'alimentation solaire
 Machine à soda
 Prise
@@ -111,7 +111,7 @@ Détecteur d'air intelligent
 Masque de mode silencieux
 Caméra de vision arrière
 Tapis de souris de chargement QI
-Chargeur QI
+QI charger
 Multiprise
 Banque de puissance
 Four
@@ -121,12 +121,12 @@ LED
 Robot de cuisine
 Machine de cuisine de cuisine
 Conférencier pour enfants
-Casque pour enfants
+Casque d'écoute pour enfants
 Plaque à induction
 Écouteurs intra-auriculaires
 Hubs et quais
 câble HDMI
-Four Halogène
+Four halogène
 Souris de jeu
 Clavier de jeu
 Accessoires de jeu
@@ -145,10 +145,10 @@ Grill électrique sur pied
 Spiraliseur électrique
 Stick électrique sous vide
 Soupière électrique
-Mélangeur électrique pour smoothies
+Mélangeur électrique à smoothie
 Machine à barbotine électrique
 Presse-agrumes électrique lent
-Machine à glace pilée électrique
+Machine à glaçons électrique
 Dispositif d'étanchéité électrique
 Grill à raclette électrique
 Autocuiseur électrique
@@ -172,7 +172,7 @@ Cuiseur vapeur électrique
 Trancheuse électrique
 Robot culinaire électrique
 Sèche-linge électrique
-Cycleur électrique d'aliments
+Cycleur de nourriture électrique
 Composteur de nourriture électrique
 Fondue électrique
 Machine à expresso électrique

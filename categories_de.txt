@@ -42,7 +42,7 @@ Oszillationszahnbürste für Kinder
 Aromazerstäuber
 Nageltrockner
 Roboter-Staubsauger
-Halsfächer
+Nackenfächer
 Box-Lüfter
 Elektrischer Rasierer
 Elektrischer Haar- und Bartschneider
@@ -78,7 +78,7 @@ Elektronischer Schraubenzieher
 Kettensäge
 Nagelpistole
 Feuchtemesser
-Elektrischer Schleifer
+Elektrischer Grinder
 Elektrischer Schleifer
 Luftkompressor
 Heißluftpistole
@@ -93,13 +93,13 @@ Vakuumversiegelung
 Echter kabelloser Kopfhörer
 Sprechender Wecker
 Tischmixer
-Schalter
-Sonnenbrille mit BT und Lautsprecher
+Schalten
+Sonnenbrille mit Bluetooth und Lautsprecher
 Dampfofen
 Standmixer mit Kochfunktion
 Soundbase-Stereo
 Solar PowerPanel
-Sodahersteller
+Soda-Hersteller
 Steckdose
 Intelligenter Wasserdetektor
 Smartwatch
@@ -111,7 +111,7 @@ Smart Air-Detektor
 Silentmode-Maske
 Rückfahrkamera
 QI-Lade-Mauspad
-QI-Ladegerät
+QI charger
 Steckdosenleiste
 Powerbank
 Ofen
@@ -144,7 +144,7 @@ Elektrischer Stabmixer
 Elektrischer Standgrill
 Elektrischer Spiralisierer
 Elektrischer Sous-Vide-Stick
-Elektrischer Suppenbereiter
+Elektrischer Suppenkocher
 Elektrischer Smoothie-Mixer
 Elektrischer Slushy Maker
 Elektrischer Slow Juicer

@@ -13,8 +13,8 @@ Calentador de cerámica
 Rizador de pelo eléctrico
 Enfriador de aire portátil
 Máquina de coser
-Ventilador de piso
-Barra de toalla calefactable
+ventilador del piso
+Toallero calefactable
 Cepillo de dientes eléctrico
 Abanico portátil
 Limpiador ultrasónico
@@ -28,7 +28,7 @@ Calentador
 Mini ventilador
 Estación de cepillos de vapor
 Estación de plancha de vapor
-Irrigador bucal eléctrico
+Irrigador oral eléctrico
 Limpiador de alfombra
 Ventilador de mesa
 Bomba de aire electrónica
@@ -45,7 +45,7 @@ Aspiradora Robot
 Ventilador de cuello
 Ventilador de caja
 Afeitadora eléctrica
-Cortapelos y barba eléctrica
+Pelo eléctrica y condensador de ajuste de la barba
 Cepillo de pelo eléctrico
 Cepillo de dientes eléctrico sónico
 Dispensador de jabón
@@ -85,7 +85,7 @@ Pistola de calor
 Aspiradora de tambor
 Lavadora a presión
 Cortacésped eléctrico
-Estaciones de energía CA
+Estaciones de energía de CA
 Cargador inalámbrico
 Cámara web
 Maestro del tiempo
@@ -94,7 +94,7 @@ Verdadero auricular inalámbrico
 Reloj despertador parlante
 Batidora de mesa
 Cambiar
-Gafas de sol con BT y altavoz
+Gafas de sol con Bluetooth y altavoz
 Horno de vapor
 Batidora de pie con función de cocción
 Estéreo de base de sonido
@@ -111,7 +111,7 @@ Detector de aire inteligente
 Máscara de modo silencioso
 Cámara trasera
 Alfombrilla de ratón de carga QI
-Cargador QI
+QI charger
 Tira de energía
 Banco de energía
 Horno
@@ -130,14 +130,14 @@ Horno halógeno
 Ratón para juegos
 Teclado para juegos
 Accesorios para juegos
-Procesador de alimentos con cocción
+Procesador de alimentos con cocina
 Teclado plegable
 Organizador de cargador inalámbrico rápido
-Máquina de yogur eléctrica
+Máquina de yogurt eléctrica
 Enfriador de vino eléctrico
 Hervidor de agua eléctrico
 Máquina para hacer gofres eléctrica
-Tostadora eléctrica
+Tostadora electrica
 Olla de té eléctrica
 Parrilla eléctrica de mesa
 Batidora de varilla eléctrica
@@ -161,18 +161,18 @@ Afilador de cuchillos eléctrico
 Cuchillo eléctrico
 Báscula de cocina eléctrica
 Máquina de hielo eléctrica
-Máquina para hacer cubitos de hielo eléctrica
+Fabricador de cubitos de hielo eléctrico
 Heladera eléctrica
 Dispensador de agua caliente eléctrico
-Máquina de punzonado en caliente eléctrica
+Perforadora eléctrica en caliente
 Infusor de hierbas eléctrico
 Batidora de mano eléctrica
-Rallador eléctrico
-Vaporizador de alimentos eléctrico
+Rallador electrico
+Alimentación eléctrica Vapor
 Cortadora de alimentos eléctrica
 Procesador de alimentos eléctrico
 Secador de alimentos eléctrico
-Ciclador de alimentos eléctrico
+Ciclador eléctrico de alimentos
 Compostador de alimentos eléctrico
 Fondue eléctrica
 Máquina de espresso eléctrica
@@ -182,16 +182,16 @@ Freidora eléctrica
 Descarboxilador eléctrico
 Crepera eléctrica
 Placa de cocción eléctrica
-Prensa de galletas eléctrica
+Prensa eléctrica para galletas
 Parrilla de contacto eléctrica
 Cafetera eléctrica
 Molinillo de café eléctrico
 Prensa de cítricos eléctrica
-Exprimidor de cítricos eléctrico
+Exprimidor eléctrico de cítricos
 Abridor de coche eléctrico
 Removedor de callos eléctrico
 Dispensador de cerveza eléctrico
-Refrigerador de cerveza eléctrico
+Enfriador de cerveza eléctrico
 Regulador de intensidad
 Temporizador de cocina digital
 Dash Cam

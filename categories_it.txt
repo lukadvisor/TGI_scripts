@@ -2,7 +2,7 @@ Pulitore a vapore
 Spazzola a vapore
 epilatore
 Ferro da viaggio
-Ventilatore da piedistallo
+Ventilatore a piedistallo
 Astuccio per cosmetici con specchio e luce
 Rimozione elettrica dei punti neri
 Ventilatore a torre
@@ -35,8 +35,8 @@ Pompa dell'aria elettronica
 Umidificatore
 Bilancia del corpo
 Stazione di irrigazione orale elettrica
-Asciugatrice per camicie
-Toelettatore elettrico per il corpo
+Asciugacamicie
+Toelettatore elettrico
 Robot lavavetri
 Spazzolino oscillante per bambini
 Diffusore di aromi
@@ -79,7 +79,7 @@ Sega elettrica
 Sparachiodi
 Misuratore di umidita
 Smerigliatrice elettrica
-Levigatrice elettrica
+levigatrice elettrica
 Compressore d'aria
 Pistola termica
 Aspirapolvere a tamburo
@@ -92,9 +92,9 @@ Maestro del tempo
 Sigillatrice sottovuoto
 Vero auricolare wireless
 Sveglia parlante
-frullatore da tavolo
+Frullatore da tavolo
 Interruttore
-Occhiali da sole con BT e altoparlante
+Occhiali da sole con Bluetooth e altoparlante
 Forno a vapore
 Frullatore con funzione di cottura
 Stereo con base audio
@@ -103,27 +103,27 @@ Soda Maker
 Presa
 Rilevatore d'acqua intelligente
 Orologio intelligente
-Termostato intelligente
+Termostato Intelligente
 Rilevatore di fumo intelligente
 Bilancia da cucina intelligente
 Campanello intelligente
 Rilevatore d'aria intelligente
-Maschera modalità silenziosa
+Maschera in modalità silenziosa
 Telecamera posteriore
 QI Ricarica Mousepad
-QI caricatore
-Multipresa
+QI charger
+Ciabatta
 Accumulatore di energia
 Forno
 Mini altoparlante
 Forno a microonde
 LED
-Macchina da cucina robot da cucina
+Robot da cucina Macchina da cucina
 Macchina da cucina da cucina
 Altoparlante per bambini
 Cuffie per bambini
 Fornello a induzione
-In Cuffia Dell'orecchio
+Cuffie auricolari
 Hub e banchine
 Cavo HDMI
 Forno alogeno
@@ -135,7 +135,7 @@ Tastiera pieghevole
 Organizer per caricabatterie wireless veloce
 Yogurtiera elettrica
 Cantinetta frigo elettrica
-Bollitore elettrico
+Bollitore elettrico dell'acqua
 Macchina per waffle elettrica
 Tostapane elettrico
 Fornello da tè elettrico
@@ -144,7 +144,7 @@ Frullatore elettrico
 Griglia elettrica con supporto
 Spiralizzatore elettrico
 Stick sottovuoto elettrico
-Macchina per zuppa elettrica
+Zuppiera elettrica
 Frullatore elettrico per frullato
 Creatore di fango elettrico
 Spremiagrumi elettrico
@@ -169,9 +169,9 @@ Infusore di erbe elettrico
 Sbattitore elettrico
 Grattugia elettrica
 Vaporiera elettrica
-Affettatrice elettrica
+Affettatrice elettrica per alimenti
 Robot da cucina elettrico
-Asciugatrice elettrica per alimenti
+Essiccatore elettrico per alimenti
 Ciclatore elettrico per alimenti
 Compostiera elettrica per alimenti
 fonduta elettrica
@@ -199,7 +199,7 @@ Radio dab
 Cavo coassiale
 Radiosveglia
 Cavi di ricarica
-Caricabatterie
+caricabatterie
 Plafoniera
 Tappetino da massaggio per auto
 Caricabatteria per auto
