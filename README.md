@@ -97,10 +97,12 @@ crontab -e
 
 And add one line for each job to schedule. Remember to include the complete path to the script's directory (check with 'pwd' command in shell to see current directory), e.g if your directory is /home/myname/TGI_scripts, then the job should be scheduled as follows:
 ```shell script
-45 23 * * 6 python /home/myname/TGI_scripts/crawl_and_write_to_db.py aldisued > /home/myname/TGI_scripts/aldisued.log 2>&1
+45 23 * * 6 conda activate TGI; python /home/myname/TGI_scripts/crawl_and_write_to_db.py aldisued > /home/myname/TGI_scripts/aldisued.log 2>&1
 ```
 This command will run the script on aldisued every Saturday (6) at 23.45 (with output printed on a log file 'aldisued.log'). Please check cron wiki page for more explanations about the syntax:
 https://en.wikipedia.org/wiki/Cron#Overview
+
+**Important:** the command 'conda activate' does not work automatically in crontab - please follow the procedure explained in the first answer at the following link first: https://unix.stackexchange.com/questions/454957/cron-job-to-run-under-conda-virtual-environment
 
 
 ## Some other useful scripts
