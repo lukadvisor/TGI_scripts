@@ -17,7 +17,7 @@ CLIENT_SECRET = os.environ.get('CLIENT_SECRET')
 
 #set these values to query your crm data
 
-crmwebapi = 'https://mysam-config.api.crm5.dynamics.com/api/data/v9.2/' #full path to web api endpoint
+crmwebapi = RESOURCE_URI+'/api/data/v9.2/' #full path to web api endpoint
 crmwebapiquery_product = 'tk_customerproductmarketdatas'#?$select=tk_features' #web api query (include leading /)
 crmwebapiquery_price = 'tk_customerproductmarketprices'#?$select=tk_features' #web api query (include leading /)
 crmwebapiquery = 'tk_customerproductmarketprices?$expand=tk_RelatedProduct'
@@ -114,8 +114,7 @@ def main():
                 timestamp = row['Created at']
 
                 currency_id = None
-                #currencyfilter = f"?$filter=contains(currencysymbol,'{row['Currency']}')" 
-                currencyfilter = f"?$filter=currencysymbol eq '{row['Currency']}'" 
+                currencyfilter = f"?$filter=isocurrencycode eq '{row['Currency']}'" 
                 r = session.get(crmwebapi+crmwebcurrenciesapi+currencyfilter)
                 if(r.status_code==200 or r.status_code==201 or r.status_code==204):
                     rawJson_str = r.content.decode('utf-8')
@@ -157,7 +156,6 @@ def main():
                     print(f"Updating item with id {recordid}:")
 
                 rawJson = r.content.decode('utf-8')
-                #print(rawJson)
 
                 if(r.status_code==200 or r.status_code==201 or r.status_code==204):
                     product_id = json.loads(rawJson)["tk_customerproductmarketdataid"]
@@ -176,6 +174,7 @@ def main():
                     data_str = json.dumps(data_price)
                     r = session.post(crmwebapi+crmwebapiquery_price, headers=headers_post, data=data_str)
                     rawJson = r.content.decode('utf-8')
+
                     try:
                         price = json.loads(rawJson)["tk_retailprice"]
                         print(f"..{name} with price: {price}")
