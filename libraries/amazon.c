@@ -1760,6 +1760,7 @@ static const char __pyx_k_https_www_amazon_com[] = "https://www.amazon.com";
 static const char __pyx_k_currently_unavailable[] = "currently unavailable";
 static const char __pyx_k_h1_id_title_span_text[] = "*//h1[@id=\"title\"]/span/text()";
 static const char __pyx_k_div_id_feature_bullets[] = "*//div[@id=\"feature-bullets\"]";
+static const char __pyx_k_li_class_a_last_a_text[] = "*//li[@class=\"a-last\"]/a/text()";
 static const char __pyx_k_AmazonSpider_parse_item[] = "AmazonSpider.parse_item";
 static const char __pyx_k_Product_category_english[] = "Product category (english)";
 static const char __pyx_k_upgrade_insecure_requests[] = "upgrade-insecure-requests";
@@ -1769,7 +1770,6 @@ static const char __pyx_k_https_aax_us_iad_amazon_com[] = "https://aax-us-iad.am
 static const char __pyx_k_https_www_amazon_com_s_k_page[] = "https://www.amazon.com/s?k={}&page={}";
 static const char __pyx_k_Mozilla_5_0_Macintosh_Intel_Mac[] = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_0) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3";
 static const char __pyx_k_Opera_v_81_Not_A_Brand_v_99_Chr[] = "\"Opera\";v=\"81\", \" Not;A Brand\";v=\"99\", \"Chromium\";v=\"95\"";
-static const char __pyx_k_a_contains_class_s_pagination_n[] = "*//a[contains(@class,\"s-pagination-next\")]/text()";
 static const char __pyx_k_div_class_imgTagWrapper_img_dat[] = "*//div[@class=\"imgTagWrapper\"]/img/@data-old-hires";
 static const char __pyx_k_div_data_component_type_s_searc[] = "*//div[@data-component-type=\"s-search-result\"]";
 static const char __pyx_k_i_data_hook_average_star_rating[] = "*//i[@data-hook=\"average-star-rating\"]/span/text()";
@@ -1870,7 +1870,6 @@ static PyObject *__pyx_kp_s__18;
 static PyObject *__pyx_kp_u__7;
 static PyObject *__pyx_kp_s__8;
 static PyObject *__pyx_kp_s__9;
-static PyObject *__pyx_kp_s_a_contains_class_s_pagination_n;
 static PyObject *__pyx_kp_s_a_href;
 static PyObject *__pyx_n_s_accept;
 static PyObject *__pyx_kp_s_accept_language;
@@ -1940,6 +1939,7 @@ static PyObject *__pyx_kp_s_it_IT_it_q_0_9_en_US_q_0_8_en_q;
 static PyObject *__pyx_n_s_item_id;
 static PyObject *__pyx_n_s_json;
 static PyObject *__pyx_n_s_lem;
+static PyObject *__pyx_kp_s_li_class_a_last_a_text;
 static PyObject *__pyx_n_s_lower;
 static PyObject *__pyx_n_s_lxml;
 static PyObject *__pyx_n_s_main;
@@ -3646,7 +3646,7 @@ static PyObject *__pyx_gb_6amazon_12AmazonSpider_5generator1(__pyx_CoroutineObje
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_response, __pyx_n_s_xpath); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 138, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_cur_scope->__pyx_v_response, __pyx_n_s_xpath); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 137, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __pyx_t_2 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_9))) {
@@ -3658,12 +3658,12 @@ static PyObject *__pyx_gb_6amazon_12AmazonSpider_5generator1(__pyx_CoroutineObje
       __Pyx_DECREF_SET(__pyx_t_9, function);
     }
   }
-  __pyx_t_8 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_9, __pyx_t_2, __pyx_kp_s_a_contains_class_s_pagination_n) : __Pyx_PyObject_CallOneArg(__pyx_t_9, __pyx_kp_s_a_contains_class_s_pagination_n);
+  __pyx_t_8 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_9, __pyx_t_2, __pyx_kp_s_li_class_a_last_a_text) : __Pyx_PyObject_CallOneArg(__pyx_t_9, __pyx_kp_s_li_class_a_last_a_text);
   __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 138, __pyx_L1_error)
+  if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 137, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-  __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_extract_first); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 138, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_extract_first); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 137, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
   __pyx_t_8 = NULL;
@@ -3678,7 +3678,7 @@ static PyObject *__pyx_gb_6amazon_12AmazonSpider_5generator1(__pyx_CoroutineObje
   }
   __pyx_t_3 = (__pyx_t_8) ? __Pyx_PyObject_CallOneArg(__pyx_t_9, __pyx_t_8) : __Pyx_PyObject_CallNoArg(__pyx_t_9);
   __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
-  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 138, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 137, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
   __Pyx_GIVEREF(__pyx_t_3);
@@ -5057,7 +5057,6 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_kp_u__7, __pyx_k__7, sizeof(__pyx_k__7), 0, 1, 0, 0},
   {&__pyx_kp_s__8, __pyx_k__8, sizeof(__pyx_k__8), 0, 0, 1, 0},
   {&__pyx_kp_s__9, __pyx_k__9, sizeof(__pyx_k__9), 0, 0, 1, 0},
-  {&__pyx_kp_s_a_contains_class_s_pagination_n, __pyx_k_a_contains_class_s_pagination_n, sizeof(__pyx_k_a_contains_class_s_pagination_n), 0, 0, 1, 0},
   {&__pyx_kp_s_a_href, __pyx_k_a_href, sizeof(__pyx_k_a_href), 0, 0, 1, 0},
   {&__pyx_n_s_accept, __pyx_k_accept, sizeof(__pyx_k_accept), 0, 0, 1, 1},
   {&__pyx_kp_s_accept_language, __pyx_k_accept_language, sizeof(__pyx_k_accept_language), 0, 0, 1, 0},
@@ -5127,6 +5126,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_item_id, __pyx_k_item_id, sizeof(__pyx_k_item_id), 0, 0, 1, 1},
   {&__pyx_n_s_json, __pyx_k_json, sizeof(__pyx_k_json), 0, 0, 1, 1},
   {&__pyx_n_s_lem, __pyx_k_lem, sizeof(__pyx_k_lem), 0, 0, 1, 1},
+  {&__pyx_kp_s_li_class_a_last_a_text, __pyx_k_li_class_a_last_a_text, sizeof(__pyx_k_li_class_a_last_a_text), 0, 0, 1, 0},
   {&__pyx_n_s_lower, __pyx_k_lower, sizeof(__pyx_k_lower), 0, 0, 1, 1},
   {&__pyx_n_s_lxml, __pyx_k_lxml, sizeof(__pyx_k_lxml), 0, 0, 1, 1},
   {&__pyx_n_s_main, __pyx_k_main, sizeof(__pyx_k_main), 0, 0, 1, 1},
