@@ -169,3 +169,9 @@ make all
 ### Update 06/01/2022
 
 - Updated categories (in all languages)
+
+
+### Update 10/01/2022
+
+- Updated bug fix in brand for **Walmart** crawler
+- Updated **amazon** and **amazonde** crawlers to match change in website structure (i.e. find next_page of each category)
