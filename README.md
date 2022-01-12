@@ -177,6 +177,6 @@ make all
 - Updated **amazon** and **amazonde** crawlers to match change in website structure (i.e. find next_page of each category)
 
 
-### Update 10/01/2022
+### Update 12/01/2022
 
 - Updated **amazon, amazonde, euroelectronics** crawlers in order to 'stabilize' url of producs (removing query parts in the url, e.g. ?ref=...)
