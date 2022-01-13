@@ -99,10 +99,12 @@ def main():
                 products = rawJson['value']
                 product_id = None
                 previous_price = None
+                old_timestamp = None
                 if(len(products)): #number 0 is most recent
                     product_id = products[0]['_tk_relatedproduct_value']
                     price_id = products[0]['tk_customerproductmarketpriceid']
                     previous_price = products[0]['tk_retailprice']
+                    old_timestamp = products[0]['tk_RelatedProduct']['tk_lastcheckeddate']
 
                 rating = None
                 number_of_reviews = None
@@ -111,7 +113,14 @@ def main():
                     number_of_reviews = int(row['Number of reviews'])
                 except:
                     pass
+
+                #do not re-add the item in the db if last crawled time is the same
                 timestamp = row['Created at']
+                if old_timestamp:
+                    new_time = timestamp.split(' ')[0]
+                    old_time = old_timestamp.split('T')[0]
+                    if(new_time==old_time):
+                        continue
 
                 currency_id = None
                 currencyfilter = f"?$filter=isocurrencycode eq '{row['Currency']}'" 
