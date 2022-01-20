@@ -180,3 +180,8 @@ make all
 ### Update 12/01/2022
 
 - Updated **amazon, amazonde, euroelectronics** crawlers in order to 'stabilize' url of producs (removing query parts in the url, e.g. ?ref=...)
+
+
+### Update 14/01/2022
+
+- Updated **walmart** crawler to fix a few products without price
