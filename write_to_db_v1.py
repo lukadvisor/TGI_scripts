@@ -100,11 +100,16 @@ def main():
                 product_id = None
                 previous_price = None
                 old_timestamp = None
+                is_relevant = None
                 if(len(products)): #number 0 is most recent
                     product_id = products[0]['_tk_relatedproduct_value']
                     price_id = products[0]['tk_customerproductmarketpriceid']
                     previous_price = products[0]['tk_retailprice']
                     old_timestamp = products[0]['tk_RelatedProduct']['tk_lastcheckeddate']
+                    is_relevant = products[0]['tk_RelatedProduct']['tk_relevant']
+
+                if(is_relevant==100000001):
+                    continue
 
                 rating = None
                 number_of_reviews = None
