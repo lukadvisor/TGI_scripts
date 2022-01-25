@@ -7,6 +7,7 @@ import sys
 import os.path
 import os
 from dotenv import load_dotenv
+import datetime
 
 # Global configs.
 load_dotenv(dotenv_path='.env')
@@ -124,7 +125,9 @@ def main():
                 if old_timestamp:
                     new_time = timestamp.split(' ')[0]
                     old_time = old_timestamp.split('T')[0]
-                    if(new_time==old_time):
+                    new_time = datetime.datetime.strptime(new_time,'%Y-%m-%d')
+                    old_time = datetime.datetime.strptime(old_time,'%Y-%m-%d')
+                    if(old_time.isocalendar()[1]==new_time.isocalendar()[1] and old_time.year==new_time.year):
                         continue
 
                 currency_id = None
