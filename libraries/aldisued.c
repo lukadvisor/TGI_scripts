@@ -1918,7 +1918,7 @@ static PyObject *__pyx_pf_8aldisued_14AldiSuedSpider_6parse_item(CYTHON_UNUSED P
 static PyObject *__pyx_tp_new_8aldisued___pyx_scope_struct__start_requests(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_8aldisued___pyx_scope_struct_1_parse(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_int_1;
-static PyObject *__pyx_int_2;
+static PyObject *__pyx_int_5;
 static PyObject *__pyx_int_4900;
 static PyObject *__pyx_codeobj_;
 static PyObject *__pyx_tuple__2;
@@ -5234,7 +5234,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 static CYTHON_SMALL_CODE int __Pyx_InitGlobals(void) {
   if (__Pyx_InitStrings(__pyx_string_tab) < 0) __PYX_ERR(0, 1, __pyx_L1_error);
   __pyx_int_1 = PyInt_FromLong(1); if (unlikely(!__pyx_int_1)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __pyx_int_2 = PyInt_FromLong(2); if (unlikely(!__pyx_int_2)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_int_5 = PyInt_FromLong(5); if (unlikely(!__pyx_int_5)) __PYX_ERR(0, 1, __pyx_L1_error)
   __pyx_int_4900 = PyInt_FromLong(4900); if (unlikely(!__pyx_int_4900)) __PYX_ERR(0, 1, __pyx_L1_error)
   return 0;
   __pyx_L1_error:;
@@ -5730,8 +5730,8 @@ if (!__Pyx_RefNanny) {
 
   __pyx_t_3 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 157, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_CONCURRENT_REQUESTS, __pyx_int_2) < 0) __PYX_ERR(0, 157, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_DOWNLOAD_DELAY, __pyx_int_1) < 0) __PYX_ERR(0, 157, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_CONCURRENT_REQUESTS, __pyx_int_1) < 0) __PYX_ERR(0, 157, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_DOWNLOAD_DELAY, __pyx_int_5) < 0) __PYX_ERR(0, 157, __pyx_L1_error)
   if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_LOG_LEVEL, __pyx_n_s_INFO) < 0) __PYX_ERR(0, 157, __pyx_L1_error)
   if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_settings, __pyx_t_3) < 0) __PYX_ERR(0, 156, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
