@@ -120,15 +120,29 @@ def main():
                 except:
                     pass
 
-                #do not re-add the item in the db if last crawled time is the same
-                timestamp = row['Created at']
+                #do not re-add the item in the db if last crawled time is in the same week
+                timestamp = row['Created at'] #THIS IS IN UTC!
+                print('------------------------')
                 if old_timestamp:
-                    new_time = timestamp.split(' ')[0]
-                    old_time = old_timestamp.split('T')[0]
-                    new_time = datetime.datetime.strptime(new_time,'%Y-%m-%d')
-                    old_time = datetime.datetime.strptime(old_time,'%Y-%m-%d')
+                    new_time = timestamp.split('.')[0]
+                    old_time = old_timestamp.replace('T',' ').replace('Z','')
+                    new_time = datetime.datetime.strptime(new_time,'%Y-%m-%d %H:%M:%S') + datetime.timedelta(hours=8) #crawling time is in utc, this is HK time
+                    old_time = datetime.datetime.strptime(old_time,'%Y-%m-%d %H:%M:%S') + datetime.timedelta(hours=8)
+                    #print(f"{old_time} - {new_time}") #test 
+                    #continue #test
                     if(old_time.isocalendar()[1]==new_time.isocalendar()[1] and old_time.year==new_time.year):
+                        print("equal week - skip")
+                        print(f"{old_time} - {new_time}") 
                         continue
+                    else:
+                        print(f"{old_time} - {new_time}")
+                        print(f"{old_time.isocalendar()[1]} - {new_time.isocalendar()[1]}")
+                        print(f"{old_time.year} - {new_time.year}")
+
+                print(f"old timestamp: {old_timestamp}")
+                print(f"record id: {recordid}")
+                print(f"product id: {product_id}")
+                print(f"name : {row['Article description']}")
 
                 currency_id = None
                 currencyfilter = f"?$filter=isocurrencycode eq '{row['Currency']}'" 
