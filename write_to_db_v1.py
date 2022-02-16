@@ -102,12 +102,22 @@ def main():
                 previous_price = None
                 old_timestamp = None
                 is_relevant = None
+                prices = []
+                previous_price = round(float(price),2)
+                highest_price = previous_price
+                lowest_price = previous_price 
+                prices.append(previous_price) #prices[0] = current week price
+                for product in products: #0 = latest price
+                    prices.append(product['tk_retailprice'])
                 if(len(products)): #number 0 is most recent
                     product_id = products[0]['_tk_relatedproduct_value']
                     price_id = products[0]['tk_customerproductmarketpriceid']
                     previous_price = products[0]['tk_retailprice']
                     old_timestamp = products[0]['tk_RelatedProduct']['tk_lastcheckeddate']
                     is_relevant = products[0]['tk_RelatedProduct']['tk_relevant']
+                    lowest_price = min(prices)
+                    highest_price = max(prices)
+                    previous_price = prices[1] #previous week price
 
                 if(is_relevant==100000001):
                     continue
@@ -169,6 +179,9 @@ def main():
                         'tk_pictureurl': row['Picture url'],
                         'tk_recordid': recordid,
                         'tk_latestprice': round(float(price),2),
+                        'tk_highestprice': highest_price,
+                        'tk_lowestprice' : lowest_price,
+                        'tk_lastcapturedprice': previous_price,
                         'tk_latestrating': rating,
                         'tk_latestnumberofreview': number_of_reviews,
                         'tk_lastcheckeddate': timestamp,
