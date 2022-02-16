@@ -42,36 +42,41 @@ headers = {
 
 #set these values to query your crm data
 
-crmwebapi = 'https://mysam-config.api.crm5.dynamics.com/api/data/v9.2/' #full path to web api endpoint
+crmwebapi = RESOURCE_URI+'/api/data/v9.2/' #full path to web api endpoint
 crmwebapiquery_product = 'tk_customerproductmarketdatas'#?$select=tk_name #web api query (include leading /)
 crmwebapiquery_price = 'tk_customerproductmarketprices'#?$select=tk_features' #web api query (include leading /)
 crmwebapiquery = 'tk_customerproductmarketprices?$expand=tk_RelatedProduct'
 
 for source in sources:
     print(f"Update statecode for {source} products...")
-    retailerquery = f"&$filter=contains(tk_RelatedProduct/tk_retailer,'{source}')"
+    #retailerquery = f"&$filter=contains(tk_RelatedProduct/tk_retailer,'{source}')"
+    retailerquery = f"?$filter=contains(tk_retailer,'{source}')"
 
     # Request data.
-    r = session.get(crmwebapi+crmwebapiquery+retailerquery)
+    r = session.get(crmwebapi+crmwebapiquery_product+retailerquery)
     rawJson_str = r.content.decode('utf-8')
     rawJson = json.loads(rawJson_str)
     products = rawJson['value']
 
     for product in products:
-        product_id = product['_tk_relatedproduct_value']
-        #statuscode = product['tk_RelatedProduct']['statuscode']
-        statecode = product['tk_RelatedProduct']['statecode']
-        modifiedon = product['tk_RelatedProduct']['modifiedon']
+        #product_id = product['_tk_relatedproduct_value']
+        #statecode = product['tk_RelatedProduct']['statecode']
+        #modifiedon = product['tk_RelatedProduct']['tk_lastcheckeddate']
+
+        product_id = product['tk_customerproductmarketdataid']
+        statecode = product['statecode']
+        modifiedon = product['tk_lastcheckeddate']
+        name = product['tk_name']
+
         first_date_str = modifiedon.split('T')[0]
         last_date = datetime.datetime.now()
         first_date = datetime.datetime.strptime(first_date_str, '%Y-%m-%d')
         difference = last_date - first_date
-        difference_in_days = difference.total_seconds()/86400
+        difference_in_days = round(difference.total_seconds()/86400,1)
+
         if(statecode==0): #0=active, 1=inactive
             if(difference_in_days>=LIMIT):
                 data = "{'value':1}"
                 patch_query = f'({product_id})/statecode'
                 r = session.put(crmwebapi+crmwebapiquery_product+patch_query, headers=headers, data=data)
-                print(f"Product {product_id} - Change statecode from 0 (active) to 1 (inactive)")
-
-
+                print(f"Product {product_id} not updated for {difference_in_days} days - Change statecode from 0 (active) to 1 (inactive)")
