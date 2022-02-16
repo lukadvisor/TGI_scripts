@@ -1558,7 +1558,7 @@ static const char __pyx_k__7[] = ", ";
 static const char __pyx_k__8[] = "?";
 static const char __pyx_k_bs[] = "bs";
 static const char __pyx_k_re[] = "re";
-static const char __pyx_k_GBP[] = "GBP";
+static const char __pyx_k_EUR[] = "EUR";
 static const char __pyx_k_bs4[] = "bs4";
 static const char __pyx_k_csv[] = "csv";
 static const char __pyx_k_doc[] = "__doc__";
@@ -1756,6 +1756,7 @@ static PyObject *__pyx_n_s_CrawlerProcess;
 static PyObject *__pyx_kp_s_Created_at;
 static PyObject *__pyx_n_s_Currency;
 static PyObject *__pyx_n_s_DOWNLOAD_DELAY;
+static PyObject *__pyx_n_s_EUR;
 static PyObject *__pyx_n_s_EuroElectronicsSpider;
 static PyObject *__pyx_n_s_EuroElectronicsSpider_parse;
 static PyObject *__pyx_n_s_EuroElectronicsSpider_parse_item;
@@ -1763,7 +1764,6 @@ static PyObject *__pyx_n_s_EuroElectronicsSpider_start_requ;
 static PyObject *__pyx_kp_u_FOUND_ITEM;
 static PyObject *__pyx_n_s_Features;
 static PyObject *__pyx_kp_s_Features_english;
-static PyObject *__pyx_n_s_GBP;
 static PyObject *__pyx_n_s_GoogleTranslator;
 static PyObject *__pyx_n_s_HEADER;
 static PyObject *__pyx_n_s_HOME_URL;
@@ -4066,6 +4066,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_kp_s_Created_at, __pyx_k_Created_at, sizeof(__pyx_k_Created_at), 0, 0, 1, 0},
   {&__pyx_n_s_Currency, __pyx_k_Currency, sizeof(__pyx_k_Currency), 0, 0, 1, 1},
   {&__pyx_n_s_DOWNLOAD_DELAY, __pyx_k_DOWNLOAD_DELAY, sizeof(__pyx_k_DOWNLOAD_DELAY), 0, 0, 1, 1},
+  {&__pyx_n_s_EUR, __pyx_k_EUR, sizeof(__pyx_k_EUR), 0, 0, 1, 1},
   {&__pyx_n_s_EuroElectronicsSpider, __pyx_k_EuroElectronicsSpider, sizeof(__pyx_k_EuroElectronicsSpider), 0, 0, 1, 1},
   {&__pyx_n_s_EuroElectronicsSpider_parse, __pyx_k_EuroElectronicsSpider_parse, sizeof(__pyx_k_EuroElectronicsSpider_parse), 0, 0, 1, 1},
   {&__pyx_n_s_EuroElectronicsSpider_parse_item, __pyx_k_EuroElectronicsSpider_parse_item, sizeof(__pyx_k_EuroElectronicsSpider_parse_item), 0, 0, 1, 1},
@@ -4073,7 +4074,6 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_kp_u_FOUND_ITEM, __pyx_k_FOUND_ITEM, sizeof(__pyx_k_FOUND_ITEM), 0, 1, 0, 0},
   {&__pyx_n_s_Features, __pyx_k_Features, sizeof(__pyx_k_Features), 0, 0, 1, 1},
   {&__pyx_kp_s_Features_english, __pyx_k_Features_english, sizeof(__pyx_k_Features_english), 0, 0, 1, 0},
-  {&__pyx_n_s_GBP, __pyx_k_GBP, sizeof(__pyx_k_GBP), 0, 0, 1, 1},
   {&__pyx_n_s_GoogleTranslator, __pyx_k_GoogleTranslator, sizeof(__pyx_k_GoogleTranslator), 0, 0, 1, 1},
   {&__pyx_n_s_HEADER, __pyx_k_HEADER, sizeof(__pyx_k_HEADER), 0, 0, 1, 1},
   {&__pyx_n_s_HOME_URL, __pyx_k_HOME_URL, sizeof(__pyx_k_HOME_URL), 0, 0, 1, 1},
@@ -4694,7 +4694,7 @@ if (!__Pyx_RefNanny) {
 
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_PLATFORM, __pyx_n_s_euroelectronics) < 0) __PYX_ERR(0, 22, __pyx_L1_error)
 
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_CURRENCY, __pyx_n_s_GBP) < 0) __PYX_ERR(0, 23, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_CURRENCY, __pyx_n_s_EUR) < 0) __PYX_ERR(0, 23, __pyx_L1_error)
 
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_PAGE_LIMIT, __pyx_int_20) < 0) __PYX_ERR(0, 24, __pyx_L1_error)
 
