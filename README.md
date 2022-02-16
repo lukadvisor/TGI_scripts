@@ -138,10 +138,9 @@ One of the methods used is block a certain IP address if too many requests are s
 Currently, it seems that two of the sources (carrefour and walmart) use this method - therefore, the scripts for these two sources may stop running after a certain amount of data has been crawled. In order to avoid that, please consider using a VPN (temporary solution, as it allows to use 1 IP only) or a rotational proxy to keep changing IP address (best solution, but more expensive).
 
 
-## LIST OF UPDATES (Check this section often, some crawlers may not work without updates!)
+## UPDATES)
 
-Updates to the scripts may be needed periodically, as the structure of the websites to crawl may change from time to time and new protection may be added. Whenever an update is released, it will be listed below. 
-After the release of an update, please download the up-to-date version of the package with:
+Updates to the scripts are released periodically, as the structure of the websites to crawl may change from time to time and new protections may be added. In order to always have the up-to-date version of the scripts, please run:
 ```shell script
 git pull
 ```
@@ -149,39 +148,3 @@ And eventually, re-install the libraries with:
 ```shell script
 make all
 ```
-(or you can just run the 'make' command for the library that was updated only, to save time).
-
-### Update 21/12/2021
-
-- Updated the following libraries to improve their "search accuracy": **aldinord, aldisued, discounto, euroelectronics**
-
-### Update 22/12/2021
-
-- Updated **write_to_db_v1.py** to include tk_url field into price table
-- Updated **all libraries** to add newline separator into features field for better readability
-
-### Update 23/12/2021
-
-- Updated **write_to_db_v1.py** to include tk_timestamp field into price table
-- Updated **amazon, amazonde** libraries to match changes in website structure
-- Bug fix in **update_statecode.py** script
-
-### Update 06/01/2022
-
-- Updated categories (in all languages)
-
-
-### Update 10/01/2022
-
-- Updated bug fix in brand for **Walmart** crawler
-- Updated **amazon** and **amazonde** crawlers to match change in website structure (i.e. find next_page of each category)
-
-
-### Update 12/01/2022
-
-- Updated **amazon, amazonde, euroelectronics** crawlers in order to 'stabilize' url of producs (removing query parts in the url, e.g. ?ref=...)
-
-
-### Update 14/01/2022
-
-- Updated **walmart** crawler to fix a few products without price
