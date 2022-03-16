@@ -4380,10 +4380,9 @@ static PyObject *__pyx_pf_7leclerc_13LeclercSpider_6parse_item_with_reviews(CYTH
 
     __pyx_t_12 = __Pyx_PyList_Append(__pyx_v_row, __pyx_v_image); if (unlikely(__pyx_t_12 == ((int)-1))) __PYX_ERR(0, 231, __pyx_L1_error)
 
-    if (unlikely(!__pyx_v_price)) { __Pyx_RaiseUnboundLocalError("price"); __PYX_ERR(0, 232, __pyx_L1_error) }
-    __pyx_t_12 = __Pyx_PyList_Append(__pyx_v_row, __pyx_v_price); if (unlikely(__pyx_t_12 == ((int)-1))) __PYX_ERR(0, 232, __pyx_L1_error)
+    __pyx_t_12 = __Pyx_PyList_Append(__pyx_v_row, __pyx_v_final_price); if (unlikely(__pyx_t_12 == ((int)-1))) __PYX_ERR(0, 232, __pyx_L1_error)
 
-    __pyx_t_12 = __Pyx_PyList_Append(__pyx_v_row, __pyx_v_old_price); if (unlikely(__pyx_t_12 == ((int)-1))) __PYX_ERR(0, 233, __pyx_L1_error)
+    __pyx_t_12 = __Pyx_PyList_Append(__pyx_v_row, __pyx_v_final_price); if (unlikely(__pyx_t_12 == ((int)-1))) __PYX_ERR(0, 233, __pyx_L1_error)
 
     __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_CURRENCY); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 234, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
