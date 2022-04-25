@@ -1,0 +1,6 @@
+Threshold: 0.75
+
+TP	FP	FN	TN
+
+AMAZON
+60	0	14	0
